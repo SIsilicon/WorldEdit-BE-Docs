@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# WorldEdit: BE Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! warning
+    
+    This addon is Work in Progress and relies on experimental features in-game. Be sure to make backups of your world!
 
-## Commands
+Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Edition. This addon will help you shape your world right inside Minecraft.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Table of Contents
 
-## Project layout
+- [Installation](installation.md)
+- [Quick Start](quick_start.md)
+- [Differences](differences.md)
+- [FAQ](common_questions.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Links
+
+- [Download at MCPEDL](https://mcpedl.com/worldedit-be-addon)
+- [GitHub Repository](https://github.com/SIsilicon/WorldEdit-BE)
+- [Discord]()

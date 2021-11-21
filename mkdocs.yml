@@ -1,1 +1,13 @@
-site_name: WorldEdit for Minecraft Bedrock Edition
+site_name: WorldEdit for Minecraft Bedrock
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quick_start.md
+  - Differences: differences.md
+  - FAQ: common_questions.md
