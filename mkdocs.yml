@@ -11,3 +11,7 @@ nav:
   - Quick Start: quick_start.md
   - Differences: differences.md
   - FAQ: common_questions.md
+
+python:
+  install:
+    - requirements: docs/requirements.txt
