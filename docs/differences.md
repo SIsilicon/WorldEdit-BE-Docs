@@ -1,6 +1,6 @@
 # Differences
 
-As this addon is still under development, there are a bunch of features that it doesn't have that the original mod does. Some features can't be implemented at all due to Minecraft's limitations.
+As this addon is still under development, there are a bunch of features that it doesn't have that the original mod does; some features can't be implemented at all due to Minecraft's limitations.
 
 ## Commands
 
@@ -88,7 +88,7 @@ The following commands are planned to be implemented.
 - /remove
 - //calculate
 
-Commands that alter biome data, use images, or any do any form of file operations cannot be implemented due to API limitations.
+Commands that alter biome data, use images, or do any form of arbitrary file operation cannot be implemented due to API limitations.
 The schematics commands will be implemented, but will use structure files instead.
 
 ## Patterns
@@ -98,7 +98,7 @@ Patterns are currently limited in features. You can only define blocks with diff
 - Weighted Random Patterns (Eg: `20%stone,80%dirt`)
 - Random Block States (Eg: `*wool` makes a bunch of random coloured wool)
 - Clipboard Patterns
-- Type or State Only Patterns (Eg: `^[waterlogged=false]` makes any waterloggable blocks logged)
+- Type or State Only Patterns (Eg: `^[waterlogged=true]` makes any waterloggable blocks, waterlogged)
 - Block Category Patterns
 
 ## Mask
@@ -118,3 +118,7 @@ Masks have even less functionality as of writing. The following will be availabl
 ## Brushes and Tools
 
 Brushes and tools currently only are limited to preset items. Soon though, any item can be binded to, so stay tuned for that!
+
+## Selections
+
+The only selection shape available is a cuboid. The other selection modes that you find in the planned command list will be implemented in the future.

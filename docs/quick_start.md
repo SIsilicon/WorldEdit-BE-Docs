@@ -2,17 +2,15 @@
 
 ## Before anything else...
 
-By default, players are not allowed to use WorldEdit. Only those tagged as a builder can use it's features.
-To make yourself a builder, enter `/tag @s add builder` in chat.
-You should then receive a message saying that you have been giving WorldEdit permissions.
+By default, players are not allowed to use WorldEdit. Only those tagged as a builder can use its features. To make yourself a builder, enter `/tag @s add builder` in chat. You should then receive a message saying that you have been giving WorldEdit permissions.
 
-!!! tip
+!!! Tip
 
-    You can also make other players builders by changing `@s` to the player's name. You'll need to surround it in quotes if has a space in it. Eg: `/tag "Steve Wilson" add builder`
+    You can also make other players builders by changing `@s` to the player's name. You'll need to surround it in quotes if it has a space in it. Eg: `/tag "Steve Wanderer" add builder`
 
 ## Going places
 
-!!! notice
+!!! Notice
 
     The commands provided by this addon use a semicolon (;) instead of a bracket (/).
     In the future, Mojang might add actual custom commands support to Minecraft.
@@ -25,7 +23,7 @@ Once you have this item, just interact with it to get teleported to the spot you
 Want to get on the otherside of a wall or ceiling? Use the wand while sneaking to go right through it!
 Stuck in a block? Using the wand will get you unstuck!
 
-!!! tip
+!!! Tip
 
     If you don't want to use the navigation wand, these actions can also be done with the commands `;junpto`, `;thru` and `;unstuck` as well.
 
@@ -63,7 +61,7 @@ If you want to you can undo everthing with `;undo 5`, since you did five success
 1. Get a shovel of any type (preferably wooden).
 2. Bind a cobblestone brush to your shovel of radius 3 with `;br tier sphere cobblestone 3`. `tier` is the kind of shovel you're binding the brush to. 1 is wooden, 2 is stone, and so on.
 3. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
-4. Make it so the brush only affects grass with `;br tier mask grass`. Use the brush now to make a cobblestone path.
+4. Make it so the brush only affects grass with `;mask tier grass`. Use the brush now to make a cobblestone path.
 5. Disable the brush with `;br tier none`.
 
 ## No commands? No problem
