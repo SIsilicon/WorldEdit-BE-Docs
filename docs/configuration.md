@@ -1,6 +1,6 @@
 # Configuration
 
-Some parts of WorldEdit can be changed by editing a configuration file that's bundled with the addon. The location of this file depends on the platform the addon is running on, but the path relative to the `com.mojang` folder is `behavior_packs/worldedit.bp/scripts/config.js`.
+Some parts of WorldEdit can be changed by editing a configuration file that's bundled with the addon. The location of this file depends on the platform the addon is running on, but the path relative to the `com.mojang` folder is `behavior_packs/WorldEdit[/scripts/config.js`.
 
 !!! Warning
 
