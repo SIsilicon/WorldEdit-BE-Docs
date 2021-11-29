@@ -31,3 +31,4 @@ Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Editio
 - [MCPEDL Page](https://mcpedl.com/worldedit-be-addon)
 - [GitHub Repository](https://github.com/SIsilicon/WorldEdit-BE)
 - [Discord](https://discord.gg/M5uAkr9WU2)
+- [Patreon](https://patreon.com/sisilicon)

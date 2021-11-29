@@ -21,7 +21,7 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
     
     This sets the region to half dirt, and upper half brick slabs
 
-As you saw in the example, you can combine multiple patterns together with commas (,) inbetween them. **No spaces!**
+As you saw in the example, you can combine multiple patterns together with commas (,) inbetween them. **No spaces!** Also, every state name is surrounded in single quotes ('), and so are the state values __if they are not true, false, or a number__.
 
 Since percentages have not been implemented yet, if you want more of one block than another, just define it multiple times.
 
