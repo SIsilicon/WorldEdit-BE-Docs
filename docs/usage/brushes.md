@@ -2,7 +2,7 @@
 
 Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to six different shovels; each one referenced by tier. For example, `;brush 2 sphere log 5` Binds a brush to the stone shovel, as stone is the second tier.
 
-|![Shovel Tiers](/img/shovel_tiers.png)|
+|![Shovel Tiers](../img/shovel_tiers.png)|
 |:---:|
 |The shovel tiers, left to right.|
 
