@@ -25,7 +25,7 @@ Stuck in a block? Using the wand will get you unstuck!
 
 !!! Tip
 
-    If you don't want to use the navigation wand, these actions can also be done with the commands `;junpto`, `;thru` and `;unstuck` as well.
+    If you don't want to use the navigation wand, these actions can also be done with the commands `;jumpto`, `;thru` and `;unstuck` as well.
 
 ## Making selections
 
