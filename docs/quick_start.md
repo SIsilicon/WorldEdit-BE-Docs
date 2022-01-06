@@ -53,7 +53,7 @@ There are many operations in WorldEdit that we may commonly use, such as undoing
 Make a modest sized selection to work with, and have your kit ready.
 We're going to try some of the features WorldEdit has to offer.
 
-1. Place down stone, use the [Pattern Picker](/usage/kit#pattern_picker) on it and use ["Selection Fill"](/usage/kit#selection_fill). A cuboid of stone should be made.
+1. Place down stone, use the [Pattern Picker](usage/kit#pattern_picker) on it and use ["Selection Fill"](usage/kit#selection_fill). A cuboid of stone should be made.
 2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Selection Fill" again to clear the stone.
 3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Selection Fill" and you should have a mix of sandstone and glass.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Selection Fill". All sandstone should now be replaced with that block.
@@ -67,7 +67,7 @@ The kit also provides a way to make brushes.
 
 1. Get a shovel of any type (preferably wooden).
 2. Place down cobblestone; you'll need it for the brush.
-3. Use the ["WorldEdit Settings"](/usage/kit#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
+3. Use the ["WorldEdit Settings"](usage/kit#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
 4. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
 5. Make it so the brush only affects grass with `;mask tier grass`. `tier` is the kind of shovel you're binding the brush to. 1 is wooden, 2 is stone, and so on. Use the brush now to make a cobblestone path.
 6. Disable the brush with `;br tier none`.
