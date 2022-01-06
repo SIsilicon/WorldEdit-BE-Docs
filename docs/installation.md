@@ -2,7 +2,7 @@
 
 ## Requirements
 
-WorldEdit: BE is an addon that's compatible with Minecraft 1.18 on Windows, Android, iOS and _possibly XBox_. You can also install this addon on server hosting sites such as Aternos, allowing you to join worlds with this addon on any platform that Minecraft is available on. You can use this on both singleplayer and multiplayer games.
+WorldEdit: BE is an addon that's compatible with Minecraft 1.17.40-1.18.2 on Windows, Android, iOS and _possibly XBox_. You can also install this addon on server hosting sites such as Aternos, allowing you to join worlds with this addon on any platform that Minecraft is available on. You can use this on both singleplayer and multiplayer games.
 
 !!! note
 
@@ -12,7 +12,13 @@ WorldEdit: BE is an addon that's compatible with Minecraft 1.18 on Windows, Andr
 
 ### Locally
 
-Once you've downloaded the addon, simply open it with Minecraft to get it imported. If you have the same, or later version of the addon already imported, you must delete both the behaviour and resource pack in `Settings > Storage`. In a new world, or an already existing one, add "WorldEdit [BP]" in `Behaviour Packs` and "WorldEdit [RP]" in `Resource Packs`. Also enable "Holiday Creator Features" and "Enable GameTest Framework" in `Experimental Features`. Create/Enter the world, and you're ready to use WorldEdit!
+Once you've downloaded the addon, simply open it with Minecraft to get it imported.
+
+!!! note
+    
+    Android users may need a file explorer that allows opening the addon with Minecraft. We suggest CX File Explorer.
+
+If you have the same, or later version of the addon already imported, you may need to delete both the behaviour and resource pack in `Settings > Storage`. In a new world, or an already existing one, add "WorldEdit [BP]" in `Behaviour Packs` and "WorldEdit [RP]" in `Resource Packs`. Also enable "Holiday Creator Features" and "Enable GameTest Framework" in `Experimental Features`. Create/Enter the world, and you're ready to use WorldEdit!
 
 ### Aternos Server
 

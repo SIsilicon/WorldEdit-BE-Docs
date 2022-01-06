@@ -6,7 +6,6 @@ As this addon is still under development, there are a bunch of features that it 
 
 The following commands are planned to be implemented.
 
-- /worldedit version
 - /toggleplace
 - /ascend
 - /descend
@@ -41,8 +40,6 @@ The following commands are planned to be implemented.
 - //deform
 - //hollow
 - //generate
-- //rotate
-- //flip
 - /clearclipboard
 - /tool()
     - repl
@@ -88,8 +85,8 @@ The following commands are planned to be implemented.
 - /remove
 - //calculate
 
-Commands that alter biome data, use images, or do any form of arbitrary file operation cannot be implemented due to API limitations.
-The schematics commands will be implemented, but will use structure files instead.
+Commands that alter biome data, use images, or do any form of arbitrary file operation will be harder, if not impossible to implement due to API limitations.
+The schematics commands will be implemented, but will use structure files instead, and limited to the world they're made in.
 
 ## Patterns
 
@@ -122,3 +119,9 @@ Brushes and tools currently only are limited to preset items. Soon though, any i
 ## Selections
 
 The only selection shape available is a cuboid. The other selection modes that you find in the planned command list will be implemented in the future.
+
+One thing we got other the Java mod, is we have the ability to see our selections, and not limited to a specific version of Minecraft, or structure blocks. This can be toggled with `;drawsel`.
+
+## Kit
+
+Unlike the original mod, which was made for game intended for keyboard only, this addon is made for all kinds of devices. The purpose of the kit, which can be received with `;kit`, is to be able to use WorldEdit's more common features more easily. See (Kit)[/usage/kit] for more info.

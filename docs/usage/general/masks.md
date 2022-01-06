@@ -2,7 +2,7 @@
 
 Masks, alongside patterns, are commonly used in WorldEdit commands. Unlike patterns, masks determine which blocks will be affected by commands, brushes, and so on.
 
-Aside from commands that take a mask as a parameter, like `;replace [mask] <pattern>`, you can also apply masks to individual brushes by using the `;mask` command, or you can apply a mask to all your WorldEdit actions globally with `;gmask`.
+Aside from commands that take a mask as a parameter, like `;replace [mask] <pattern>`, you can also apply masks to individual brushes by using the `;mask` command, or you can apply a mask to all your WorldEdit actions globally with `;gmask`. The global mask can also be set from the kit using the [Mask Picker](/usage/kit#mask_picker).
 
 !!! Note
 
@@ -25,7 +25,3 @@ Like [patterns](patterns.md), masks also take blocks as part of their definition
     `;replace log2['new_log_type':'dark_oak','pillar_axis':0],cobblestone air`
     
     Replaces dark oak logs facing up, and cobblestone with air.
-
-## Mask Picker
-
-The Mask Picker (:wedit-maskdropper:) has the same control as the [Pattern Picker](patterns.md#pattern-picker). This item is used when you are setting up brushes via the item buttons.

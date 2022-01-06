@@ -11,17 +11,10 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
 
 theme:
   name: readthedocs
   locale: en
-  custom_dir: overrides
 
 extra_css: [css/extra.css]
 
@@ -39,6 +32,7 @@ nav:
       - Sessions: usage/general/sessions.md
       - Patterns: usage/general/patterns.md
       - Masks: usage/general/masks.md
+    - Kit: usage/kit.md
     - Navigation: usage/navigation.md
     - Clipboard: usage/clipboard.md
     #- Regions:

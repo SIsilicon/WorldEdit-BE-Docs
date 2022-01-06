@@ -47,3 +47,11 @@ The stack command repeats your selection, in a certain direction (`;stack <times
 ## Moving
 
 Suppose you think a build would look better if it were nudged a little to the right. Rather than cutting and pasting the build, you also have the option of using the move command to adjust the its position (`;move <amount: int> [direction: Direction]`).
+
+## Rotating
+
+The rotate command allows you to rotate your builds in increments of 90°  around you (`;rotate [-cos] <rotate: int>`). The `-c` flag makes this command affect the clipboard, `-o` makes it rotate around its center, and `-s` changes your selection to fit the rotated build.
+
+## Flipping
+
+The flip command flips your builds in a direction of your choice around you `;flip [-cos] [direction: Direction]`). The flags here do the same things as the ones for `;rotate`.

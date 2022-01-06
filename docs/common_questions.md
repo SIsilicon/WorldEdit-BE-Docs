@@ -12,7 +12,7 @@ There are three possible reasons why your addon may not be working.
 
 1. You didn't enable both "Holiday Creator Features" and "Enable Gametest Framework".
 2. You didn't apply both the behaviour pack and resource pack to your world.
-3. The addon doesn't seems to work for certain devices. There isn't a known reason why, but until that's resolved, you can try using the addon from a server hosting site, such as Aternos. You may report the bug [here](https://github.com/SIsilicon/WorldEdit-BE/issues).
+3. You are not playing on the right version of Minecraft. As of writing, the addon supports 1.17.40 to 1.18.2. 
 
 ## Can I use WorldEdit with other addons?
 

@@ -29,10 +29,6 @@ Since percentages have not been implemented yet, if you want more of one block t
 
     You can also define certain block variations by adding a data value to the block ID. `wool:1` is orange wool for instance. This can't be defined alongside block states.
 
-## Pattern Picker
-
-When using items, the Pattern Picker (:wedit-eyedropper:) allows you to select blocks to be used in a pattern by other items (just Selection Fill (:wedit-selection-fill:) for now). To set a pattern to a block, just use the item on the block of your choice. You can select air by using it without facing any block (mobile players just have to tap and hold). You may add additional blocks by using this tool while sneaking.
-
 !!! Tip
 
-    Using the Pattern Picker also displays the block's ID and block states, so you can also use it to find the ID and states of different blocks!
+    Using the [Pattern Picker](/usage/kit#pattern_picker) displays the block's ID and block states, so you can do this to find the ID and states of different blocks!

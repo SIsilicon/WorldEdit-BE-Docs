@@ -29,8 +29,8 @@ Stuck in a block? Using the wand will get you unstuck!
 
 ## Making selections
 
-Like the original mod, you use what's known as a Selection Wand to easily mark regions of your world for various operations.
-To get one, you enter the command `;wand`.
+Like the original mod, you use what's known as a selection wand to easily mark regions of your world for all sorts of operations.
+To get one, grab a wooden axe, or enter the command `;wand`.
 
 Selections in WorldEdit are cuboid shaped by default.
 To make a selection, you need to mark the two corners of this cuboid.
@@ -44,30 +44,33 @@ If there's no block for you to mark a corner with, like high in the air, you can
 
 ![Position Placement](img/pos_placement.jpg)
 
+## Kit items for convenience
+
+There are many operations in WorldEdit that we may commonly use, such as undoing, and copying structures. To make this addon more convenient for mobile and controller players, it comes with a set of items that act as a shortcut to these common WorldEdit functions. To receive this kit, just type `;kit`.
+
 ## Doing stuff with your selection
 
-Make a modest sized selection to work with.
-We're going to try some of the commands WorldEdit has to offer.
+Make a modest sized selection to work with, and have your kit ready.
+We're going to try some of the features WorldEdit has to offer.
 
-1. Set the selection to stone using `;set minecraft:stone`. `minecraft:` is optional. Blocks provided by other addons need their namespace explicitly defined. Eg: `wiki:block`.
-2. Set it to yellow wool with `;set wool:4`. Some blocks like wool come in different variations. The number after the block id determines the variation used.
-3. Set the selection to half sandstone, half glass with `;set sandstone,glass`.
-4. Replace the sandstone with dirt with `;replace sandstone dirt`.
-5. Repeat your selection upwards with `;stack 4 up`.
+1. Place down stone, use the [Pattern Picker](/usage/kit#pattern_picker) on it and use ["Selection Fill"](/usage/kit#selection_fill). A cuboid of stone should be made.
+2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Selection Fill" again to clear the stone.
+3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Selection Fill" and you should have a mix of sandstone and glass.
+4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Selection Fill". All sandstone should now be replaced with that block.
+5. Repeat your selection upwards by typing the command `;stack 4 up`.
 
-If you want to you can undo everthing with `;undo 5`, since you did five successful operations.
+If you want to you can undo everthing by using the undo item until you can't undo any further.
 
 ## Playing with brushes
+
+The kit also provides a way to make brushes.
+
 1. Get a shovel of any type (preferably wooden).
-2. Bind a cobblestone brush to your shovel of radius 3 with `;br tier sphere cobblestone 3`. `tier` is the kind of shovel you're binding the brush to. 1 is wooden, 2 is stone, and so on.
-3. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
-4. Make it so the brush only affects grass with `;mask tier grass`. Use the brush now to make a cobblestone path.
-5. Disable the brush with `;br tier none`.
-
-## No commands? No problem
-
-If typing commands isn't your thing, whether it's because you don't use a keyboard, or their complicated, this addon gives you a simpler alternative.
-If you get a wooden axe instead of using `;wand`, you'll be given a bunch of items as alternatives to commands. They're not as extensive as commands, but allow you to do the more common tasks more quickly, such as copying and pasting, and setting up brushes.
+2. Place down cobblestone; you'll need it for the brush.
+3. Use the ["WorldEdit Settings"](/usage/kit#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
+4. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
+5. Make it so the brush only affects grass with `;mask tier grass`. `tier` is the kind of shovel you're binding the brush to. 1 is wooden, 2 is stone, and so on. Use the brush now to make a cobblestone path.
+6. Disable the brush with `;br tier none`.
 
 ## What now?
 
