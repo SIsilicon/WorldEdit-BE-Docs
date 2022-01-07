@@ -2,7 +2,7 @@
 
 Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to six different shovels; each one referenced by tier. For example, `;brush 2 sphere log 5` Binds a brush to the stone shovel, as stone is the second tier.
 
-|![Shovel Tiers](/img/shovel_tiers.png)|
+|![Shovel Tier](/img/shovel_tiers.png)|
 |:---:|
 |The shovel tiers, left to right.|
 
@@ -60,4 +60,4 @@ This changes the blocks what this brush can trace through before hitting somethi
 
 ## Configuring the Brush without Commands
 
-You can also set up brushes within the Kit's [Config Menu](/usage/kit#config). using the item will show another button that will let you edit each brush tier as instructed by WorldEdit.
+You can also set up brushes within the Kit's [Config Menu](./kit/#config). using the item will show another button that will let you edit each brush tier as instructed by WorldEdit.
