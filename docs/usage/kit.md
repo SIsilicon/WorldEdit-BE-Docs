@@ -18,7 +18,7 @@ Upon typing the command `;kit`, you are given the following items:
 * **Flip (<img src="../img/icons/flip.png" class="wedit-icn" id="flip"/>):** Flip your selection left to right relative to your orientation. Sneaking will make it flip about its center.
 * **Rotate (<img src="../img/icons/rotate_cw.png" class="wedit-icn" id="rotate"/> and <img src="../img/icons/rotate_ccw.png" class="wedit-icn"/>):** Rotate your selection relative to your orientation. Sneaking will make it rotate about its center.
 * **Mask Picker (<img src="../img/icons/maskdropper.png" class="wedit-icn" id="mask_picker"/>):** Select blocks to use in the global mask. Like the Pattern Picker, sneaking will add blocks to the mask. This affects "Selection Fill", and the brushes. To clear it, use the command `;gmask`.
-* <a name="config">**WorldEdit Settings ![](/img/icons/config.png):**</a> Enter a hotbar menu to change and setup some things about WorldEdit and the kit.
+* <a name="config"></a>**WorldEdit Settings ![](/img/icons/config.png):** Enter a hotbar menu to change and setup some things about WorldEdit and the kit.
 
 ## Settings Menu
 
