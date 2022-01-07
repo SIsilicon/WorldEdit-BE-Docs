@@ -1,5 +1,5 @@
 img[src*='/icons/'] {
-    width: 24sp;
+    width: 1.5em;
     -ms-interpolation-mode: nearest-neighbor;
     image-rendering: pixelated;
     vertical-align: middle;
