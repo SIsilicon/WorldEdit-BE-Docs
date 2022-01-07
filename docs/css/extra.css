@@ -1,4 +1,4 @@
-.wedit-icn {
+img[src*='/icons/'] {
     width: 24sp;
     -ms-interpolation-mode: nearest-neighbor;
     image-rendering: pixelated;
