@@ -5,7 +5,7 @@ This includes brush uses, filling areas with blocks, and pasting structures all 
 
 ## Undo and Redo
 
-It's important to know how to undo any actions you've made, intentional or not. You can easily do this with `;undo`, and there's also `;redo` to go forward in history as well. These two commands are also available trigerrable from the [Kit](../usage/kit.md#undo).
+It's important to know how to undo any actions you've made, intentional or not. You can easily do this with `;undo`, and there's also `;redo` to go forward in history as well. These two commands are also available trigerrable from the [Kit](../kit.md#undo).
 
 !!! warning
 
