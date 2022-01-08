@@ -1,5 +1,5 @@
 # Clipboard
-WorldEdit has a handy clipboard function that allows you to copy an area, and paste it anywhere else. Clipboard contents are currently only cuboids and copying uses the region you have selected. These operations can also done using the [Kit](/usage/kit).
+WorldEdit has a handy clipboard function that allows you to copy an area, and paste it anywhere else. Clipboard contents are currently only cuboids and copying uses the region you have selected. These operations can also done using the [Kit](kit.md).
 
 [TOC]
 

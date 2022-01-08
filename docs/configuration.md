@@ -17,7 +17,7 @@ Some parts of WorldEdit can be changed by editing a configuration file that's bu
 ```
 /storage/emulated/0/Android/data/com.mojang.minecraftpe/files/games/com.mojang/(path to config)
 ```
-It's recommended that you use CX File Explorer to access this path.
+It's recommended that you use CX File Explorer to access this path. You must also have Minecraft's storage mode set to External.
 
 **iOS**
 
