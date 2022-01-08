@@ -5,7 +5,7 @@ This includes brush uses, filling areas with blocks, and pasting structures all 
 
 ## Undo and Redo
 
-It's important to know how to undo any actions you've made, intentional or not. You can easily do this with `;undo`, and there's also `;redo` to go forward in history as well. These two commands are also available trigerrable from the [Kit](usage/kit.md#undo).
+It's important to know how to undo any actions you've made, intentional or not. You can easily do this with `;undo`, and there's also `;redo` to go forward in history as well. These two commands are also available trigerrable from the [Kit](../usage/kit.md#undo).
 
 !!! warning
 
@@ -15,6 +15,6 @@ You can also undo and redo multiple actions at once by specifying how many time 
 
 !!! note
 
-    Sessions can only hold up to 20 of your last actions by default. This can be changed in the addon's config file (see [Configuration](configuration.md)).
+    Sessions can only hold up to 20 of your last actions by default. This can be changed in the addon's config file (see [Configuration](../../configuration.md)).
 
 Finally, you can clear your entire history with `;clearhistory`.
