@@ -31,4 +31,4 @@ Since percentages have not been implemented yet, if you want more of one block t
 
 !!! Tip
 
-    Using the [Pattern Picker](/usage/kit#pattern_picker) displays the block's ID and block states, so you can do this to find the ID and states of different blocks!
+    Using the [Pattern Picker](../kit.md#pattern_picker) displays the block's ID and block states, so you can do this to find the ID and states of different blocks!
