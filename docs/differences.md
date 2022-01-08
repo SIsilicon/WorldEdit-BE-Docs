@@ -124,4 +124,4 @@ One thing we got other the Java mod, is we have the ability to see our selection
 
 ## Kit
 
-Unlike the original mod, which was made for game intended for keyboard only, this addon is made for all kinds of devices. The purpose of the kit, which can be received with `;kit`, is to be able to use WorldEdit's more common features more easily. See (Kit)[../usage/kit.md] for more info.
+Unlike the original mod, which was made for game intended for keyboard only, this addon is made for all kinds of devices. The purpose of the kit, which can be received with `;kit`, is to be able to use WorldEdit's more common features more easily. See [Kit](usage/kit.md) for more info.
