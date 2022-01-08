@@ -26,7 +26,7 @@ It should be compatible with any other addon you have in your world.
 
 ## How do I make coloured blocks, different type of wood, etc...?
 
-How Minecraft works is that some blocks are just variations of a base block. Red wool for example is just a variation of the default white wool, and granite is just a variation of stone. To define these variations, you can use either data values (`wool:1` = orange wool), or block states (`stone_slab['stone_slab_type':'brick']` = brick slabs). For more information on blocks in commands, go to [this docs page](../usage/general/patterns.md).
+How Minecraft works is that some blocks are just variations of a base block. Red wool for example is just a variation of the default white wool, and granite is just a variation of stone. To define these variations, you can use either data values (`wool:1` = orange wool), or block states (`stone_slab['stone_slab_type':'brick']` = brick slabs). For more information on blocks in commands, go to [this docs page](usage/general/patterns.md).
  
 ## How do I uninstall the addon from the world?
 
