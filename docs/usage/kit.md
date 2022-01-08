@@ -6,7 +6,7 @@ As WorldEdit for Bedrock is made for different devices, the kit was created to m
 
 Upon typing the command `;kit`, you are given the following items:
 
-* <a name="selection_wand"></a>**Selection Wand ![](../img/icons/wood_axe.png):** Make selections to do stuff with. See [Quick Start](../../quick_start.md).
+* <a name="selection_wand"></a>**Selection Wand ![](../img/icons/wood_axe.png):** Make selections to do stuff with. See [Quick Start](../quick_start.md).
 * <a name="selection_fill"></a>**Selection Fill ![](../img/icons/selection_fill.png):** Fill your selection with blocks determined by the pattern picker.
 * <a name="pattern_picker"></a>**Pattern Picker ![](../img/icons/eyedropper.png):** Select blocks to use in a pattern. Sneaking will add blocks to the pattern. The pattern is used by Selection Fill.
 * <a name="copy"></a>**Copy ![](../img/icons/copy.png):** Copy whatever is in your selection to the clipboard.
