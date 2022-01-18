@@ -55,7 +55,7 @@ We're going to try some of the features WorldEdit has to offer.
 
 1. Place down stone, use the [Pattern Picker](../usage/kit.md#pattern_picker) on it and use ["Selection Fill"](../usage/kit.md#selection_fill). A cuboid of stone should be made.
 2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Selection Fill" again to clear the stone.
-3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Selection Fill" and you should have a mix of sandstone and glass.
+3. Place down sandstone and glass, use the Pattern Picker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Selection Fill" and you should have a mix of sandstone and glass.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Selection Fill". All sandstone should now be replaced with that block.
 5. Repeat your selection upwards by typing the command `;stack 4 up`.
 
