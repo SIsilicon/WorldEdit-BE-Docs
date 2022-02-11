@@ -6,8 +6,8 @@ As WorldEdit for Bedrock is made for different devices, the kit was created to m
 
 Upon typing the command `;kit`, you are given the following items:
 
-* <a name="selection_wand"></a>**Selection Wand ![](../img/icons/wood_axe.png):** Make selections to do stuff with. See [Quick Start](../../quick_start.md).
-* <a name="selection_fill"></a>**Selection Fill ![](../img/icons/selection_fill.png):** Fill your selection with blocks determined by the pattern picker.
+* <a name="selection_wand"></a>**Selection Wand ![](../img/icons/wood_axe.png):** Make selections to do stuff with. You ca remove your selection with `;sel` See [Quick Start](../../quick_start.md).
+* <a name="selection_fill"></a>**Fill Selection ![](../img/icons/selection_fill.png):** Fill your selection with blocks determined by the pattern picker.
 * <a name="pattern_picker"></a>**Pattern Picker ![](../img/icons/eyedropper.png):** Select blocks to use in a pattern. Sneaking will add blocks to the pattern. The pattern is used by Selection Fill.
 * <a name="copy"></a>**Copy ![](../img/icons/copy.png):** Copy whatever is in your selection to the clipboard.
 * <a name="cut"></a>**Cut ![](../img/icons/cut.png):** Cut whatever is in your selection to the clipboard. The selection is then replaced with air.
@@ -18,6 +18,9 @@ Upon typing the command `;kit`, you are given the following items:
 * <a name="flip"></a>**Flip ![](../img/icons/flip.png):** Flip your selection left to right relative to your orientation. Sneaking will make it flip about its center.
 * <a name="rotate"></a>**Rotate ![](../img/icons/rotate_cw.png) ![](../img/icons/rotate_ccw.png):** Rotate your selection relative to your orientation. Sneaking will make it rotate about its center.
 * <a name="mask_picker"></a>**Mask Picker ![](../img/icons/maskdropper.png):** Select blocks to use in the global mask. Like the Pattern Picker, sneaking will add blocks to the mask. This affects "Selection Fill", and the brushes. To clear it, use the command `;gmask`.
+* <a name="draw_line"></a>**Draw Line ![](../img/icons/draw_line.png):** Draw a line from your first position to your second.
+* <a name="selection_wall"></a>**Wall Selection ![](../img/icons/selection_wall.png):** Surround your selection with walls.
+* <a name="selection_outline"></a>**Outline Selection ![](../img/icons/selection_outline.png):** Surround your selection with an outline.
 * <a name="config"></a>**WorldEdit Settings ![](../img/icons/config.png):** Enter a hotbar menu to change and setup some things about WorldEdit and the kit.
 
 ## Settings Menu

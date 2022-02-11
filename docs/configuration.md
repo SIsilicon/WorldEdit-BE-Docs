@@ -35,4 +35,5 @@ Minecraft/games/com.mojang/(path to config)
 | BRUSH_HISTORY_MODE | 1 (fast) | How to handle brush undo and redo |
 | TICKS_TO_DELETE_SESSION | 12000 (10 mins) | How long until a previously active builder's session gets deleted. |
 | PRINT_TO_ACTION_BAR | true | Whether using items prints their messages to the action bar or chat. |
-| PLAYER_HEIGHT | 1.61 | The eye level of the player; used in raytracing |
+| COMMAND_PREFIX | ; | The character that every WorldEdit comman shoukd start with. |
+| DRAW_SELECTION | true | Whether the player's selection is visible by default |

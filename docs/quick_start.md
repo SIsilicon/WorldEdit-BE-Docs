@@ -2,11 +2,11 @@
 
 ## Before anything else...
 
-By default, players are not allowed to use WorldEdit. Only those tagged as a builder can use its features. To make yourself a builder, enter `/tag @s add builder` in chat. You should then receive a message saying that you have been giving WorldEdit permissions.
+By default, players are not allowed to use WorldEdit. Only those tagged as with worldedit can use its features. To give yourself all worldedit permissions, enter `/tag @s add worldedit` in chat. You should then receive a message saying that you have been giving WorldEdit permissions.
 
 !!! Tip
 
-    You can also make other players builders by changing `@s` to the player's name. You'll need to surround it in quotes if it has a space in it. Eg: `/tag "Steve Wanderer" add builder`
+    You can also give other players worldedit permissions by changing `@s` to the player's name. You'll need to surround it in quotes if it has a space in it. Eg: `/tag "Steve Wanderer" add worldedit`
 
 ## Going places
 
@@ -65,12 +65,12 @@ If you want to you can undo everthing by using the undo item until you can't und
 
 The kit also provides a way to make brushes.
 
-1. Get a shovel of any type (preferably wooden).
+1. Get a shovel of any type.
 2. Place down cobblestone; you'll need it for the brush.
 3. Use the ["WorldEdit Settings"](../usage/kit.md#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
 4. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
-5. Make it so the brush only affects grass with `;mask tier grass`. `tier` is the kind of shovel you're binding the brush to. 1 is wooden, 2 is stone, and so on. Use the brush now to make a cobblestone path.
-6. Disable the brush with `;br tier none`.
+5. Make it so the brush only affects grass with `;mask grass` while holding the brush. Use the brush now to make a cobblestone path.
+6. Disable the brush with `;br none`.
 
 ## What now?
 

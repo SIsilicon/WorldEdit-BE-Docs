@@ -17,8 +17,9 @@ The `;copy` command copies your current selection to your session’s clipboard,
 
     This remembers your current position relative to the copy. This is a very important concept to grasp otherwise you will not be able to control where you paste your copy!
 
-Both commands have two additional flags:
+Both commands have three additional flags:
 
+- `-a` can be used to remove air from your selection, so that it doesn't replace anything when pasting.
 - `-e` can be specified to also copy/cut entities from the selection.
 - `-m <mask>` can be used to specify a mask of blocks to copy/cut. Any blocks that do not match will be replaced with air in your clipboard.
 

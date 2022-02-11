@@ -2,7 +2,7 @@
 
 ## Requirements
 
-WorldEdit: BE is an addon that's compatible with Minecraft 1.17.40-1.18.2 on Windows, Android, iOS and _possibly XBox_. You can also install this addon on server hosting sites such as Aternos, allowing you to join worlds with this addon on any platform that Minecraft is available on. You can use this on both singleplayer and multiplayer games.
+WorldEdit: BE is an addon that's compatible with Minecraft 1.18.10 on Windows, Android, iOS and XBox. You can also install this addon on server hosting sites such as Aternos, allowing you to join worlds with this addon on any platform that Minecraft is available on. You can use this on both singleplayer and multiplayer games.
 
 !!! note
 

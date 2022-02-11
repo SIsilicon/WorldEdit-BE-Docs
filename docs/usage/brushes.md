@@ -1,12 +1,8 @@
 # Brushes
 
-Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to six different shovels; each one referenced by tier. For example, `;brush 2 sphere log 5` Binds a brush to the stone shovel, as stone is the second tier.
+Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to any vanilla shovels, as long as you are holding it. For example, `;brush sphere log 5` Binds a spgere brush to a held shovel,
 
-|![Shovel Tier](../../img/shovel_tiers.png)|
-|:---:|
-|The shovel tiers, left to right.|
-
-You can unbind a brush from a shovel with `;brush <tier> none`.
+You can unbind a brush from a shovel with `;brush none`.
 
 [TOC]
 
@@ -15,16 +11,23 @@ You can unbind a brush from a shovel with `;brush <tier> none`.
 ### Sphere Brush
 
 ```
-;brush <tier> sphere [-h] <pattern> <radius>
+;brush sphere [-h] <pattern> <radius>
 ```
 The sphere brush creates a sphere of blocks wherever it hits. It's a brush you'll likely use most often. `-h` makes the shape hollow.
 
 ### Cylinder Brush
 
 ```
-;brush <tier> cylinder [-h] <pattern> <radius> [height]
+;brush cylinder [-h] <pattern> <radius> [height]
 ```
 The cylinder brush creates a cylinder of blocks wherever it hits. Again, `-h` makes it hollow.
+
+### Smooth Brush
+
+```
+;brush smooth [radius] [iterations] [mask]
+```
+The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smooth.
 
 ## Brush Settings
 
@@ -33,28 +36,35 @@ A few things about a brush can be adjusted to better fit your situation.
 ### Size
 
 ```
-;brush <tier> size <size>
+;brush size <size>
 ```
 This changes the size of the area the brush affects.
 
 ### Range
 
 ```
-;brush <tier> range <range>
+;brush range <range>
 ```
 This changes the how far the brush can reach. If hits the limit, then it will apply mid-air.
+
+### Material
+
+```
+;brush material <pattern>
+```
+This changes what blocks the brush can make. This will only work on brushes that create blocks.
 
 ### Mask
 
 ```
-;brush <tier> mask [mask]
+;brush mask [mask]
 ```
 This changes what blocks the brush can affect. This mask is also used in combination with the global mask.
 
 ### Trace Mask
 
 ```
-;brush <tier> tracemask [mask]
+;brush tracemask [mask]
 ```
 This changes the blocks what this brush can trace through before hitting something that matches this mask. Useful if you want to build through certain blocks.
 

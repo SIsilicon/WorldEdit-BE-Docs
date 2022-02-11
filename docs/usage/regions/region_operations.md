@@ -14,9 +14,9 @@ The set command is a simple command (`;set <pattern: Pattern>`) that sets all th
     
     Sets the region to stone.
     
-    `;set air,air,wool['color':'orange']`
+    `;set 75%air,25%wool[color=orange]`
     
-    Sets the region to 2/3 air, and 1/3 orange wool.
+    Sets the region to 3/4 air, and 1/4 orange wool.
 
 ## Replacing Blocks
 
@@ -54,4 +54,8 @@ The rotate command allows you to rotate your builds in increments of 90°  aroun
 
 ## Flipping
 
-The flip command flips your builds in a direction of your choice around you `;flip [-cos] [direction: Direction]`). The flags here do the same things as the ones for `;rotate`.
+The flip command flips your builds in a direction of your choice around you (`;flip [-cos] [direction: Direction]`). The flags here do the same things as the ones for `;rotate`.
+
+## Lines, Walls, and Faces
+
+The `;line`, `;walls` and `;faces` commands are all simple commands that only need a pattern to work, but are also affected by the global mask. They all do what they say. `;line` makes a line from the first to the second position, `;walls` makes walls around the selection, and `;faces` surrounds the selection with an outline (like `;walls`, but with a floor and ceiling).
