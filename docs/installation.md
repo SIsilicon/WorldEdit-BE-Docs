@@ -35,5 +35,5 @@ You must then install the addon separately in the server's `packs` folder. Now y
 ## Uninstalling from a world
 
 It's a straight forward process when deactivating the resource pack, but since this addon uses scripts, Minecraft won't allow you to just deactivate the behaviour pack. You need to delete as shown.
-![check mark under WorldEdit behaviour pack](/img/uninstall_1.jpg)
-![Delete button](/img/uninstall_2.jpg)
+![check mark under WorldEdit behaviour pack](img/uninstall_1.jpg)
+![Delete button](img/uninstall_2.jpg)
