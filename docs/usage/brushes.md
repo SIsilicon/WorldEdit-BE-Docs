@@ -70,4 +70,4 @@ This changes the blocks what this brush can trace through before hitting somethi
 
 ## Configuring the Brush without Commands
 
-You can also set up brushes within the Kit's [Config Menu](../kit/#config). using the item will show another button that will let you edit each brush tier as instructed by WorldEdit.
+You can also set up brushes within the Kit's [Config Menu](kit.md/#config). using the item will show another button that will let you edit each brush item as instructed by WorldEdit.
