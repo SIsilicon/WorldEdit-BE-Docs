@@ -374,9 +374,19 @@ Each command has their own permission requirements to be useable by a player. To
 
 	|||
 	|:--|:--|
-	|**Description**|Get all sorts of tools (currently only the stacker)|
+	|**Description**|Get all sorts of tools|
 	|**Permission**||
-	|**Usage**|`;tool <stacker>`|
+	|**Usage**|`;tool <none|stacker|selwand|navwand>`|
+
+!!! note ""
+	
+	**;tool none**
+
+	|||
+	|:--|:--|
+	|**Description**|Unbind held tool|
+	|**Permission**||
+	|**Usage**|`;tool none`|
 
 !!! note ""
 	
@@ -387,6 +397,26 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Block stacker tool|
 	|**Permission**|`worldedit.tool.stack`|
 	|**Usage**|`;tool stacker [range] [mask]`|
+
+!!! note ""
+	
+	**;tool selwand**
+
+	|||
+	|:--|:--|
+	|**Description**|Selection tool|
+	|**Permission**|`worldedit.setwand`|
+	|**Usage**|`;tool selwand`|
+
+!!! note ""
+	
+	**;tool navwand**
+
+	|||
+	|:--|:--|
+	|**Description**|Navigation tool|
+	|**Permission**|`worldedit.setwand`|
+	|**Usage**|`;tool navwand`|
 
 !!! note ""
 	

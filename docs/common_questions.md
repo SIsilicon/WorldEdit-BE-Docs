@@ -4,7 +4,7 @@
 
 ## Does it work on consoles?
 
-The GameTest Framework, an API this addon relies on, does not on work on Playstation nor the Nintendo Switch as of writing. Theoratically, it should work on XBox, but it hasn't been tested. If you want to use it on consoles, you can host a server/world somewhere else and join that world.
+The GameTest Framework, an API this addon relies on, does not on work on Playstation nor the Nintendo Switch as of writing, however it should work on XBox just fine. If you want to use it on consoles, you can host a server/world somewhere else and join that world.
 
 ## Why isn't the addon working for me?
 
@@ -22,12 +22,16 @@ There are four possible reasons why your addon may not be working.
 
 ## Can I use WorldEdit with other addons?
 
-It should be compatible with any other addon you have in your world.
+It should be compatible with any other addon you have in your world, but said compatibility is not fully guaranteed.
 
 ## How do I make coloured blocks, different type of wood, etc...?
 
 How Minecraft works is that some blocks are just variations of a base block. Red wool for example is just a variation of the default white wool, and granite is just a variation of stone. To define these variations, you can use either data values (`wool:1` = orange wool), or block states (`stone_slab[stone_slab_type=brick]` = brick slabs). For more information on blocks in commands, go to [this docs page](usage/general/patterns.md).
  
+## How do I disable the selection's visibility?
+
+Use the command `;drawsel` to toggle the visiblity of the selection.
+
 ## How do I uninstall the addon from the world?
 
 [See this section in the intallation page.](installation.md#uninstalling-from-a-world)

@@ -1,8 +1,8 @@
 # Brushes
 
-Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to any vanilla shovels, as long as you are holding it. For example, `;brush sphere log 5` Binds a spgere brush to a held shovel,
+Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to almost any vanilla item, as long as you are holding it. For example, `;brush sphere log 5` Binds a sphere brush to the item you're holding.
 
-You can unbind a brush from a shovel with `;brush none`.
+You can unbind a brush from an item with `;brush none`.
 
 [TOC]
 
@@ -70,4 +70,4 @@ This changes the blocks what this brush can trace through before hitting somethi
 
 ## Configuring the Brush without Commands
 
-You can also set up brushes within the Kit's [Config Menu](kit.md/#config). using the item will show another button that will let you edit each brush item as instructed by WorldEdit.
+You can also set up brushes within the Kit's [Config Menu](kit.md/#config). using the item will show another button that will let you create and edit each brush item as instructed by WorldEdit.
