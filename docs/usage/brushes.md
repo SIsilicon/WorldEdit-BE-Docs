@@ -36,35 +36,35 @@ A few things about a brush can be adjusted to better fit your situation.
 ### Size
 
 ```
-;brush size <size>
+;size <size>
 ```
 This changes the size of the area the brush affects.
 
 ### Range
 
 ```
-;brush range <range>
+;range <range>
 ```
 This changes the how far the brush can reach. If hits the limit, then it will apply mid-air.
 
 ### Material
 
 ```
-;brush material <pattern>
+;material <pattern>
 ```
 This changes what blocks the brush can make. This will only work on brushes that create blocks.
 
 ### Mask
 
 ```
-;brush mask [mask]
+;mask [mask]
 ```
 This changes what blocks the brush can affect. This mask is also used in combination with the global mask.
 
 ### Trace Mask
 
 ```
-;brush tracemask [mask]
+;tracemask [mask]
 ```
 This changes the blocks what this brush can trace through before hitting something that matches this mask. Useful if you want to build through certain blocks.
 
