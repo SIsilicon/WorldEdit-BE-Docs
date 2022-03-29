@@ -20,10 +20,12 @@ Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Editio
         - [Sessions](usage/general/sessions.md)
         - [Patterns](usage/general/patterns.md)
         - [Masks](usage/general/masks.md)
+    - Regions
+        - [Region Operations](usage/regions/region_operations.md)
+        - [Selection](usage/regions/selection.md)
     - [Kit](usage/kit.md)
     - [Navigation](usage/navigation.md)
     - [Clipboard](usage/clipboard.md)
-    - [Regions](usage/regions/region_operations.md)
     - [Generation](usage/generation.md)
     - [Tools](usage/tools.md)
     - [Brushes](usage/brushes.md)

@@ -10,25 +10,16 @@ The following commands are planned to be implemented.
 - /ascend
 - /descend
 - /ceil
-- //hpos1
-- //hpos2
 - //sel
-    - extend
     - poly
     - ellipsoid
     - sphere
     - cyl
     - convex
 - //chunk
-- //contract
-- //shift
-- //offset
-- //outset
-- //inset
 - //size
 - //count
 - //distr
-- //expand [vert]
 - //curve
 - //overlay
 - //center
@@ -38,7 +29,6 @@ The following commands are planned to be implemented.
 - //generate
 - /tool()
     - repl
-    - farwand
     - deltree
     - lrbuild
     - floodfill
@@ -78,15 +68,15 @@ The following commands are planned to be implemented.
 - /remove
 - //calculate
 
-Commands that alter biome data, use images, or do any form of arbitrary file operation will be harder, if not impossible to implement due to API limitations.
+Commands that alter biome data, use images, or do any form of arbitrary file operation will be much harder to implement due to API limitations, so they will take longer to become a feature of the addon.
 
 ## Brushes and Tools
 
-Only the majority of vanilla items can have a tool bound to them. Plus, binding effectively transforms the item into another one, so attributes like enchantment and lore will be lost.
+Items are not the only things you can bind to in the addon. Unlike the Java mod, you can also bind to blocks as well! Remember that once you bind a tool to a block, you can no longer place down that block until you unbind the tool/brush with either `;tool none` or `;brush none`.
 
 ## Selections
 
-The only selection shape available is a cuboid. The other selection modes that you find in the planned command list will be implemented in the future.
+The only selection modes available are cuboid and extend. The other selection modes that you find in the planned command list will be implemented in the future.
 
 One thing this has over the Java mod, is the ability to see selections, and not be limited to a specific version of Minecraft, or structure blocks. This can be toggled with `;drawsel`.
 
