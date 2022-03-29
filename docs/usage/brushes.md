@@ -10,24 +10,24 @@ You can unbind a brush from an item with `;brush none`.
 
 ### Sphere Brush
 
-```
+``` txt
 ;brush sphere [-h] <pattern> <radius>
 ```
 The sphere brush creates a sphere of blocks wherever it hits. It's a brush you'll likely use most often. `-h` makes the shape hollow.
 
 ### Cylinder Brush
 
-```
+``` txt
 ;brush cylinder [-h] <pattern> <radius> [height]
 ```
 The cylinder brush creates a cylinder of blocks wherever it hits. Again, `-h` makes it hollow.
 
 ### Smooth Brush
 
-```
+``` txt
 ;brush smooth [radius] [iterations] [mask]
 ```
-The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smooth.
+The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smoothed. `mask` determines what is part of the terrain to be smoothed. This mask acts different from `;gmask` which determines what blocks are affected all together.
 
 ## Brush Settings
 
@@ -35,35 +35,35 @@ A few things about a brush can be adjusted to better fit your situation.
 
 ### Size
 
-```
+``` txt
 ;size <size>
 ```
 This changes the size of the area the brush affects.
 
 ### Range
 
-```
+``` txt
 ;range <range>
 ```
 This changes the how far the brush can reach. If hits the limit, then it will apply mid-air.
 
 ### Material
 
-```
+``` txt
 ;material <pattern>
 ```
 This changes what blocks the brush can make. This will only work on brushes that create blocks.
 
 ### Mask
 
-```
+``` txt
 ;mask [mask]
 ```
 This changes what blocks the brush can affect. This mask is also used in combination with the global mask.
 
 ### Trace Mask
 
-```
+``` txt
 ;tracemask [mask]
 ```
 This changes the blocks what this brush can trace through before hitting something that matches this mask. Useful if you want to build through certain blocks.

@@ -6,7 +6,7 @@ WorldEdit comes with a few commands help you make shapes without the use of a re
 
 ## Spheres
 
-```
+``` txt
 ;sphere [-hr] <pattern> <radius> [radiusY] [radiusZ]
 ;hsphere [-r] <pattern> <radius> [radiusY] [radiusZ]
 ```
@@ -14,7 +14,7 @@ This generates a sphere or spheroid of any dimensions. You can also define 2, or
 
 ## Cylinders
 
-```
+``` txt
 ;cyl [-hr] <pattern> <radius> ([radiusY]) [height]
 ;hcyl [-r] <pattern> <radius> ([radiusY]) [height]
 ```
@@ -22,7 +22,7 @@ This generates a cylinder of any dimensions. You can also define 2 numbers to de
 
 ## Pyramids
 
-```
+``` txt
 ;pyramid [-h] <pattern> <size>
 ;hpyramid <pattern> <size>
 ```

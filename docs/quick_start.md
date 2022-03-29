@@ -17,7 +17,7 @@ By default, players are not allowed to use WorldEdit. Only those tagged as with 
 
 Getting from point A to point B can sometimes be a hassle.
 Luckily, this addon comes with what's known as a Navigation Wand.
-To get one, you can either have a compass in your inventory, or enter the command `;navwand`.
+To get one, enter the command `;navwand`, an ender pearl.
 
 Once you have this item, just interact with it to get teleported to the spot you are looking at.
 Want to get on the otherside of a wall or ceiling? Use the wand while sneaking to go right through it!
@@ -53,10 +53,10 @@ There are many operations in WorldEdit that we may commonly use, such as undoing
 Make a modest sized selection to work with, and have your kit ready.
 We're going to try some of the features WorldEdit has to offer.
 
-1. Place down stone, use the [Pattern Picker](../usage/kit#pattern_picker) on it and use ["Selection Fill"](../usage/kit#selection_fill). A cuboid of stone should be made.
-2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Selection Fill" again to clear the stone.
-3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Selection Fill" and you should have a mix of sandstone and glass.
-4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Selection Fill". All sandstone should now be replaced with that block.
+1. Place down stone, use the [Pattern Picker](../usage/kit#pattern_picker) on it and use ["Fill Selection"](../usage/kit#selection_fill). A cuboid of stone should be made.
+2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Fill Selection" again to clear the stone.
+3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Fill Selection" and you should have a mix of sandstone and glass.
+4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Fill Selection". All sandstone should now be replaced with that block.
 5. Repeat your selection upwards by typing the command `;stack 4 up`.
 
 If you want to you can undo everthing by using the undo item until you can't undo any further.

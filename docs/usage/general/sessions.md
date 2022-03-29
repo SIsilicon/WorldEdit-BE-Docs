@@ -1,6 +1,6 @@
 # Sessions
 
-When you select a region or change your preferences in-game, your information will be put into a session that will be kept active as long as you stay logged in. Upon disconnecting, your session will be discarded in 10 minutes (or how long it was set to in [Configuration](../../configuration.md)), allowing you to log back in and keep your session. Every WorldEdit builder gets a unique session.
+When you select a region or change your preferences in-game, your information will be put into a session that will be kept active as long as you stay logged in. Upon disconnecting, your session will be discarded in 10 minutes (or how long it was set to in [Configuration](../../configuration.md)), allowing you to log back in and keep your session. Every WorldEdit user gets a unique session.
 
 Sessions contain various things such as the following:
 
