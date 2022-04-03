@@ -30,6 +30,6 @@ Read more about how aternos handles addons and experimental features [here](http
 
 ## Uninstalling from a world
 
-It's a straight forward process when deactivating the resource pack, but since this addon uses scripts, Minecraft won't allow you to just deactivate the behaviour pack. You need to delete it as shown.
+Since this addon uses scripts, Minecraft won't allow you to just deactivate the behaviour pack. You need to delete it as shown.
 ![check mark under WorldEdit behaviour pack](img/uninstall_1.jpg)
 ![Delete button](img/uninstall_2.jpg)
