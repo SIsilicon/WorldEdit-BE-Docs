@@ -17,34 +17,23 @@ Each command has their own permission requirements to be useable by a player. To
     No command will work unless you _at least_ have explicit permission to use any worldedit command. `/tag @s add worldedit` would give you permission for all of them.
 
 ## The commands
+<!-- TODO: Fix expand command documentation -->
 <!--COMMANDAREA-->
 !!! note ""
 	
 	**;help (or ;?)**
 
-	|||
-	|:--|:--|
 	|**Description**|Get a list of commands available and a quick description for each of them|
+	|:--|:--|
 	|**Permission**|`worldedit.help`|
 	|**Usage**|`;help (<command>|[page])`|
 
 !!! note ""
 	
-	**;kit**
-
-	|||
-	|:--|:--|
-	|**Description**|Give yourself a set of items to do common worldedit functions|
-	|**Permission**|`worldedit.kit`|
-	|**Usage**|`;kit`|
-
-!!! note ""
-	
 	**;worldedit (or ;we)**
 
-	|||
-	|:--|:--|
 	|**Description**|WorldEdit commands|
+	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;worldedit <version>`|
 
@@ -52,19 +41,35 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;worldedit version**
 
-	|||
-	|:--|:--|
 	|**Description**|Get WorldEdit version|
+	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;worldedit version`|
 
 !!! note ""
 	
+	**;limit**
+
+	|**Description**|Set the number of blocks you can change per action|
+	|:--|:--|
+	|**Permission**|`worldedit.limit`|
+	|**Usage**|`;limit [limit]`|
+
+!!! note ""
+	
+	**;kit**
+
+	|**Description**|Give yourself a set of items to do common worldedit functions|
+	|:--|:--|
+	|**Permission**|`worldedit.kit`|
+	|**Usage**|`;kit`|
+
+!!! note ""
+	
 	**;pos1 (or ;1)**
 
-	|||
-	|:--|:--|
 	|**Description**|Set the first position of your selection to the specified or current position|
+	|:--|:--|
 	|**Permission**|`worldedit.selection.pos`|
 	|**Usage**|`;pos1 [coordinates]`|
 
@@ -72,19 +77,35 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;pos2 (or ;2)**
 
-	|||
-	|:--|:--|
 	|**Description**|Set the second position of your selection to the specified or current position|
+	|:--|:--|
 	|**Permission**|`worldedit.selection.pos`|
 	|**Usage**|`;pos2 [coordinates]`|
 
 !!! note ""
 	
+	**;hpos1**
+
+	|**Description**|Set the first position of your selection to the position of the block you're facing|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.hpos`|
+	|**Usage**|`;hpos1`|
+
+!!! note ""
+	
+	**;hpos2**
+
+	|**Description**|Set the second position of your selection to the position of the block you're facing|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.hpos`|
+	|**Usage**|`;hpos2`|
+
+!!! note ""
+	
 	**;drawsel**
 
-	|||
-	|:--|:--|
 	|**Description**|Toggle your selection's visibility|
+	|:--|:--|
 	|**Permission**|`worldedit.drawsel`|
 	|**Usage**|`;drawsel`|
 
@@ -92,29 +113,98 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;sel (or ;deselect, ;desel)**
 
-	|||
+	|**Description**|Change selection mode|
 	|:--|:--|
-	|**Description**|Change selection mode (currently can only clear selection)|
 	|**Permission**||
-	|**Usage**|`;sel`|
+	|**Usage**|`;sel <cuboid|extend>`|
+
+!!! note ""
+	
+	**;sel cuboid**
+
+	|**Description**|Select two corners of a cuboid|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;sel cuboid`|
+
+!!! note ""
+	
+	**;sel extend**
+
+	|**Description**|Fast cuboid selection mode|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;sel extend`|
 
 !!! note ""
 	
 	**;wand**
 
-	|||
-	|:--|:--|
 	|**Description**|Give yourself a selection wand|
+	|:--|:--|
 	|**Permission**|`worldedit.wand`|
 	|**Usage**|`;wand`|
 
 !!! note ""
 	
+	**;contract**
+
+	|**Description**|Contract the selection area|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.contract`|
+	|**Usage**|`;contract (<amount> [direction]|<amount> <reverseAmount> [direction])`|
+
+!!! note ""
+	
+	**;expand**
+
+	|**Description**|Expand the selection area|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.expand`|
+	|**Usage**|`;expand <vert>`|
+
+!!! note ""
+	
+	**;expand vert**
+
+	|**Description**|Vertically expand your selection to world height limits|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;expand vert [height]`|
+
+!!! note ""
+	
+	**;shift**
+
+	|**Description**|Shift the selection area|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.shift`|
+	|**Usage**|`;shift <amount> [direction]`|
+
+!!! note ""
+	
+	**;outset**
+
+	|**Description**|Outset the selection area|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.outset`|
+	|**Usage**|`;outset [-hv] <amount>`|
+
+!!! note ""
+	
+	**;inset**
+
+	|**Description**|Inset the selection area|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.inset`|
+	|**Usage**|`;inset [-hv] <amount>`|
+
+!!! note ""
+	
 	**;cut**
 
-	|||
-	|:--|:--|
 	|**Description**|Remove your current selection and place it in the clipboard|
+	|:--|:--|
 	|**Permission**|`worldedit.clipboard.cut`|
 	|**Usage**|`;cut [-ae] [fill] [-m <mask>]`|
 
@@ -122,9 +212,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;copy**
 
-	|||
-	|:--|:--|
 	|**Description**|Copy the current selection to the clipboard|
+	|:--|:--|
 	|**Permission**|`worldedit.clipboard.copy`|
 	|**Usage**|`;copy [-aem <mask>]`|
 
@@ -132,9 +221,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;paste**
 
-	|||
-	|:--|:--|
 	|**Description**|Paste your clipboard into the world|
+	|:--|:--|
 	|**Permission**|`worldedit.clipboard.paste`|
 	|**Usage**|`;paste [-osn]`|
 
@@ -142,9 +230,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;clearclipboard**
 
-	|||
-	|:--|:--|
 	|**Description**|Clear your clipboard|
+	|:--|:--|
 	|**Permission**|`worldedit.clipboard.clear`|
 	|**Usage**|`;clearclipboard`|
 
@@ -152,9 +239,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;hsphere**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a hollow sphere|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.sphere`|
 	|**Usage**|`;hsphere [-r] <pattern> <radii>`|
 
@@ -162,9 +248,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;sphere**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a sphere|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.sphere`|
 	|**Usage**|`;sphere [-hr] <pattern> <radii>`|
 
@@ -172,9 +257,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;cyl**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a cylinder|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.cylinder`|
 	|**Usage**|`;cyl [-hr] <pattern> <radii> [height]`|
 
@@ -182,9 +266,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;hcyl**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a hollow cylinder|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.cylinder`|
 	|**Usage**|`;hcyl [-r] <pattern> <radii> [height]`|
 
@@ -192,9 +275,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;pyramid**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a pyramid|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.pyramid`|
 	|**Usage**|`;pyramid [-h] <pattern> <size>`|
 
@@ -202,9 +284,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;hpyramid**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a hollow pyramid|
+	|:--|:--|
 	|**Permission**|`worldedit.generation.pyramid`|
 	|**Usage**|`;hpyramid <pattern> <size>`|
 
@@ -212,9 +293,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;gmask**
 
-	|||
-	|:--|:--|
 	|**Description**|Set the global mask|
+	|:--|:--|
 	|**Permission**|`worldedit.global-mask`|
 	|**Usage**|`;gmask [mask]`|
 
@@ -222,9 +302,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;set**
 
-	|||
-	|:--|:--|
 	|**Description**|Fill the selection with a block pattern|
+	|:--|:--|
 	|**Permission**|`worldedit.region.set`|
 	|**Usage**|`;set <pattern>`|
 
@@ -232,9 +311,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;replace**
 
-	|||
-	|:--|:--|
 	|**Description**|Replace certain blocks in the selection with other blocks|
+	|:--|:--|
 	|**Permission**|`worldedit.region.replace`|
 	|**Usage**|`;replace <mask> <pattern>`|
 
@@ -242,9 +320,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;move**
 
-	|||
-	|:--|:--|
 	|**Description**|Move the selection in a certain direction|
+	|:--|:--|
 	|**Permission**|`worldedit.region.move`|
 	|**Usage**|`;move [amount] [offset]`|
 
@@ -252,9 +329,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;stack**
 
-	|||
-	|:--|:--|
 	|**Description**|Repeat the contents of the current selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.stack`|
 	|**Usage**|`;stack [count] [offset]`|
 
@@ -262,9 +338,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;rotate**
 
-	|||
-	|:--|:--|
 	|**Description**|Rotate the selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.rotate`|
 	|**Usage**|`;rotate [-ocs] <rotate>`|
 
@@ -272,9 +347,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;flip**
 
-	|||
-	|:--|:--|
 	|**Description**|Flip the selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.flip`|
 	|**Usage**|`;flip [-ocs] [direction]`|
 
@@ -282,9 +356,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;walls**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate a wall from your selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.walls`|
 	|**Usage**|`;walls <pattern>`|
 
@@ -292,9 +365,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;smooth**
 
-	|||
-	|:--|:--|
 	|**Description**|Smooth the surface within the selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.smooth`|
 	|**Usage**|`;smooth [iterations] [mask]`|
 
@@ -302,9 +374,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;faces**
 
-	|||
-	|:--|:--|
 	|**Description**|Generate an outline from your selection|
+	|:--|:--|
 	|**Permission**|`worldedit.region.faces`|
 	|**Usage**|`;faces <pattern>`|
 
@@ -312,9 +383,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;line**
 
-	|||
-	|:--|:--|
 	|**Description**|Create a line between your first and second selection points|
+	|:--|:--|
 	|**Permission**|`worldedit.region.line`|
 	|**Usage**|`;line <pattern>`|
 
@@ -322,9 +392,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;navwand**
 
-	|||
-	|:--|:--|
 	|**Description**|Give yourself a navigation wand|
+	|:--|:--|
 	|**Permission**|`worldedit.setwand`|
 	|**Usage**|`;navwand`|
 
@@ -332,9 +401,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;up**
 
-	|||
-	|:--|:--|
 	|**Description**|Move up a certain number of blocks|
+	|:--|:--|
 	|**Permission**|`worldedit.navigation.up`|
 	|**Usage**|`;up <height>`|
 
@@ -342,9 +410,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;unstuck (or ;!)**
 
-	|||
-	|:--|:--|
 	|**Description**|Move out of blocks|
+	|:--|:--|
 	|**Permission**|`worldedit.navigation.unstuck`|
 	|**Usage**|`;unstuck`|
 
@@ -352,9 +419,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;jumpto (or ;j)**
 
-	|||
-	|:--|:--|
 	|**Description**|Teleport you to the top of the block you're looking at|
+	|:--|:--|
 	|**Permission**|`worldedit.navigation.jumpto.command`|
 	|**Usage**|`;jumpto`|
 
@@ -362,9 +428,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;thru**
 
-	|||
-	|:--|:--|
 	|**Description**|Teleport through any wall you look at|
+	|:--|:--|
 	|**Permission**|`worldedit.navigation.thru.command`|
 	|**Usage**|`;thru`|
 
@@ -372,19 +437,17 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;tool**
 
-	|||
-	|:--|:--|
 	|**Description**|Get all sorts of tools|
+	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;tool <none|stacker|selwand|navwand>`|
+	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand>`|
 
 !!! note ""
 	
 	**;tool none**
 
-	|||
-	|:--|:--|
 	|**Description**|Unbind held tool|
+	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;tool none`|
 
@@ -392,9 +455,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;tool stacker**
 
-	|||
-	|:--|:--|
 	|**Description**|Block stacker tool|
+	|:--|:--|
 	|**Permission**|`worldedit.tool.stack`|
 	|**Usage**|`;tool stacker [range] [mask]`|
 
@@ -402,9 +464,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;tool selwand**
 
-	|||
-	|:--|:--|
 	|**Description**|Selection tool|
+	|:--|:--|
 	|**Permission**|`worldedit.setwand`|
 	|**Usage**|`;tool selwand`|
 
@@ -412,19 +473,26 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;tool navwand**
 
-	|||
-	|:--|:--|
 	|**Description**|Navigation tool|
+	|:--|:--|
 	|**Permission**|`worldedit.setwand`|
 	|**Usage**|`;tool navwand`|
 
 !!! note ""
 	
+	**;tool farwand**
+
+	|**Description**|Selection tool, but can reach farther|
+	|:--|:--|
+	|**Permission**|`worldedit.farwand`|
+	|**Usage**|`;tool farwand`|
+
+!!! note ""
+	
 	**;brush (or ;br)**
 
-	|||
-	|:--|:--|
 	|**Description**|Set the type of a brush being held|
+	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;brush <none|sphere|cyl|smooth>`|
 
@@ -432,9 +500,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;brush none**
 
-	|||
-	|:--|:--|
 	|**Description**|Unbind a bound brush from your current item|
+	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;brush none`|
 
@@ -442,9 +509,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;brush sphere**
 
-	|||
-	|:--|:--|
 	|**Description**|Create a sphere brush|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.sphere`|
 	|**Usage**|`;brush sphere [-h] <pattern> [radius]`|
 
@@ -452,9 +518,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;brush cyl**
 
-	|||
-	|:--|:--|
 	|**Description**|Create a cylinder brush|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.cylinder`|
 	|**Usage**|`;brush cyl [-h] <pattern> [radius] [height]`|
 
@@ -462,9 +527,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;brush smooth**
 
-	|||
-	|:--|:--|
 	|**Description**|Create a terrain smoothing brush|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.smooth`|
 	|**Usage**|`;brush smooth [radius] [iterations] [mask]`|
 
@@ -472,9 +536,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;mask**
 
-	|||
-	|:--|:--|
 	|**Description**|Set what kind of blocks a brush can affect, if any|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.options.mask`|
 	|**Usage**|`;mask [mask]`|
 
@@ -482,9 +545,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;tracemask**
 
-	|||
-	|:--|:--|
 	|**Description**|Set what kind of blocks a brush can be used on|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.options.tracemask`|
 	|**Usage**|`;tracemask [mask]`|
 
@@ -492,9 +554,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;size**
 
-	|||
-	|:--|:--|
 	|**Description**|Set the size of a brush|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.options.size`|
 	|**Usage**|`;size <size>`|
 
@@ -502,9 +563,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;range**
 
-	|||
-	|:--|:--|
 	|**Description**|Set how far a brush can be used from|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.options.range`|
 	|**Usage**|`;range [range]`|
 
@@ -512,9 +572,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;material**
 
-	|||
-	|:--|:--|
 	|**Description**|Set what kind of blocks a brush should make|
+	|:--|:--|
 	|**Permission**|`worldedit.brush.options.material`|
 	|**Usage**|`;material <pattern>`|
 
@@ -522,9 +581,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;undo**
 
-	|||
-	|:--|:--|
 	|**Description**|Undo a certain amount of actions|
+	|:--|:--|
 	|**Permission**|`worldedit.history.undo`|
 	|**Usage**|`;undo [times]`|
 
@@ -532,9 +590,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;redo**
 
-	|||
-	|:--|:--|
 	|**Description**|Redo a certain amount of actions|
+	|:--|:--|
 	|**Permission**|`worldedit.history.redo`|
 	|**Usage**|`;redo [times]`|
 
@@ -542,9 +599,8 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;clearhistory**
 
-	|||
-	|:--|:--|
 	|**Description**|Clear your editing history|
+	|:--|:--|
 	|**Permission**|`worldedit.history.clear`|
 	|**Usage**|`;clearhistory`|
 

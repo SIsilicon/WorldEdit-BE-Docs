@@ -16,7 +16,7 @@ WorldEdit: Bedrock Edition is an addon that's compatible with Minecraft 1.18.10 
 
 Once you've downloaded the addon, simply open it with Minecraft to get it imported. Mobile users may need a file explorer that allows opening the addon with Minecraft. [CX File Explorer](https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer) and [Documents](https://itunes.apple.com/app/id364901807) are recommended for Android and iOS respectively.
 
-If you have the same, or later version of the addon already imported, you may need to delete both the behaviour and resource pack in `Settings > Storage`. In a new world, or an already existing one, add "WorldEdit [BP]" in `Behaviour Packs` and "WorldEdit [RP]" in `Resource Packs`. Also enable "Holiday Creator Features" and "Enable GameTest Framework" in `Experimental Features`. Create/Enter the world, and you're ready to use WorldEdit!
+If you have the same, or later version of the addon already imported, you may need to delete both the behaviour and resource pack in `Settings > Storage`. In a new world, or an already existing one, add "WorldEdit" in `Behaviour Packs`. The resource pack should apply itself automatically. Also enable "Holiday Creator Features" and "Enable GameTest Framework" in `Experimental Features`. Create/Enter the world, and you're ready to use WorldEdit!
 
 ### Aternos Server
 

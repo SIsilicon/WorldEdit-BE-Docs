@@ -39,7 +39,6 @@ def printUsage(args, sub=''):
             if 'subName' in arg:
                 processflagtext()
                 if arg['subName'] == sub:
-                    print(sub)
                     usage.append(sub)
                     text = printUsage(arg.get('args', []))
                     if text:
@@ -73,7 +72,7 @@ commands_folder = '../WorldEdit/src/server/commands'
 commands = {}
 
 ## Get location of commands
-with open(commands_folder + '/import-commands.ts') as file:
+with open(commands_folder + '/register_commands.ts') as file:
     line = file.readline()
     while line:
         match = re.match(r"import '\.(/.+).js';", line)
@@ -145,12 +144,12 @@ with open(commandspage, 'w') as file:
             args = printUsage(command.get('usage', []))
         
         if not desc in texts:
-            warn(f'there is no text value for \033[93m{desc}\033[0m.')
+            print(f'WARNING: There is no text value for \033[93m{desc}\033[0m.')
         perm = f'`{perm}`' if perm else ''
         
         file.write(f'\t**;{name}{aliases}**\n\n')
-        file.write('\t|||\n\t|:--|:--|\n')
         file.write(f'\t|**Description**|{texts.get(desc, desc)}|\n')
+        file.write('\t|:--|:--|\n')
         file.write(f'\t|**Permission**|{perm}|\n')
         file.write(f'\t|**Usage**|`;{command["name"]}{args}`|\n')
         
