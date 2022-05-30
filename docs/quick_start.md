@@ -2,7 +2,7 @@
 
 ## Before anything else...
 
-By default, players are not allowed to use WorldEdit. Only those tagged as with worldedit can use its features. To give yourself all worldedit permissions, enter `/tag @s add worldedit` in chat. You should then receive a message saying that you have been giving WorldEdit permissions.
+By default, players are not allowed to use WorldEdit. Only those tagged with "worldedit" can use its features. To give yourself all worldedit permissions, enter `/tag @s add worldedit` in chat. You should then receive a message saying that you have been giving WorldEdit permissions.
 
 !!! Tip
 
@@ -59,7 +59,7 @@ We're going to try some of the features WorldEdit has to offer.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Fill Selection". All sandstone should now be replaced with that block.
 5. Repeat your selection upwards by typing the command `;stack 4 up`.
 
-If you want to you can undo everthing by using the undo item until you can't undo any further.
+If you want to you can undo everthing by using the undo item until you can't undo any further. You should also use `;mask` to clear the mask created previously.
 
 ## Playing with brushes
 
@@ -70,7 +70,7 @@ The kit also provides a way to make brushes.
 3. Use the ["WorldEdit Settings"](../usage/kit#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
 4. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
 5. Make it so the brush only affects grass with `;mask grass` while holding the brush. Use the brush now to make a cobblestone path.
-6. Disable the brush with `;br none`.
+6. Disable the brush with `;br none` while holding said brush.
 
 ## What now?
 

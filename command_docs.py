@@ -72,7 +72,7 @@ commands_folder = '../WorldEdit/src/server/commands'
 commands = {}
 
 ## Get location of commands
-with open(commands_folder + '/register_commands.ts') as file:
+with open(commands_folder + '/command_list.ts') as file:
     line = file.readline()
     while line:
         match = re.match(r"import '\.(/.+).js';", line)
@@ -97,8 +97,9 @@ for path in commands:
                 elif re.match(r"\s+range:.+\n", line):
                     line = '\trange: 1' + (',\n' if line[:-1].endswith(',') else '\n')
                 line = re.sub(r"(\s+)(.+?):(.+)", r"\1'\2':\3", line)
-                jsonStr += line.replace("'", '"')
+                jsonStr += line.replace("'", '"').split("//")[0]
             line = file.readline()
+        # print(jsonStr)
         commands[path] = json.loads(jsonStr)
 
 texts_file = '../WorldEdit/texts/en_US.po'

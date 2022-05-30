@@ -13,20 +13,16 @@ The following commands are planned to be implemented.
 - //sel
     - poly
     - ellipsoid
-    - sphere
     - cyl
     - convex
 - //chunk
 - //size
-- //count
-- //distr
 - //curve
 - //overlay
 - //center
 - //naturalize
 - //deform
 - //hollow
-- //generate
 - /tool()
     - repl
     - deltree
@@ -51,20 +47,6 @@ The following commands are planned to be implemented.
     - snow
 - /listchunks
 - /delchunks
-- //fill
-- //fillr
-- //drain
-- //fixlava
-- //fixwater
-- //removeabove
-- //removebelow
-- //removenear
-- //replacenear
-- //snow
-- //thaw
-- //green
-- /extinguish
-- /butcher
 - /remove
 - //calculate
 
@@ -76,10 +58,10 @@ Items are not the only things you can bind to in the addon. Unlike the Java mod,
 
 ## Selections
 
-The only selection modes available are cuboid and extend. The other selection modes that you find in the planned command list will be implemented in the future.
+The only selection modes currently available are cuboid, extend and sphere. The other selection modes that you find in the planned command list will be implemented in the future.
 
 One thing this has over the Java mod, is the ability to see selections, and not be limited to a specific version of Minecraft, or structure blocks. This can be toggled with `;drawsel`.
 
 ## Kit
 
-Unlike the original mod, which was made for a game intended for keyboard only, this addon is made for all kinds of devices. The purpose of the kit, which can be received with `;kit`, is to be able to use WorldEdit's more common features more easily. See [Kit](usage/kit.md) for more info.
+Unlike the original mod, which was made for a game intended for keyboard only, this addon is made for all kinds of devices. The purpose of the kit, which you can get with `;kit`, is to be able to use WorldEdit's more common features more easily. See [Kit](usage/kit.md) for more info.

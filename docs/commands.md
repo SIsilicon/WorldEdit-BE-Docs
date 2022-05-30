@@ -17,7 +17,7 @@ Each command has their own permission requirements to be useable by a player. To
     No command will work unless you _at least_ have explicit permission to use any worldedit command. `/tag @s add worldedit` would give you permission for all of them.
 
 ## The commands
-<!-- TODO: Fix expand command documentation -->
+<!--TODO: Fix expand command documentation-->
 <!--COMMANDAREA-->
 !!! note ""
 	
@@ -26,7 +26,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Get a list of commands available and a quick description for each of them|
 	|:--|:--|
 	|**Permission**|`worldedit.help`|
-	|**Usage**|`;help (<command>|[page])`|
+	|**Usage**|`;help ([page]|<command>)`|
 
 !!! note ""
 	
@@ -116,7 +116,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Change selection mode|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;sel <cuboid|extend>`|
+	|**Usage**|`;sel <cuboid|extend|sphere>`|
 
 !!! note ""
 	
@@ -125,7 +125,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Select two corners of a cuboid|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;sel cuboid`|
+	|**Usage**|`;sel [-d] cuboid`|
 
 !!! note ""
 	
@@ -134,7 +134,16 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Fast cuboid selection mode|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;sel extend`|
+	|**Usage**|`;sel [-d] extend`|
+
+!!! note ""
+	
+	**;sel sphere**
+
+	|**Description**|Select a sphere|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;sel [-d] sphere`|
 
 !!! note ""
 	
@@ -198,6 +207,24 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.selection.inset`|
 	|**Usage**|`;inset [-hv] <amount>`|
+
+!!! note ""
+	
+	**;count**
+
+	|**Description**|Count the number of blocks that match a mask|
+	|:--|:--|
+	|**Permission**|`worldedit.analysis.count`|
+	|**Usage**|`;count <mask>`|
+
+!!! note ""
+	
+	**;distr**
+
+	|**Description**|Analyse the amount of different blocks in the selection|
+	|:--|:--|
+	|**Permission**|`worldedit.analysis.distr`|
+	|**Usage**|`;distr [-cd]`|
 
 !!! note ""
 	
@@ -291,6 +318,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;gen (or ;g)**
+
+	|**Description**|Generate any kind of shape in your selection|
+	|:--|:--|
+	|**Permission**|`worldedit.generation.shape`|
+	|**Usage**|`;gen [-h] <pattern> <expr>`|
+
+!!! note ""
+	
 	**;gmask**
 
 	|**Description**|Set the global mask|
@@ -341,7 +377,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Rotate the selection|
 	|:--|:--|
 	|**Permission**|`worldedit.region.rotate`|
-	|**Usage**|`;rotate [-ocs] <rotate>`|
+	|**Usage**|`;rotate [-ocs] <rotate> [rotateX] [rotateZ]`|
 
 !!! note ""
 	
@@ -387,6 +423,132 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.region.line`|
 	|**Usage**|`;line <pattern>`|
+
+!!! note ""
+	
+	**;fill**
+
+	|**Description**|Fill an area with certain blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.fill`|
+	|**Usage**|`;fill <pattern> <radius> [depth] [direction]`|
+
+!!! note ""
+	
+	**;fillr**
+
+	|**Description**|Recursively fill an area with certain blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.fillr`|
+	|**Usage**|`;fillr <pattern> <radius> [depth] [direction]`|
+
+!!! note ""
+	
+	**;removeabove**
+
+	|**Description**|Remove blocks above you|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.removeabove`|
+	|**Usage**|`;removeabove <size> [height]`|
+
+!!! note ""
+	
+	**;removebelow**
+
+	|**Description**|Remove blocks below you|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.removebelow`|
+	|**Usage**|`;removebelow <size> [depth]`|
+
+!!! note ""
+	
+	**;removenear**
+
+	|**Description**|Remove nearby blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.removenear`|
+	|**Usage**|`;removenear <mask> <size>`|
+
+!!! note ""
+	
+	**;replacenear**
+
+	|**Description**|Replace nearby blocks with other blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.replacenear`|
+	|**Usage**|`;replacenear <size> <mask> <pattern>`|
+
+!!! note ""
+	
+	**;drain**
+
+	|**Description**|Drain nearby fluids|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.drain`|
+	|**Usage**|`;drain [-w] <radius>`|
+
+!!! note ""
+	
+	**;fixwater**
+
+	|**Description**|Make nearby flowing water blocks source blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.fixwater`|
+	|**Usage**|`;fixwater <radius>`|
+
+!!! note ""
+	
+	**;fixlava**
+
+	|**Description**|Make nearby flowing lava blocks source blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.fixlava`|
+	|**Usage**|`;fixlava <radius>`|
+
+!!! note ""
+	
+	**;snow**
+
+	|**Description**|Simulate snow in the area|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.snow`|
+	|**Usage**|`;snow [-s] <size> [height]`|
+
+!!! note ""
+	
+	**;thaw**
+
+	|**Description**|Melt snow and ice exposed to the sky|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.thaw`|
+	|**Usage**|`;thaw <size> [height]`|
+
+!!! note ""
+	
+	**;green**
+
+	|**Description**|Turn nearby dirt into grass|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.green`|
+	|**Usage**|`;green [-f] <radius>`|
+
+!!! note ""
+	
+	**;extinguish (or ;ext, ;ex)**
+
+	|**Description**|Extinguish nearby fires|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.extinguish`|
+	|**Usage**|`;extinguish <radius>`|
+
+!!! note ""
+	
+	**;butcher**
+
+	|**Description**|Kill nearby entities.|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.butcher`|
+	|**Usage**|`;butcher [-pngabtrwf] [radius]`|
 
 !!! note ""
 	

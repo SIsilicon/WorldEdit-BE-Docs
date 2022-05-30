@@ -4,7 +4,7 @@
     
     This addon is Work in Progress and relies on experimental features in-game. Be sure to make backups of your world!
 
-Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Edition. This addon will help you shape your world right inside Minecraft.
+Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Edition. This addon will help you shape your world right inside of Minecraft.
 
 ## Table of Contents
 
@@ -29,6 +29,7 @@ Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Editio
     - [Generation](usage/generation.md)
     - [Tools](usage/tools.md)
     - [Brushes](usage/brushes.md)
+    - [Utilities](usage/utilites.md)
 
 ## Links
 

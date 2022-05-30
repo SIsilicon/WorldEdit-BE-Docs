@@ -70,6 +70,14 @@ This command is like `;expand`, but instead shrinks the selection in the specifi
 
 If you want to expand or contract in all directions at once (or just horizontal or vertical directions), you can use the `;outset` and `;inset` commands. For example, `;outset -v 5` will expand your selection vertically (both up and down) 5 blocks each, while `;inset -h 5` will contract your selection horizontally (north, west, south, and east) 5 blocks each. Leaving out the v or h will work in all 6 directions.
 
+## Counting blocks
+
+Sometimes when doing builds in creative, you'd like to know the amount of blocks used so it can be replicated in survival. The commands `;count` and `;distr` can help you with that.
+
+- `;count <mask>` counts the number of blocks in your selection that match the specified mask. 
+
+- `;distr [-cd]` counts _every_ block in your selection. If you want it to be more specific, include the `-d` flag to count blocks of different states (eg: different colored wool blocks).
+
 ## Selection Modes
 
 Using the `;sel <mode>` command allows you to change between different shapes.
@@ -81,4 +89,9 @@ Using the `;sel <mode>` command allows you to change between different shapes.
 - `;sel extend`
 
     This mode works like cuboid mode, but with each second position, the selection expands.
-    Selecting the first position works like normal, but any second position after that will extend the cuboid selection to include the new point.
+    Selecting the first position works like normal, but any second position after that will extend the cuboid selection to include the new position.
+
+- `;sel sphere`
+
+    This mode creates a sperical selection.
+    The first position defines where the sphere is at, and the second position defines the radius.

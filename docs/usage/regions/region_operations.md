@@ -50,7 +50,7 @@ Suppose you think a build would look better if it were nudged a little to the ri
 
 ## Rotating
 
-The rotate command allows you to rotate your builds in increments of 90°  around you (`;rotate [-cos] <rotate: int>`). The `-c` flag makes this command affect the clipboard, `-o` makes it rotate around its center, and `-s` changes your selection to fit the rotated build.
+The rotate command allows you to rotate your builds around you (`;rotate [-cos] <rotate: int>`). The `-c` flag makes this command affect the clipboard, `-o` makes it rotate around its center, and `-s` changes your selection to fit the rotated build.
 
 ## Flipping
 

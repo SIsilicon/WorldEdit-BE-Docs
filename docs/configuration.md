@@ -29,8 +29,7 @@ Minecraft/games/com.mojang/(path to config)
 
 | Setting | Default | Description |
 | ------- | ------- | ----------- |
-| DEBUG | false | Enables debugging messages |
-| CONTENT_LOG | false | Enables content log info messages |
+| DEBUG | false | Enables debugging messages in the content logs |
 | MAX_HISTORY_SIZE | 20 | How many operations can be recorded in a session's history |
 | HISTORY_MODE | 2 (accurate) | How to handle general undo and redo |
 | BRUSH_HISTORY_MODE | 1 (fast) | How to handle brush undo and redo |
@@ -44,3 +43,5 @@ Minecraft/games/com.mojang/(path to config)
 | DRAW_SELECTION | true | Whether the player's selection is visible by default |
 | DEFAULT_CHANGE_LIMIT | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
 | MAX_CHANGE_LIMIT | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |
+| ASYNC_TIME_BUDGET | 400 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
+| FAST_MODE | false | Whether the addon should use simpler methods to run operations faster; this comes with the drawback of more limited capabilities |
