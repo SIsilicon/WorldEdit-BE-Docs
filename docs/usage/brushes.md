@@ -18,7 +18,7 @@ The sphere brush creates a sphere of blocks wherever it hits. It's a brush you'l
 ### Cylinder Brush
 
 ``` txt
-;brush cylinder [-h] <pattern> <radius> [height]
+;brush cyl [-h] <pattern> <radius> [height]
 ```
 The cylinder brush creates a cylinder of blocks wherever it hits. Again, `-h` makes it hollow.
 
