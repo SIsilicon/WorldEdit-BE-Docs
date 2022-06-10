@@ -43,5 +43,5 @@ Minecraft/games/com.mojang/(path to config)
 | DRAW_SELECTION | true | Whether the player's selection is visible by default |
 | DEFAULT_CHANGE_LIMIT | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
 | MAX_CHANGE_LIMIT | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |
-| ASYNC_TIME_BUDGET | 1000 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
+| ASYNC_TIME_BUDGET | 200 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
 | FAST_MODE | false | Whether the addon should use simpler methods to run operations faster; this comes with the drawback of more limited capabilities |
