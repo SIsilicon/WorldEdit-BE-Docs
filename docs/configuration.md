@@ -38,10 +38,10 @@ Minecraft/games/com.mojang/(path to config)
 | COMMAND_PREFIX | ; | The character that every WorldEdit comman shoukd start with. |
 | WAND_ITEM | minecraft:wooden_axe | The default item the selection wand is bound to from `;wand`. |
 | NAV_WAND_ITEM | minecraft:ender_pearl | The default item the navigation wand is bound to from `;navwand`. |
-| NAV_WAND_DISTANCE | 50 | How far the navigation wand, along with other tool, will trace for a block of interest. |
+| NAV_WAND_DISTANCE | 128 | How far the navigation wand, along with other tool, will trace for a block of interest. |
 | MAX_BRUSH_RADIUS | 6 | The maximum radius a brush is allowed to be. |
 | DRAW_SELECTION | true | Whether the player's selection is visible by default |
 | DEFAULT_CHANGE_LIMIT | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
 | MAX_CHANGE_LIMIT | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |
-| ASYNC_TIME_BUDGET | 400 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
+| ASYNC_TIME_BUDGET | 1000 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
 | FAST_MODE | false | Whether the addon should use simpler methods to run operations faster; this comes with the drawback of more limited capabilities |
