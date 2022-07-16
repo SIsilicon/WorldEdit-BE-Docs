@@ -4,11 +4,11 @@
 
 ## Requirements
 
-WorldEdit: Bedrock Edition is an addon that's compatible with Minecraft 1.19 on Windows, Android, iOS and XBox. You can also install this addon on server hosting sites such as Aternos, allowing you to join worlds with this addon on any platform that Minecraft is available on. You can use this on both singleplayer and multiplayer games.
+WorldEdit: Bedrock Edition is an addon that's compatible with Minecraft 1.19 and up. You can also install this addon on server hosting sites such as Aternos. It can be used in both singleplayer and multiplayer games.
 
 !!! note
 
-    This addon **does not** run on Minecraft: Java Edition.
+    This addon **will not** work on Minecraft: Java Edition.
 
 ## Installation Step-by-Step
 
@@ -18,9 +18,11 @@ Once you've downloaded the addon, simply open it with Minecraft to get it import
 
 If you have the same, or later version of the addon already imported, you may need to delete both the behaviour and resource pack in `Settings > Storage`. In a new world, or an already existing one, add "WorldEdit" in `Behaviour Packs`. The resource pack should apply itself automatically. Also enable "Holiday Creator Features" and "Enable GameTest Framework" in `Experimental Features`. Create/Enter the world, and you're ready to use WorldEdit!
 
+If you have a console, and either a PC or mobile device, use a realm to transfer a world from one platform to the other.
+
 ### Aternos Server
 
-Firstly you must upload the addon in the server's `packs` folder. Then in a new or uploaded world, turn on the previously mentioned experimental toggles.
+First you must upload the addon in the server's `packs` folder. Then in a new or uploaded world, turn on the previously mentioned experimental toggles.
 
 !!! warning
 

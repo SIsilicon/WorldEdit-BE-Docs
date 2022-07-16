@@ -8,7 +8,7 @@ The documentation is full of neat information! As a beginner, it's best to start
 
 ## Does it work on consoles?
 
-The GameTest Framework, an API this addon relies on, does not on work on Playstation nor the Nintendo Switch as of writing, however it should work on XBox just fine. If you want to use it on consoles, you can host a server/world somewhere else and join that world.
+Yes. The addon will work on consoles. Realms can be used to transfer a world with the addon installed.
 
 ## Why isn't the addon working for me?
 
