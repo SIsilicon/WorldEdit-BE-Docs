@@ -8,7 +8,7 @@ The documentation is full of neat information! As a beginner, it's best to start
 
 ## Does it work on consoles?
 
-Yes. The addon will work on consoles. Realms can be used to transfer a world with the addon installed.
+In theory the addon should work on consoles, but it hasn't been tested on those. Realms can be used to transfer a world with the addon installed.
 
 ## Why isn't the addon working for me?
 
@@ -17,7 +17,7 @@ There are four possible reasons why your addon may not be working.
 1. You didn't enable both "Holiday Creator Features" and "Enable Gametest Framework".
 2. You didn't apply both the behaviour pack and resource pack to your world.
 3. You are not playing on the right version of Minecraft. As of writing, the addon supports 1.19 and up. 
-4. The addon may be broken for you. There isn't a known reason why, but until that's resolved, you can try three things.
+4. The addon may be broken for you. There isn't a known reason why, but you can try three things.
 
     * Restart Minecraft
     * Redownload the addon
@@ -27,7 +27,7 @@ There are four possible reasons why your addon may not be working.
 
 ## Can I use WorldEdit with other addons?
 
-It should be compatible with any other addon you have in your world, but said compatibility is not fully guaranteed.
+It should be compatible with any other addon you have in your world, but said compatibility is not guaranteed.
 
 ## How do I make coloured blocks, different types of wood, etc...?
 
