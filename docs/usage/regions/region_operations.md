@@ -50,11 +50,11 @@ Suppose you think a build would look better if it were nudged a little to the ri
 
 ## Rotating
 
-The rotate command allows you to rotate your builds around you (`;rotate [-cos] <rotate: int>`). The `-c` flag makes this command affect the clipboard, `-o` makes it rotate around its center, and `-s` changes your selection to fit the rotated build.
+The rotate command allows you to rotate your builds around you (`;rotate [-ows] <rotate: int>`). By default, it affects the clipboard, but adding the `-w` flag will make it affect your selection instead. `-o` makes it rotate around its center, and `-s` changes your selection to fit the rotated build (only works with the `-w` flag).
 
 ## Flipping
 
-The flip command flips your builds in a direction of your choice around you (`;flip [-cos] [direction: Direction]`). The flags here do the same things as the ones for `;rotate`.
+The flip command flips your builds in a direction of your choice around you (`;flip [-ows] [direction: Direction]`). The flags here do the same things as the ones for `;rotate`.
 
 ## Lines, Walls, and Faces
 

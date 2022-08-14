@@ -377,7 +377,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Rotate the selection|
 	|:--|:--|
 	|**Permission**|`worldedit.region.rotate`|
-	|**Usage**|`;rotate [-ocs] <rotate> [rotateX] [rotateZ]`|
+	|**Usage**|`;rotate [-ows] <rotate> [rotateX] [rotateZ]`|
 
 !!! note ""
 	
@@ -386,7 +386,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Flip the selection|
 	|:--|:--|
 	|**Permission**|`worldedit.region.flip`|
-	|**Usage**|`;flip [-ocs] [direction]`|
+	|**Usage**|`;flip [-ows] [direction]`|
 
 !!! note ""
 	

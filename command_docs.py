@@ -75,7 +75,7 @@ commands = {}
 with open(commands_folder + '/command_list.ts') as file:
     line = file.readline()
     while line:
-        match = re.match(r"import '\.(/.+).js';", line)
+        match = re.match(r'import "\.(/.+).js";', line)
         if match:
             commands[commands_folder + match.group(1) + '.ts'] = {}
         line = file.readline()
@@ -86,18 +86,18 @@ for path in commands:
         line = file.readline()
         jsonStr = None
         while line:
-            if re.match(r"const registerInformation = {", line):
+            if re.match(r'const registerInformation = {', line):
                 jsonStr = '{\n'
-            elif re.match(r"};", line):
+            elif re.match(r'};', line):
                 jsonStr += '}'
                 break
             elif jsonStr:
-                if re.match(r"\s+default:.+\n", line):
+                if re.match(r'\s+default:.+\n', line):
                     line = '\tdefault: 1' + (',\n' if line[:-1].endswith(',') else '\n')
-                elif re.match(r"\s+range:.+\n", line):
+                elif re.match(r'\s+range:.+\n', line):
                     line = '\trange: 1' + (',\n' if line[:-1].endswith(',') else '\n')
-                line = re.sub(r"(\s+)(.+?):(.+)", r"\1'\2':\3", line)
-                jsonStr += line.replace("'", '"').split("//")[0]
+                line = re.sub(r'(\s+)(.+?):(.+)', r'\1"\2":\3', line)
+                jsonStr += line.replace("'", '"').split('//')[0]
             line = file.readline()
         # print(jsonStr)
         commands[path] = json.loads(jsonStr)
@@ -109,7 +109,7 @@ texts = {
 
 ## Get texts
 for entry in polib.pofile(texts_file):
-    if entry.msgid != "":
+    if entry.msgid != '':
         texts[entry.msgid] = entry.msgstr.replace('\\"', '"')
 
 commandspage = 'docs/commands.md'
