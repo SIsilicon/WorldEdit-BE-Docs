@@ -8,7 +8,7 @@ The documentation is full of neat information! As a beginner, it's best to start
 
 ## Does it work on consoles?
 
-In theory the addon should work on consoles, but it hasn't been tested on those. Realms can be used to transfer a world with the addon installed.
+Yes. The addon will work on consoles. Realms can be used to transfer a world with the addon installed.
 
 ## Why isn't the addon working for me?
 
