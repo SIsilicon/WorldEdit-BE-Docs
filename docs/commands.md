@@ -35,7 +35,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|WorldEdit commands|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;worldedit <version>`|
+	|**Usage**|`;worldedit <version|perf>`|
 
 !!! note ""
 	
@@ -45,6 +45,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;worldedit version`|
+
+!!! note ""
+	
+	**;worldedit perf**
+
+	|**Description**|Toggle performance mode for the current session.|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;worldedit perf`|
 
 !!! note ""
 	
@@ -597,6 +606,24 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;ascend**
+
+	|**Description**|Go up a floor|
+	|:--|:--|
+	|**Permission**|`worldedit.navigation.ascend`|
+	|**Usage**|`;ascend [levels]`|
+
+!!! note ""
+	
+	**;descend**
+
+	|**Description**|Go down a floor|
+	|:--|:--|
+	|**Permission**|`worldedit.navigation.descend`|
+	|**Usage**|`;descend [levels]`|
+
+!!! note ""
+	
 	**;tool**
 
 	|**Description**|Get all sorts of tools|
@@ -765,4 +792,22 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.history.clear`|
 	|**Usage**|`;clearhistory`|
+
+!!! note ""
+	
+	**;export**
+
+	|**Description**|Exports the selection for later use.|
+	|:--|:--|
+	|**Permission**|`worldedit.structure.export`|
+	|**Usage**|`;export [-e] <name>`|
+
+!!! note ""
+	
+	**;import**
+
+	|**Description**|Imports a structure to the clipboard.|
+	|:--|:--|
+	|**Permission**|`worldedit.structure.import`|
+	|**Usage**|`;import <name>`|
 
