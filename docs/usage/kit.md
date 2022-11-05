@@ -14,7 +14,7 @@ Upon typing the command `;kit`, you are given the following items:
 * <a name="paste"></a>**Paste ![](../img/icons/paste.png):** Paste whatever is in your clipboard to the world. The location of the paste is relative to the selection when you last copied/cut. See [Clipboard](clipboard.md).
 * <a name="undo"></a>**Undo ![](../img/icons/undo.png):** Undo your previous action that affected the world. See [History](general/history.md).
 * <a name="redo"></a>**Redo ![](../img/icons/redo.png):** Redo your previous action that affected the world. See [History](general/history.md).
-* <a name="config"></a>**WorldEdit Settings ![](../img/icons/config.png):** Enter a hotbar menu to change and setup some things about WorldEdit and the kit.
+* <a name="config"></a>**WorldEdit Settings ![](../img/icons/config.png):** Enter a menu to change and setup some things about WorldEdit and the kit items.
 * <a name="flip"></a>**Flip ![](../img/icons/flip.png):** Flip your selection left to right relative to your orientation. Sneaking will make it flip about its center.
 * <a name="rotate"></a>**Rotate ![](../img/icons/rotate_cw.png) ![](../img/icons/rotate_ccw.png):** Rotate your selection relative to your orientation. Sneaking will make it rotate about its center.
 * <a name="mask_picker"></a>**Mask Picker ![](../img/icons/maskdropper.png):** Select blocks to use in the global mask. Like the Pattern Picker, sneaking will add blocks to the mask. This affects "Fill Selection", and the brushes. To clear it, use the command `;gmask`.
@@ -25,9 +25,21 @@ Upon typing the command `;kit`, you are given the following items:
 
 ## Settings Menu
 
-Using "WorldEdit Settings" creates a menu in your hotbar. Not to worry! Any items in your hotbar before, will come back once you exit. Currently there are three buttons.
+Upon using the "WorldEdit Settings" item, a menu will popup giving you access to some aspects of WorldEdit. There are a few sections to choose from.
 
-* **Include Air ![](../img/icons/include_air.png):** Choose whether to copy air into the clipboard. If not, empty spaces are not made when pasting.
-* **Include Entities ![](../img/icons/include_entities.png):** Choose whether to copy entities into the clipboard. When cutting, entities in the selection are deleted.
-* **Tool Settings ![](../img/icons/tool_config.png):** Create and manage tools.
-* **Brush Settings ![](../img/icons/brush_config.png):** Create and manage brushes. Before using this, be sure to place blocks that you will use in a brush's pattern and/or mask.
+### General ![](../img/icons/config.png)
+
+This section allows you to change some things that affect WorldEdit overall. You have some settings to use here.
+
+* **Include Entities**: Whether to include entities in your clipboard when copying or cutting. This only affects the kit items. See [Clipboard](clipboard.md) for how to include entities via commands.
+* **Include Air**: Whether to include air in your clipboard. Like the previous setting, this only affects the kit items.
+* **Performance Mode**: Whether to run WorldEdit in performance mode. In this mode, the clipboard is saved in a simpler format; allowing you to copy, cut and paste more quickly. However, this limits your clipboard's capabilities. For example, you can only rotate along the Y axis, and air is always included. This can also be toggled by entering `;worldedit perf`.
+* **Selection Mode**: What selection mode to use. See [Selection](./regions/selection.md).
+
+### Tools ![](../img/icons/tool_config.png) and Brushes ![](../img/icons/brush_config.png)
+
+These other two sections allow you to manage tools or brushes respectively. There will be a button for each active tool you have, and if it has properties you can edit, tapping them will open up another menu to let you change how that tool works.
+
+You also have the option to create a new tool. When tapped, you will be prompted to hold an item you want to bind a tool to. Once you've done that, you can then set it up as you wish.
+
+Finally, there's a button that allows you to select what tools to delete.
