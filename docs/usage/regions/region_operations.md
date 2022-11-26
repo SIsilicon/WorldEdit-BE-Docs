@@ -59,3 +59,8 @@ The flip command flips your builds in a direction of your choice around you (`;f
 ## Lines, Walls, and Faces
 
 The `;line`, `;walls` and `;faces` commands are all simple commands that only need a pattern to work, but are also affected by the global mask. They all do what they say. `;line` makes a line from the first to the second position, `;walls` makes walls around the selection, and `;faces` surrounds the selection with an outline (like `;walls`, but with a floor and ceiling).
+
+## Setting Biomes
+
+By changing biomes, you can change how parts of the world operate. Whether it be the colour the grass, or whether rain or snow (or nothing) falls.
+To make these changes, use the setbiome command (`;setbiome <biome>`). Note that due to limitations, these changes **won't apply on their own**. To do that, you need to exit the world, and process it with the WorldEdit app.

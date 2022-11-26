@@ -16,8 +16,8 @@ By default, players are not allowed to use WorldEdit. Only those tagged with "wo
     In the future, Mojang might add actual custom commands support to Minecraft.
 
 Getting from point A to point B can sometimes be a hassle.
-Luckily, this addon comes with what's known as a Navigation Wand.
-To get one, enter the command `;navwand`, an ender pearl.
+Luckily, this addon comes with what's known as a navigation wand.
+To get one, enter the command `;navwand`, or grab an ender pearl, the default item for this wand.
 
 Once you have this item, just interact with it to get teleported to the spot you are looking at.
 Want to get on the otherside of a wall or ceiling? Use the wand while sneaking to go right through it!
@@ -46,7 +46,7 @@ If there's no block for you to mark a corner with, like high in the air, you can
 
 ## Kit items for convenience
 
-There are many operations in WorldEdit that we may commonly use, such as undoing, and copying structures. To make this addon more convenient for mobile and controller players, it comes with a set of items that act as a shortcut to these common WorldEdit functions. To receive this kit, just type `;kit`.
+There are many operations in WorldEdit that we may commonly use, such as undoing, and copying structures. To make this addon more convenient for players on any device, it comes with a set of items that act as a shortcut to these common WorldEdit functions. To receive this kit, just type `;kit`.
 
 ## Doing stuff with your selection
 
@@ -54,7 +54,7 @@ Make a modest sized selection to work with, and have your kit ready.
 We're going to try some of the features WorldEdit has to offer.
 
 1. Place down stone, use the [Pattern Picker](../usage/kit#pattern_picker) on it and use ["Fill Selection"](../usage/kit#selection_fill). A cuboid of stone should be made.
-2. Use the Pattern Picker on the air (mobile players must hold the screen with it) and use "Fill Selection" again to clear the stone.
+2. Use the Pattern Picker on the air (mobile players may hold the screen with it) and use "Fill Selection" again to clear the stone.
 3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Fill Selection" and you should have a mix of sandstone and glass.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Fill Selection". All sandstone should now be replaced with that block.
 5. Repeat your selection upwards by typing the command `;stack 4 up`.
@@ -67,10 +67,10 @@ The kit also provides a way to make brushes.
 
 1. Get a shovel of any type.
 2. Place down cobblestone; you'll need it for the brush.
-3. Use the ["WorldEdit Settings"](../usage/kit#config) item. A menu in your hotbar should appear including "Brush Settings". Select the item, then select the shovel to bind to. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
-4. Aim at the ground not near you and interact with the shovel (now brush) to place cobblestone spheres.
-5. Make it so the brush only affects grass with `;mask grass` while holding the brush. Use the brush now to make a cobblestone path.
-6. Disable the brush with `;br none` while holding said brush.
+3. Use the ["WorldEdit Settings"](../usage/kit#config) item. A menu should appear including "Brush Settings". Select that button, then create a new brush as the interface instructs you. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
+4. Aim at the ground not near you and interact with the bound item (now brush) to place cobblestone spheres.
+5. Enter the brush settings again to set the mask for the brush to `grass`. Use the brush now to make a cobblestone path.
+6. Delete the brush from the menu to disable it.
 
 ## What now?
 

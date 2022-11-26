@@ -125,7 +125,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Change selection mode|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;sel <cuboid|extend|sphere>`|
+	|**Usage**|`;sel <cuboid|extend|sphere|cyl>`|
 
 !!! note ""
 	
@@ -153,6 +153,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**||
 	|**Usage**|`;sel [-d] sphere`|
+
+!!! note ""
+	
+	**;sel cyl**
+
+	|**Description**|Select a cylinder|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;sel [-d] cyl`|
 
 !!! note ""
 	
@@ -810,4 +819,22 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.structure.import`|
 	|**Usage**|`;import <name>`|
+
+!!! note ""
+	
+	**;biomeinfo**
+
+	|**Description**|Retrieve the kinds of biomes in your selection|
+	|:--|:--|
+	|**Permission**|`worldedit.biome.info`|
+	|**Usage**|`;biomeinfo [-pt]`|
+
+!!! note ""
+	
+	**;setbiome**
+
+	|**Description**|Change the biomes in your selection|
+	|:--|:--|
+	|**Permission**|`worldedit.biome.set`|
+	|**Usage**|`;setbiome <biome> [-p]`|
 
