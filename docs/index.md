@@ -31,6 +31,7 @@ Welcome! This is a port of the original WorldEdit mod for Minecraft: Java Editio
     - [Brushes](usage/brushes.md)
     - [Structures](usage/structures.md)
     - [Utilities](usage/utilites.md)
+    - [WorldEdit App](usage/worldedit_app.md)
 
 ## Links
 

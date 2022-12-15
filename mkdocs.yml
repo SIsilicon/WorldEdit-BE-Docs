@@ -43,6 +43,7 @@ nav:
     - Brushes: usage/brushes.md
     - Structures: usage/structures.md
     - Utilities: usage/utilites.md
+    - WorldEdit App: usage/worldedit_app.md
 
 python:
   install:

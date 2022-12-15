@@ -20,6 +20,4 @@ To use structures, all you have to do is run `;import <name>`. When you do this,
 
 ## Transferring structures to other worlds
 
-As they are, the structures defined when exporting can only be used in the world it was exported in. To use it in other worlds, the original world will need to be processed with an external app. Currently this app is only available for Windows.
-
-More detail coming soon...
+As they are, the structures defined when exporting can only be used in the world it was exported in. To use it in other worlds, the original world will need to be processed with the [WorldEdit app](worldedit_app.md). 

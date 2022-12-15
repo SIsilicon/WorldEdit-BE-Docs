@@ -76,7 +76,7 @@ Sometimes when doing builds in creative, you'd like to know the amount of blocks
 
 - `;count <mask>` counts the number of blocks in your selection that match the specified mask. 
 
-- `;distr [-cd]` counts _every_ block in your selection. If you want it to be more specific, include the `-d` flag to count blocks of different states (eg: different colored wool blocks).
+- `;distr [-cd]` counts _every_ block in your selection. If you want it to be more specific, include the `-d` flag to count blocks of different states (eg: different coloured wool blocks).
 
 ## Selection Modes
 
@@ -95,3 +95,8 @@ Using the `;sel <mode>` command allows you to change between different shapes.
 
     This mode creates a sperical selection.
     The first position defines where the sphere is at, and the second position defines the radius.
+
+- `;sel cylinder`
+
+    This mode creates a cylindrical selection
+    The first position marks the start of the cylinder, and every second position after that will expand the cylinder in both radius and height.

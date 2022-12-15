@@ -60,7 +60,12 @@ The flip command flips your builds in a direction of your choice around you (`;f
 
 The `;line`, `;walls` and `;faces` commands are all simple commands that only need a pattern to work, but are also affected by the global mask. They all do what they say. `;line` makes a line from the first to the second position, `;walls` makes walls around the selection, and `;faces` surrounds the selection with an outline (like `;walls`, but with a floor and ceiling).
 
-## Setting Biomes
+## Reading and Changing Biomes
 
-By changing biomes, you can change how parts of the world operate. Whether it be the colour the grass, or whether rain or snow (or nothing) falls.
-To make these changes, use the setbiome command (`;setbiome <biome>`). Note that due to limitations, these changes **won't apply on their own**. To do that, you need to exit the world, and process it with the WorldEdit app.
+Two commands are available to read and set biomes respectively. `;biomeinfo` and `;setbiome`. With `;biomeinfo` you can get a list of biomes that the selection is covering. You can also do `;biomeinfo -p` to get the biome at your current position.
+
+!!! Warning
+
+    For this command to work, you must have the `Molang Features` experimental toggle enabled. Otherwise it will just give you `unknown`.
+
+As for setting biomes, that's done with `;setbiome <biome>` and you can change how parts of the world look and operate with it. Whether it be the colour of the grass, or whether rain or snow (or nothing) falls. Note that due to limitations, these changes **won't apply on their own**. To do that, you need to exit the world, and process it with the [WorldEdit app](../worldedit_app.md).
