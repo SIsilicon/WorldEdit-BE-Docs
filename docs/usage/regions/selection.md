@@ -96,7 +96,7 @@ Using the `;sel <mode>` command allows you to change between different shapes.
     This mode creates a sperical selection.
     The first position defines where the sphere is at, and the second position defines the radius.
 
-- `;sel cylinder`
+- `;sel cyl`
 
     This mode creates a cylindrical selection
     The first position marks the start of the cylinder, and every second position after that will expand the cylinder in both radius and height.
