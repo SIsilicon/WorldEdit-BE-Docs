@@ -66,3 +66,11 @@ Prefixing '^' to a block ID or block states allows you to change that aspect of 
     `;replace wheat ^[growth=7]`
     
     This makes all wheat crops fully grown.
+
+### Clipboard Pattern
+
+Some patterns you want can get too complex to type. With `#clipboard` though, you can use what you've copied as your pattern. You can also offset the pattern by defining an offset like this. `#clipboard@[x,y,z]`
+
+### Hand Pattern
+
+Want to quickly use a block without having to type it in? Use `#hand` to use the block in your main hand as your pattern. So if you were to hold sponge for instance, your pattern will contain sponge.
