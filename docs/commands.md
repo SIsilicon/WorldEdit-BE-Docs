@@ -377,7 +377,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Move the selection in a certain direction|
 	|:--|:--|
 	|**Permission**|`worldedit.region.move`|
-	|**Usage**|`;move [amount] [offset]`|
+	|**Usage**|`;move [-aes] [amount] [offset] [replace] [-m <mask>]`|
 
 !!! note ""
 	
@@ -386,7 +386,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Repeat the contents of the current selection|
 	|:--|:--|
 	|**Permission**|`worldedit.region.stack`|
-	|**Usage**|`;stack [count] [offset]`|
+	|**Usage**|`;stack [-aers] [count] [offset] [-m <mask>]`|
 
 !!! note ""
 	
