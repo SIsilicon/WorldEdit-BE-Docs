@@ -111,6 +111,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;chunk**
+
+	|**Description**|Select your current, or specified chunk.|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.chunk`|
+	|**Usage**|`;chunk [-cs] [coordinates]`|
+
+!!! note ""
+	
 	**;drawsel**
 
 	|**Description**|Toggle your selection's visibility|
@@ -444,6 +453,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;center (or ;middle)**
+
+	|**Description**|Set the center block(s).|
+	|:--|:--|
+	|**Permission**|`worldedit.region.center`|
+	|**Usage**|`;center <pattern>`|
+
+!!! note ""
+	
 	**;fill**
 
 	|**Description**|Fill an area with certain blocks|
@@ -567,6 +585,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.utility.butcher`|
 	|**Usage**|`;butcher [-pngabtrwf] [radius]`|
+
+!!! note ""
+	
+	**;calculate (or ;calc, ;eval, ;evaluate, ;solve)**
+
+	|**Description**|Evaluate a mathematical expression.|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.calc`|
+	|**Usage**|`;calculate <expr>`|
 
 !!! note ""
 	
