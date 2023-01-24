@@ -111,6 +111,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;chunk**
+
+	|**Description**|Select your current, or specified chunk.|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.chunk`|
+	|**Usage**|`;chunk [-cs] [coordinates]`|
+
+!!! note ""
+	
 	**;drawsel**
 
 	|**Description**|Toggle your selection's visibility|
@@ -377,7 +386,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Move the selection in a certain direction|
 	|:--|:--|
 	|**Permission**|`worldedit.region.move`|
-	|**Usage**|`;move [amount] [offset]`|
+	|**Usage**|`;move [-aes] [amount] [offset] [replace] [-m <mask>]`|
 
 !!! note ""
 	
@@ -386,7 +395,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Repeat the contents of the current selection|
 	|:--|:--|
 	|**Permission**|`worldedit.region.stack`|
-	|**Usage**|`;stack [count] [offset]`|
+	|**Usage**|`;stack [-aers] [count] [offset] [-m <mask>]`|
 
 !!! note ""
 	
@@ -441,6 +450,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.region.line`|
 	|**Usage**|`;line <pattern>`|
+
+!!! note ""
+	
+	**;center (or ;middle)**
+
+	|**Description**|Set the center block(s).|
+	|:--|:--|
+	|**Permission**|`worldedit.region.center`|
+	|**Usage**|`;center <pattern>`|
 
 !!! note ""
 	
@@ -567,6 +585,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.utility.butcher`|
 	|**Usage**|`;butcher [-pngabtrwf] [radius]`|
+
+!!! note ""
+	
+	**;calculate (or ;calc, ;eval, ;evaluate, ;solve)**
+
+	|**Description**|Evaluate a mathematical expression.|
+	|:--|:--|
+	|**Permission**|`worldedit.utility.calc`|
+	|**Usage**|`;calculate <expr>`|
 
 !!! note ""
 	
