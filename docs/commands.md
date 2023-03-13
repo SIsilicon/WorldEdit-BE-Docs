@@ -278,7 +278,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Paste your clipboard into the world|
 	|:--|:--|
 	|**Permission**|`worldedit.clipboard.paste`|
-	|**Usage**|`;paste [-osn]`|
+	|**Usage**|`;paste [-osnm <mask>]`|
 
 !!! note ""
 	

@@ -25,23 +25,25 @@ It's recommended that you use [CX File Explorer](https://play.google.com/store/a
 Minecraft/games/com.mojang/(path to config)
 ```
 
+**Dedicated Servers**
+
+For servers, there's a dedicated file that holds configuration data called `variables.json` located in `config/default` or `config/<module_uuid>`
+
 ## Settings
 
 | Setting | Default | Description |
 | ------- | ------- | ----------- |
-| DEBUG | false | Enables debugging messages in the content logs |
-| MAX_HISTORY_SIZE | 20 | How many operations can be recorded in a session's history |
-| HISTORY_MODE | 2 (accurate) | How to handle general undo and redo |
-| BRUSH_HISTORY_MODE | 1 (fast) | How to handle brush undo and redo |
-| TICKS_TO_DELETE_SESSION | 12000 (10 mins) | How long until a previously active user's session gets deleted. |
-| PRINT_TO_ACTION_BAR | true | Whether using items prints their messages to the action bar or chat. |
-| COMMAND_PREFIX | ; | The character that every WorldEdit comman shoukd start with. |
-| WAND_ITEM | minecraft:wooden_axe | The default item the selection wand is bound to from `;wand`. |
-| NAV_WAND_ITEM | minecraft:ender_pearl | The default item the navigation wand is bound to from `;navwand`. |
-| NAV_WAND_DISTANCE | 128 | How far the navigation wand, along with other tool, will trace for a block of interest. |
-| MAX_BRUSH_RADIUS | 6 | The maximum radius a brush is allowed to be. |
-| DRAW_SELECTION | true | Whether the player's selection is visible by default |
-| DEFAULT_CHANGE_LIMIT | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
-| MAX_CHANGE_LIMIT | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |
-| ASYNC_TIME_BUDGET | 200 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
-| FAST_MODE | false | Whether the addon should use simpler methods to run operations faster; this comes with the drawback of more limited capabilities |
+| debug | false | Enables debugging messages in the content logs |
+| maxHistorySize | 20 | How many operations can be recorded in a session's history |
+| performanceMode | false | Whether the addon should use simpler methods to run operations faster. This comes with the drawback of more limited capabilities. |
+| ticksToDeleteSession | 12000 (10 mins) | How long until a previously active user's session gets deleted. |
+| printToActionBar | true | Whether using items prints their messages to the action bar or chat. |
+| commandPrefix | ; | The character that every WorldEdit comman shoukd start with. |
+| wandItem | minecraft:wooden_axe | The default item the selection wand is bound to from `;wand`. |
+| navWandItem | minecraft:ender_pearl | The default item the navigation wand is bound to from `;navwand`. |
+| traceDistance | 128 | How far the navigation wand, along with other tool, will trace for a block of interest. |
+| maxBrushRadius | 6 | The maximum radius a brush is allowed to be. |
+| drawOutlines | true | Whether the player's selections are visible by default |
+| defaultChangeLimit | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
+| maxChangeLimit | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |
+| asyncTimeBudget | 200 | How long an async operation will run until giving Minecraft a chance to run; the higher the value, the faster the operation, but the slower Minecraft takes to run |
