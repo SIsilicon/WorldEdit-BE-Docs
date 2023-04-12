@@ -116,7 +116,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Select your current, or specified chunk.|
 	|:--|:--|
 	|**Permission**|`worldedit.selection.chunk`|
-	|**Usage**|`;chunk [-cs] [coordinates]`|
+	|**Usage**|`;chunk [-cs] ([coordinates]|<coordinates>)`|
 
 !!! note ""
 	
@@ -665,7 +665,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Get all sorts of tools|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand>`|
+	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand|cmd>`|
 
 !!! note ""
 	
@@ -711,6 +711,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.farwand`|
 	|**Usage**|`;tool farwand`|
+
+!!! note ""
+	
+	**;tool cmd**
+
+	|**Description**|Command exeution tool; both vanilla and worldedit|
+	|:--|:--|
+	|**Permission**|`worldedit.tool.cmd`|
+	|**Usage**|`;tool cmd <command>`|
 
 !!! note ""
 	
