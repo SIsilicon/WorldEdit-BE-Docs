@@ -39,6 +39,4 @@ And as mentioned before you put `variable.json` in the right place.
 
 ## Uninstalling from a world
 
-Since this addon uses scripts, Minecraft won't allow you to just deactivate the behaviour pack. You need to delete it as shown.
-![check mark under WorldEdit behaviour pack](img/uninstall_1.jpg)
-![Delete button](img/uninstall_2.jpg)
+Uninstalling is as easy as deactivating the addon in the world. If you want to remove it from your game installation entirely, go to `Settings > Storage` and delete it from there.
