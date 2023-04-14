@@ -27,3 +27,13 @@ The stacker wand is a simple yet powerful tool. It acts like the `;stack` comnan
 ## Far wand
 
 The far wand is a long range version of the Selection wand. You mark selection points with it like usual, but you can do it from a distance. Created by typing `;tool farwand`.
+
+## Command Wand
+
+The command wand allows you to run both vanilla Minecraft and WorldEdit commands on tool use. Very useful if you have a command you want to run quickly and repeatedly. Note that you need OP permissions to use vanilla commands, and normal WorldEdit permissions still apply.
+
+!!! Examples
+
+    `;tool cmd /tp 23 40 50` would let you teleport to specific coordinates.
+    `;tool cmd ;replacenear 5 grass stone` would replace nearby grass with stone.
+    Notice how the commands start with their respective prefix.
