@@ -75,6 +75,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;toggleplace**
+
+	|**Description**|Toggles the placement position used in various WorldEdit operations.|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;toggleplace`|
+
+!!! note ""
+	
 	**;pos1 (or ;1)**
 
 	|**Description**|Set the first position of your selection to the specified or current position|
@@ -351,6 +360,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.generation.shape`|
 	|**Usage**|`;gen [-h] <pattern> <expr>`|
+
+!!! note ""
+	
+	**;gradient**
+
+	|**Description**|Create a gradient to use in patterns.|
+	|:--|:--|
+	|**Permission**|`worldedit.generation.gradient`|
+	|**Usage**|`;gradient [-sf <fade>] <id> <patterns...>`|
 
 !!! note ""
 	
@@ -660,12 +678,21 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;ceil**
+
+	|**Description**|Go to the ceiling.|
+	|:--|:--|
+	|**Permission**|`worldedit.navigation.ceiling`|
+	|**Usage**|`;ceil [clearance]`|
+
+!!! note ""
+	
 	**;tool**
 
 	|**Description**|Get all sorts of tools|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand|cmd>`|
+	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand|cmd|repl|cycler>`|
 
 !!! note ""
 	
@@ -719,7 +746,25 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Command exeution tool; both vanilla and worldedit|
 	|:--|:--|
 	|**Permission**|`worldedit.tool.cmd`|
-	|**Usage**|`;tool cmd <command>`|
+	|**Usage**|`;tool cmd <command...>`|
+
+!!! note ""
+	
+	**;tool repl**
+
+	|**Description**|Block replacer tool|
+	|:--|:--|
+	|**Permission**|`worldedit.repl`|
+	|**Usage**|`;tool repl <pattern>`|
+
+!!! note ""
+	
+	**;tool cycler**
+
+	|**Description**|Block cycler tool|
+	|:--|:--|
+	|**Permission**|`worldedit.cycler`|
+	|**Usage**|`;tool cycler`|
 
 !!! note ""
 	
@@ -728,7 +773,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Set the type of a brush being held|
 	|:--|:--|
 	|**Permission**||
-	|**Usage**|`;brush <none|sphere|cyl|smooth>`|
+	|**Usage**|`;brush <none|sphere|cyl|smooth|struct|erode|overlay>`|
 
 !!! note ""
 	
@@ -765,6 +810,33 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.brush.smooth`|
 	|**Usage**|`;brush smooth [radius] [iterations] [mask]`|
+
+!!! note ""
+	
+	**;brush struct**
+
+	|**Description**|Creates a brush that places structures|
+	|:--|:--|
+	|**Permission**|`worldedit.brush.struct`|
+	|**Usage**|`;brush struct <clipboard>`|
+
+!!! note ""
+	
+	**;brush erode**
+
+	|**Description**|Creates a terrain shaping brush|
+	|:--|:--|
+	|**Permission**|`worldedit.brush.erode`|
+	|**Usage**|`;brush erode <lift|fill|melt|smooth>`|
+
+!!! note ""
+	
+	**;brush overlay**
+
+	|**Description**|Creates a terrain overlaying brush|
+	|:--|:--|
+	|**Permission**|`worldedit.brush.overlay`|
+	|**Usage**|`;brush overlay <pattern> [radius] [depth] [mask]`|
 
 !!! note ""
 	
@@ -845,7 +917,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Exports the selection for later use.|
 	|:--|:--|
 	|**Permission**|`worldedit.structure.export`|
-	|**Usage**|`;export [-e] <name>`|
+	|**Usage**|`;export [-ea] <name>`|
 
 !!! note ""
 	

@@ -37,3 +37,11 @@ The command wand allows you to run both vanilla Minecraft and WorldEdit commands
     `;tool cmd /tp 23 40 50` would let you teleport to specific coordinates.
     `;tool cmd ;replacenear 5 grass stone` would replace nearby grass with stone.
     Notice how the commands start with their respective prefix.
+
+## Block Replacer
+
+The block replacer simply replaces any block you interact with with a pattern of choice (eg: `;tool repl stone`).
+
+## Block Cycler
+
+This tool, made with the command `;tool cycler`, lets you change the state of an interacted block. Using it while sneaking lets you choose which state to cycle through.

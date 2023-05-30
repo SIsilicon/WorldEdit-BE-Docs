@@ -74,3 +74,15 @@ Some patterns you want can get too complex to type. With `#clipboard` though, yo
 ### Hand Pattern
 
 Want to quickly use a block without having to type it in? Use `#hand` to use the block in your main hand as your pattern. So if you were to hold sponge for instance, your pattern will contain sponge.
+
+## Gradients
+
+Gradients are a complex pattern type. To create a gradient, type the command `;gradient` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `;gradient nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
+
+!!! Tips
+
+    You can specify the gradient based on a selection by running `;gradient -s "name"`. The command will read the selection along its longest side like a gradient map.
+
+    You can also change how much the patterns fade into each other with the `-f` flag. For example `;gradient -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
+
+Once you have defined a gradient you can then use it in a pattern like so: `$gradient_name`. By default the gradient goes upward, but you can specify the direction by adding a dot followed by the direction. For example, `$gradient_name.north`. Only absolute directions are supported, so `left`, `right`, `forward` nor `back` can't be used.

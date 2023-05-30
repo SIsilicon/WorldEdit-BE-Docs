@@ -1,14 +1,15 @@
-import re, json, polib
+import re, json, polib, sys
 from warnings import warn
 
 def printFlag(arg):
     return f'[-{arg["flag"]}]'
 
 def printArg(arg):
+    name = arg['name'] + ('...' if arg['type'].endswith('...') else '')
     if 'default' in arg:
-        return f'[{arg["name"]}]'
+        return f'[{name}]'
     else:
-        return f'<{arg["name"]}>'
+        return f'<{name}>'
 
 def getSubCmds(args):
     subs = {}
@@ -99,8 +100,13 @@ for path in commands:
                 line = re.sub(r'(\s+)(.+?):(.+)', r'\1"\2":\3', line)
                 jsonStr += line.replace("'", '"').split('//')[0]
             line = file.readline()
-        # print(jsonStr)
-        commands[path] = json.loads(jsonStr)
+
+        jsonStr = re.sub(r'(\w+?)(?=: )', r'"\1"', jsonStr)
+        try:
+            commands[path] = json.loads(jsonStr)
+        except Exception as e:
+            print(e, '\n' + jsonStr, file=sys.stderr)
+            exit(1)
 
 texts_file = '../WorldEdit/texts/en_US.po'
 texts = {

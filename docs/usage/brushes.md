@@ -29,6 +29,35 @@ The cylinder brush creates a cylinder of blocks wherever it hits. Again, `-h` ma
 ```
 The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smoothed. `mask` determines what is part of the terrain to be smoothed. This mask acts different from `;gmask` which determines what blocks are affected all together.
 
+### Erosion Brush
+
+```txt
+;brush erode [radius]
+;brush erode lift [radius]
+;brush erode fill [radius]
+;brush erode melt [radius]
+;brush erode smooth [radius]
+```
+Use the erosion brush to shape terrain with great control. It comes in various modes.
+* The default mode pushes terrain in.
+* `lift` mode pushes terrain out.
+* `fill` mode filles in areas of the terrain.
+* `melt` mode does the opposite of `fill`.
+* `smooth` mode smoothes the terrain.
+
+### Overlay brush
+```
+;brush overlay <pattern> [radius] [depth] [mask]
+```
+The overlay brush replaces blocks exposed to the sky with a pattern of choice, like dirt or grass. For example, `;br overlay dirt 3 2` creates a brush of radius 3 that will overlay dirt 2 blocks deep in an affected surface. The mask parameter lets you choose what blocks count as a surface. 
+
+### Structure/Clipboard brush
+```
+;brush struct clipboard
+;brush struct <structure(s)...>
+```
+The structure brush will paste a structure down wherever the brush is used. Do this to sprinkle features on landscapes for example. You can either use your clipboard, which offers the mask for flexibility, or exported structures which you can define multiple of to be picked randomly every brush use.
+
 ## Brush Settings
 
 A few things about a brush can be adjusted to better fit your situation.
