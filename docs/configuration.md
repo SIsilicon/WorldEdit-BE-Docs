@@ -41,8 +41,8 @@ For servers, there's a dedicated file that holds configuration data called `vari
 | commandPrefix | ; | The character that every WorldEdit comman shoukd start with. |
 | wandItem | minecraft:wooden_axe | The default item the selection wand is bound to from `;wand`. |
 | navWandItem | minecraft:ender_pearl | The default item the navigation wand is bound to from `;navwand`. |
-| traceDistance | 128 | How far the navigation wand, along with other tool, will trace for a block of interest. |
-| maxBrushRadius | 6 | The maximum radius a brush is allowed to be. |
+| traceDistance | 256 | How far the navigation wand, along with other tool, will trace for a block of interest. |
+| maxBrushRadius | 12 | The maximum radius a brush is allowed to be. |
 | drawOutlines | true | Whether the player's selections are visible by default |
 | defaultChangeLimit | -1 | The default amount of blocks that can be "potentially" affected within a single operation |
 | maxChangeLimit | -1 | The absolute change limit that can be set from the `;limit` command; bypassed with `worldedit.limit.unlimited` permission |

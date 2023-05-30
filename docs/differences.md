@@ -6,8 +6,6 @@ As this addon is still under development, there are a bunch of features that it 
 
 The following commands are planned to be implemented.
 
-- /toggleplace
-- /ceil
 - //sel
     - poly
     - ellipsoid
@@ -16,16 +14,13 @@ The following commands are planned to be implemented.
 - //size
 - //curve
 - //overlay
-- //center
 - //naturalize
 - //deform
 - //hollow
 - /tool()
-    - repl
     - deltree
     - lrbuild
     - floodfill
-    - cycler
     - info
 - /, (Super Pickaxe)
 - /superpickaxe
@@ -34,7 +29,6 @@ The following commands are planned to be implemented.
     - recursive
 - /brush 
     - butcher
-    - clipboard
     - gravity
     - extinguish
     - raise
@@ -45,13 +39,13 @@ The following commands are planned to be implemented.
 - /listchunks
 - /delchunks
 - /remove
-- //calculate
 
 Commands that alter biome data, use images, or do any form of arbitrary file operation will be much harder to implement due to API limitations, so they will take longer to become a feature of the addon.
 
 ## Brushes and Tools
 
 Items are not the only things you can bind to in the addon. Unlike the Java mod, you can also bind to blocks as well! Remember that once you bind a tool to a block, you can no longer place down that block until you unbind the tool/brush with either `;tool none` or `;brush none`.
+Also, VoxelSniper's brush set has been implemented in the form of `;brush erode` and `;brush overlay`.
 
 ## Selections
 
