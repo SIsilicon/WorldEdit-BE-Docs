@@ -368,7 +368,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Create a gradient to use in patterns.|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.gradient`|
-	|**Usage**|`;gradient [-sf <fade>] <id> <patterns...>`|
+	|**Usage**|`;gradient [-sf <fade>] <id> [patterns...]`|
 
 !!! note ""
 	
@@ -459,6 +459,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.region.faces`|
 	|**Usage**|`;faces <pattern>`|
+
+!!! note ""
+	
+	**;hollow**
+
+	|**Description**|Hollow out the objects contained in your selection|
+	|:--|:--|
+	|**Permission**|`worldedit.region.hollow`|
+	|**Usage**|`;hollow [thickness] [pattern]`|
 
 !!! note ""
 	
@@ -860,10 +869,10 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;size**
 
-	|**Description**|Set the size of a brush|
+	|**Description**|Set the size of a brush or get information about the selection|
 	|:--|:--|
-	|**Permission**|`worldedit.brush.options.size`|
-	|**Usage**|`;size <size>`|
+	|**Permission**||
+	|**Usage**|`;size (<size>|[-c])`|
 
 !!! note ""
 	

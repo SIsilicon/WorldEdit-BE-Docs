@@ -9,6 +9,9 @@ The WorldEdit app is a program that can be used in combination with the WorldEdi
 1. Exporting structures and using them in other worlds
 2. Changing biomes
 
+!!! Note
+    This means you must perform these operations from within the world first. See [Region Operations](./regions/region_operations.md) and [Structures](structures.md).
+
 [TOC]
 
 ## Installation

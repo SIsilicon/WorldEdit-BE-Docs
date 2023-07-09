@@ -24,6 +24,10 @@ The selection wand (a wooden axe by default) is a tool used for making selection
 
 `;hpos1` and `;hpos2` do exactly what the previous two commands do, but instead of marking your current location, it marks the block you're looking at. They also have a tool equivalent, the far wand, which you can bind to any item with `;tool farwand`.
 
+### Selection information
+
+The `;size` command, while it's used for changing the brush size, can also tell you information about your selection. Just use the command without any arguments. Adding the `-c` flag will give you information about the clipboard instead.
+
 ## Adjusting the selection
 
 ### Expanding the selection

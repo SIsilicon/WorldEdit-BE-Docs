@@ -14,9 +14,9 @@ In theory the addon should work on consoles, but it hasn't been tested on those.
 
 There are four possible reasons why your addon may not be working.
 
-1. You didn't enable both "Holiday Creator Features" and "Enable Gametest Framework".
+1. You didn't enable the "Beta API" experimental feature.
 2. You didn't apply both the behaviour pack and resource pack to your world.
-3. You are not playing on the right version of Minecraft. As of writing, the addon supports 1.19.50 and up. 
+3. You are not playing on the right version of Minecraft. As of writing, the addon supports 1.20.10.
 4. The addon may be broken for you. There isn't a known reason why, but you can try three things.
 
     * Restart Minecraft
@@ -53,7 +53,7 @@ You are allowed to do so. Mind you that the addon is work in progress, so keep r
 
 ## Are you affiliated with the original mod creators?
 
-Nope! I (SIsilicon) developed this addon on my own.
+Nope! I (SIsilicon) developed this addon on my own with help from various contributors.
 
 ## My question hasn't been answered here. Where else can I ask?
 
