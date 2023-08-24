@@ -84,6 +84,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;blockid (or ;id)**
+
+	|**Description**|Prints the id and states of the block you're looking at.|
+	|:--|:--|
+	|**Permission**|`worldedit.blockid`|
+	|**Usage**|`;blockid`|
+
+!!! note ""
+	
 	**;pos1 (or ;1)**
 
 	|**Description**|Set the first position of your selection to the specified or current position|

@@ -17,7 +17,7 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
     
     This sets the selected region to normal stone.
     
-    `;set wool[color=red]`
+    `;set red_wool`
     
     This sets the region to red wool.
     
@@ -27,7 +27,7 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
 
 !!! Tip
 
-    Using the [Pattern Picker](/usage/kit#pattern_picker) displays the block's ID and block states, so you can do this to find the ID and states of different blocks!
+    Using the `;blockid` command while facing a block tells you how that block should be written in WorldEdit patterns!
 
 !!! Note
 
