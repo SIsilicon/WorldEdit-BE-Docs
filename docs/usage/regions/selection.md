@@ -14,7 +14,7 @@ As of the time of writing, WorldEdit currently only supports the cuboid selectio
 
 ### Using the selection wand.
 
-The selection wand (a wooden axe by default) is a tool used for making selections; received with the command `;wand`. To make selections with it, you tap on a block to mark it as one of the corners of the cuboid. Doing it while sneaking marks the first corner, and without sneaking marks the second corner.
+The selection wand (a wooden axe by default) is a tool used for making selections; received with the command `;wand`. To make selections with it, you break a block to mark the first corner, and use the wand on a block to mark the second corner.
 
 ### Selecting at your current location
 

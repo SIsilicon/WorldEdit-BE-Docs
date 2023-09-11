@@ -34,8 +34,8 @@ To get one, grab a wooden axe, or enter the command `;wand`.
 
 Selections in WorldEdit are cuboid shaped by default.
 To make a selection, you need to mark the two corners of this cuboid.
-You mark the first corner by using the wand on a block at that corner while sneaking.
-You mark the second point by using it on a block _without_ sneaking. 
+You mark the first corner by breaking a block at that corner with the wand.
+You mark the second point by using the wand on another block. 
 If done correctly, you should see a highlight of your selection.
 
 ![Cuboid Selection](img/cuboid_selection.jpg)
