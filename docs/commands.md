@@ -255,6 +255,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;trim**
+
+	|**Description**|Minimize the selection to encompass matching blocks|
+	|:--|:--|
+	|**Permission**|`worldedit.selection.trim`|
+	|**Usage**|`;trim [mask]`|
+
+!!! note ""
+	
 	**;count**
 
 	|**Description**|Count the number of blocks that match a mask|
