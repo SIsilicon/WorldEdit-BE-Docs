@@ -89,7 +89,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Prints the id and states of the block you're looking at.|
 	|:--|:--|
 	|**Permission**|`worldedit.blockid`|
-	|**Usage**|`;blockid`|
+	|**Usage**|`;blockid [-d]`|
 
 !!! note ""
 	
@@ -792,6 +792,42 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.cycler`|
 	|**Usage**|`;tool cycler`|
+
+!!! note ""
+	
+	**;superpickaxe**
+
+	|**Description**|Toggle the super pickaxe|
+	|:--|:--|
+	|**Permission**|`worldedit.superpickaxe`|
+	|**Usage**|`;superpickaxe <single|area|recursive>`|
+
+!!! note ""
+	
+	**;superpickaxe single**
+
+	|**Description**|Make the super pickaxe break a single block|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;superpickaxe single`|
+
+!!! note ""
+	
+	**;superpickaxe area**
+
+	|**Description**|Make the super pickaxe break blocks in a cubic range|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;superpickaxe area <range>`|
+
+!!! note ""
+	
+	**;superpickaxe recursive**
+
+	|**Description**|Make the super pickaxe break blocks starting from the initial one|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;superpickaxe recursive <range>`|
 
 !!! note ""
 	

@@ -31,7 +31,7 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
 
 !!! Note
 
-    You can also define certain block variations by adding a data value to the block ID. `wool:1` is orange wool for instance. This can't be defined alongside block states. You can find these data values in places like the Minecraft Wiki.
+    You can also define certain block variations by adding a data value to the block ID. `wool:1` is orange wool for instance. This can't be defined alongside block states. You can do `;blockid -d` To get the id along with the data value of the block you look at.
 
 ### Random Pattern
 

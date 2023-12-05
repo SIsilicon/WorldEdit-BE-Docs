@@ -45,3 +45,19 @@ The block replacer simply replaces any block you interact with with a pattern of
 ## Block Cycler
 
 This tool, made with the command `;tool cycler`, lets you change the state of an interacted block. Using it while sneaking lets you choose which state to cycle through.
+
+## Super Pickaxe
+
+The super pickaxe is different from other tools. It's more like a mode that you toggle on and off. While enabled, it will increase the amount of blocks any pickaxe can break at a time. This is activated using the `;superpickaxe`/`;sp` command along with a specified mode. Specifying no mode deactivates the super pickaxe. There are three modes in total.
+
+### Single Mode
+
+Pickaxes in this mode operate mostly like they always do, apart from their dropping behaviour. Activated with `;sp single`.
+
+### Area Mode
+
+Pickaxes will break blocks within a cubic area around the initial block broken. Only the block that are the same as the initial one broken are affected. Activated with `;sp area <range>`.
+
+### Recursive Mode
+
+Pickaxes will break blocks starting from the initial broken block. It will stop once it can no longer find adjacent blocks to break of the same type. Activated with `;sp recursive <range>`.
