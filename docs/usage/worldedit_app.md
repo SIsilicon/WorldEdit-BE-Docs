@@ -1,8 +1,8 @@
 # WorldEdit App
 
 !!! Important
-    
-    The app is for Windows only! However an Android port is planned in the near future. Whether one for iOS will be made is not made certain.
+
+    The app is for Windows only! However an Android port is planned in the future. Whether one for iOS will be made is not made certain.
 
 The WorldEdit app is a program that can be used in combination with the WorldEdit addon. It gives you more capabilities than what the game itself allows. As of writing, you can use the app for two things.
 
@@ -10,6 +10,7 @@ The WorldEdit app is a program that can be used in combination with the WorldEdi
 2. Changing biomes
 
 !!! Note
+
     This means you must perform these operations from within the world first. See [Region Operations](./regions/region_operations.md) and [Structures](structures.md).
 
 [TOC]
@@ -32,5 +33,5 @@ Also in `Settings`, there is an option to automatically process worlds. So if yo
 
 ## Limitations
 
-- Changing biomes may not work properly in worlds with a modded height range.
-- Marketplace maps are encrypted, so they can't be modified.
+-   Changing biomes may not work properly in worlds with a modded height range.
+-   Marketplace maps are encrypted, so they can't be modified.

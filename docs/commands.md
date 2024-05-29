@@ -93,6 +93,15 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;cancel**
+
+	|**Description**|Cancels one of, or all your active jobs.|
+	|:--|:--|
+	|**Permission**|`worldedit.cancel`|
+	|**Usage**|`;cancel [job]`|
+
+!!! note ""
+	
 	**;pos1 (or ;1)**
 
 	|**Description**|Set the first position of your selection to the specified or current position|
@@ -795,7 +804,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;superpickaxe**
+	**;superpickaxe (or ;sp)**
 
 	|**Description**|Toggle the super pickaxe|
 	|:--|:--|

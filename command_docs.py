@@ -102,6 +102,7 @@ for path in commands:
             line = file.readline()
 
         jsonStr = re.sub(r'(\w+?)(?=: )', r'"\1"', jsonStr)
+        jsonStr = re.sub(r',(\s*?)([}\]])', r'\1\2', jsonStr)
         try:
             commands[path] = json.loads(jsonStr)
         except Exception as e:

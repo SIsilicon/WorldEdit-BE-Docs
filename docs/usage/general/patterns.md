@@ -14,15 +14,15 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
 !!! Example
 
     `;set stone`
-    
+
     This sets the selected region to normal stone.
-    
+
     `;set red_wool`
-    
+
     This sets the region to red wool.
-    
+
     `;set stone_slab[stone_slab_type=brick,top_slot_bit=true]`
-    
+
     This sets the region to upper half brick slabs.
 
 !!! Tip
@@ -40,11 +40,11 @@ It's possible to make a pattern that creates a mixture of other patterns. The si
 !!! Example
 
     `;set dirt,grass`
-    
+
     This sets the region to half dirt, half grass.
-    
+
     `;set 20%*wool,80%stone`
-    
+
     This sets the region to 20% random wool, and 80% stone.
 
 Notice in the last example, how block patterns aren't the only patterns you can use. There's more!
@@ -60,11 +60,11 @@ Prefixing '^' to a block ID or block states allows you to change that aspect of 
 !!! Example
 
     `;replace birch_stairs ^acacia_stairs`
-    
+
     This turns birch stairs into acacia ones while keeping their orientation.
-    
+
     `;replace wheat ^[growth=7]`
-    
+
     This makes all wheat crops fully grown.
 
 ### Clipboard Pattern
@@ -75,7 +75,11 @@ Some patterns you want can get too complex to type. With `#clipboard` though, yo
 
 Want to quickly use a block without having to type it in? Use `#hand` to use the block in your main hand as your pattern. So if you were to hold sponge for instance, your pattern will contain sponge.
 
-## Gradients
+### Void Pattern
+
+A `void` pattern doesn't place any block. Seems pretty useless by itself, but it can be combined with other patterns to only affect certain parts of a region. For instance, `;set grass,void` will only affect half of the blocks in the selection.
+
+### Gradient Patterns
 
 Gradients are a complex pattern type. To create a gradient, type the command `;gradient` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `;gradient nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
 
@@ -85,4 +89,12 @@ Gradients are a complex pattern type. To create a gradient, type the command `;g
 
     You can also change how much the patterns fade into each other with the `-f` flag. For example `;gradient -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
 
-Once you have defined a gradient you can then use it in a pattern like so: `$gradient_name`. By default the gradient goes upward, but you can specify the direction by adding a dot followed by the direction. For example, `$gradient_name.north`. Only absolute directions are supported, so `left`, `right`, `forward` nor `back` can't be used.
+Once you have defined a gradient you can then use it in a pattern like so: `$gradient_name`. By default the gradient goes in the direction you're facing, but you can specify the direction by adding a dot followed by the direction. For example, `$gradient_name.north`. Only absolute directions are supported, so `left`, `right`, `forward` nor `back` can't be used.
+
+!!! Tip
+
+    You can also do a radial gradient; that is, a gradient that goes from the center of the operation to its boundaries. You define it like how you define the direction, but with `rad`. For example, `$gradient_name.rad`.
+
+### Blob Patterns
+
+A blob pattern is a complex pattern that generates blocks randomly, but more consistently than a normal random pattern. It generates them using voronoi noise. You can specify how large this noise pattern is. The larger the pattern the more consistent it becomes. To make a blob pattern, do `#blob[n](pattern)`, where `[n]` is the size of the noise, and `pattern` is what determines what blocks the blob pattern chooses from. For example, `;set #blob5(stone,dirt)` will make a blobby pattern of stone and dirt.

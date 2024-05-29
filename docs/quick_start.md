@@ -35,7 +35,7 @@ To get one, grab a wooden axe, or enter the command `;wand`.
 Selections in WorldEdit are cuboid shaped by default.
 To make a selection, you need to mark the two corners of this cuboid.
 You mark the first corner by breaking a block at that corner with the wand.
-You mark the second point by using the wand on another block. 
+You mark the second point by using the wand on another block.
 If done correctly, you should see a highlight of your selection.
 
 ![Cuboid Selection](img/cuboid_selection.jpg)
@@ -53,7 +53,7 @@ There are many operations in WorldEdit that we may commonly use, such as undoing
 Make a modest sized selection to work with, and have your kit ready.
 We're going to try some of the features WorldEdit has to offer.
 
-1. Place down stone, use the [Pattern Picker](../usage/kit#pattern_picker) on it and use ["Fill Selection"](../usage/kit#selection_fill). A cuboid of stone should be made.
+1. Place down stone, use the [Pattern Picker](usage/kit.md#pattern_picker) on it and use ["Fill Selection"](usage/kit.md#region_tools). A cuboid of stone should be made.
 2. Use the Pattern Picker on the air (mobile players may hold the screen with it) and use "Fill Selection" again to clear the stone.
 3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Fill Selection" and you should have a mix of sandstone and glass.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Fill Selection". All sandstone should now be replaced with that block.
@@ -67,7 +67,7 @@ The kit also provides a way to make brushes.
 
 1. Get a shovel of any type.
 2. Place down cobblestone; you'll need it for the brush.
-3. Use the ["WorldEdit Settings"](../usage/kit#config) item. A menu should appear including "Brush Settings". Select that button, then create a new brush as the interface instructs you. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
+3. Use the ["WorldEdit Settings"](usage/kit.md#config) item. A menu should appear including "Brush Settings". Select that button, then create a new brush as the interface instructs you. Make it a sphere brush of radius 3, and a cobblestone pattern. Confirm the settings and exit the menu.
 4. Aim at the ground not near you and interact with the bound item (now brush) to place cobblestone spheres.
 5. Enter the brush settings again to set the mask for the brush to `grass`. Use the brush now to make a cobblestone path.
 6. Delete the brush from the menu to disable it.
