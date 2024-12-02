@@ -20,22 +20,14 @@ If you have the same, or later version of the addon already imported, you may ne
 
 If you have a console, and either a PC or mobile device, use a realm to transfer a world from one platform to the other.
 
-## Servers
+### Servers
 
 There is a separate version of WorldEdit made for dedicated servers (not to be confused with Realms). This version comes as a zip. You must install it depending on how your server is hosted.
 This version also comes with a file called `variables.json` which you must put in the server's `config/default` folder.
 
-### Aternos Server
-
-Let's look at Aternos as an example. First you must upload the addon in the server's `packs` folder. Then in a new or uploaded world, turn on the previously mentioned experimental toggles.
-
 !!! warning
 
-    You must not apply the addon to a world before uploading it to Aternos. Otherwise it will not work!
-
-Read more about how aternos handles addons and experimental features [here](https://support.aternos.org/hc/en-us/articles/360042095232-Installing-Addons-Minecraft-Bedrock-Edition-) and [here](https://support.aternos.org/hc/en-us/articles/4407553257873-Enabling-experimental-gameplay-Minecraft-Bedrock-Edition-).
-
-And as mentioned before you put `variable.json` in the right place.
+    If you are using Aternos, use the normal addon, as it doesn't seem to support `variables.json` at the time of writing.
 
 ## Uninstalling from a world
 

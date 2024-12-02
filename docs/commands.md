@@ -332,7 +332,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Generate a hollow sphere|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.sphere`|
-	|**Usage**|`;hsphere [-r] <pattern> <radii>`|
+	|**Usage**|`;hsphere [-rd <dome>] <pattern> <radii>`|
 
 !!! note ""
 	
@@ -341,7 +341,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Generate a sphere|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.sphere`|
-	|**Usage**|`;sphere [-hr] <pattern> <radii>`|
+	|**Usage**|`;sphere [-hrd <dome>] <pattern> <radii>`|
 
 !!! note ""
 	
@@ -350,7 +350,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Generate a cylinder|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.cylinder`|
-	|**Usage**|`;cyl [-hr] <pattern> <radii> [height]`|
+	|**Usage**|`;cyl [-hrd <direction>] <pattern> <radii> [height]`|
 
 !!! note ""
 	
@@ -359,7 +359,7 @@ Each command has their own permission requirements to be useable by a player. To
 	|**Description**|Generate a hollow cylinder|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.cylinder`|
-	|**Usage**|`;hcyl [-r] <pattern> <radii> [height]`|
+	|**Usage**|`;hcyl [-rd <direction>] <pattern> <radii> [height]`|
 
 !!! note ""
 	
@@ -381,6 +381,24 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
+	**;torus**
+
+	|**Description**|Generate a torus.|
+	|:--|:--|
+	|**Permission**|`worldedit.generation.torus`|
+	|**Usage**|`;torus [-hd <direction>] <pattern> <outerRadius> <innerRadius>`|
+
+!!! note ""
+	
+	**;htorus**
+
+	|**Description**|Generate a hollow torus.|
+	|:--|:--|
+	|**Permission**|`worldedit.generation.torus`|
+	|**Usage**|`;htorus [-d <direction>] <pattern> <outerRadius> <innerRadius>`|
+
+!!! note ""
+	
 	**;gen (or ;g)**
 
 	|**Description**|Generate any kind of shape in your selection|
@@ -392,10 +410,37 @@ Each command has their own permission requirements to be useable by a player. To
 	
 	**;gradient**
 
-	|**Description**|Create a gradient to use in patterns.|
+	|**Description**|Manage your gradients.|
 	|:--|:--|
 	|**Permission**|`worldedit.generation.gradient`|
-	|**Usage**|`;gradient [-sf <fade>] <id> [patterns...]`|
+	|**Usage**|`;gradient <create|delete|list>`|
+
+!!! note ""
+	
+	**;gradient create**
+
+	|**Description**|Create a gradient to use in patterns.|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;gradient create [-sf <fade>] <id> [patterns...]`|
+
+!!! note ""
+	
+	**;gradient delete**
+
+	|**Description**|Delete a gradient.|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;gradient delete <id>`|
+
+!!! note ""
+	
+	**;gradient list**
+
+	|**Description**|List created gradients.|
+	|:--|:--|
+	|**Permission**||
+	|**Usage**|`;gradient list`|
 
 !!! note ""
 	
@@ -441,6 +486,15 @@ Each command has their own permission requirements to be useable by a player. To
 	|:--|:--|
 	|**Permission**|`worldedit.region.stack`|
 	|**Usage**|`;stack [-aers] [count] [offset] [-m <mask>]`|
+
+!!! note ""
+	
+	**;revolve**
+
+	|**Description**|Make copies of the selection revolving around the player|
+	|:--|:--|
+	|**Permission**|`worldedit.region.revolve`|
+	|**Usage**|`;revolve [-as] <count> [start] [end] [heightDiff] [-d <direction>] [-m <mask>]`|
 
 !!! note ""
 	

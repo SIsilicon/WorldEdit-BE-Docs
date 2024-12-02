@@ -43,4 +43,5 @@ nav:
           - Brushes: usage/brushes.md
           - Structures: usage/structures.md
           - Utilities: usage/utilites.md
+          - Whitelisting: usage/whitelist.md
           - WorldEdit App: usage/worldedit_app.md

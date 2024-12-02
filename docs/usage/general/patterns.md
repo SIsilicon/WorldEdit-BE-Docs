@@ -81,19 +81,21 @@ A `void` pattern doesn't place any block. Seems pretty useless by itself, but it
 
 ### Gradient Patterns
 
-Gradients are a complex pattern type. To create a gradient, type the command `;gradient` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `;gradient nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
+Gradients are a complex pattern type. To create a gradient, type the command `;gradient create` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `;gradient create nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
 
 !!! Tips
 
-    You can specify the gradient based on a selection by running `;gradient -s "name"`. The command will read the selection along its longest side like a gradient map.
+    You can specify the gradient based on a selection by running `;gradient create -s "name"`. The command will read the selection along its longest side like a gradient map.
 
-    You can also change how much the patterns fade into each other with the `-f` flag. For example `;gradient -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
+    You can also change how much the patterns fade into each other with the `-f` flag. For example `;gradient create -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
 
 Once you have defined a gradient you can then use it in a pattern like so: `$gradient_name`. By default the gradient goes in the direction you're facing, but you can specify the direction by adding a dot followed by the direction. For example, `$gradient_name.north`. Only absolute directions are supported, so `left`, `right`, `forward` nor `back` can't be used.
 
 !!! Tip
 
-    You can also do a radial gradient; that is, a gradient that goes from the center of the operation to its boundaries. You define it like how you define the direction, but with `rad`. For example, `$gradient_name.rad`.
+    You can also do a radial gradient; that is, a gradient that goes from the center of the operation to its boundaries. You define it like how you define the direction, but with `rad`. For example, `$gradient_name.rad`. There's also `$gradient_name.lit` but instead of the center, it starts from the player's position.
+
+You can look back at what gradients you have with `;gradient list`, or delete one you already made with `;gradient delete "id"`. Note that creating a gradient with an ID that already exists will simply override the old gradient.
 
 ### Blob Patterns
 

@@ -21,11 +21,11 @@ You can combine masks in two way: intersection, where all masks must pass to be 
 !!! Example
 
     `;replace stone,dirt bedrock`
-    
+
     This replace blocks that are stone OR dirt with bedrock.
-    
+
     `;replace "dirt <air" grass`
-    
+
     This replace blocks that are dirt AND under air with grass.
 
 Notice how since a space is used to denote an intersection, the whole mask needs to be surrounded in double quotes.
@@ -39,11 +39,11 @@ Like [single block patterns](patterns.md#single-block-pattern), masks also take 
 !!! Example
 
     `;replace wool dirt`
-    
+
     Replaces wool of any colour with dirt.
-    
+
     `;replace log2[new_log_type=dark_oak,pillar_axis=0],cobblestone air`
-    
+
     Replaces dark oak logs facing up, and cobblestone with air.
 
 ### Mask Negation
@@ -53,7 +53,7 @@ Using the `!` symbol allows you to match blocks that do NOT match any other mask
 !!! Example
 
     `;replace !gravel,dirt,sand grass`
-    
+
     This replaces any block that isn't gravel, dirt or sand with grass.
 
 ### Existing Block Mask
@@ -67,7 +67,7 @@ You can test if a block is being overlayed (`>`) or underlayed (`<`) by the curr
 !!! Example
 
     `;replace "air >stone" grass`
-    
+
     This replaces any air that's overlaying(above) stone with grass.
 
 ### Random Noise Mask
@@ -81,9 +81,13 @@ This mask will match blocks that match it's defined states, no matter what type 
 !!! Example
 
     `;replace ^=[pillar_axis=0] stone`
-    
+
     This sets any pillar-like blocks that face up to stone.
 
 ### Surface Mask
 
 This mask matches any block that's directly adjacent to air blocks, i.e. exposed to air. You type either `#exposed` or `#surface`.
+
+### Shadow Mask
+
+This mask matches blocks that can't be seen from where you are. It's best used in combination with `#surface`. For example, `;replace "#shadow #surface" stone` on some grass under trees while you're above them will turn them into stone. Inverting it like `!#shadow` will only match with blocks that can be seen from where you are.
