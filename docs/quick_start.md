@@ -10,14 +10,9 @@ By default, players are not allowed to use WorldEdit. Only those tagged with "wo
 
 ## Going places
 
-!!! Notice
-
-    The commands provided by this addon use a semicolon (;) instead of a bracket (/).
-    In the future, Mojang might add actual custom commands support to Minecraft.
-
 Getting from point A to point B can sometimes be a hassle.
 Luckily, this addon comes with what's known as a navigation wand.
-To get one, enter the command `;navwand`, or grab an ender pearl, the default item for this wand.
+To get one, enter the command `/wedit:navwand`, or grab an ender pearl, the default item for this wand.
 
 Once you have this item, just interact with it to get teleported to the spot you are looking at.
 Want to get on the otherside of a wall or ceiling? Use the wand while sneaking to go right through it!
@@ -25,12 +20,12 @@ Stuck in a block? Using the wand will get you unstuck!
 
 !!! Tip
 
-    If you don't want to use the navigation wand, these actions can also be done with the commands `;jumpto`, `;thru` and `;unstuck` as well.
+    If you don't want to use the navigation wand, these actions can also be done with the commands `/wedit:jumpto`, `/wedit:thru` and `/wedit:unstuck` as well.
 
 ## Making selections
 
 Like the original mod, you use what's known as a selection wand to easily mark regions of your world for all sorts of operations.
-To get one, grab a wooden axe, or enter the command `;wand`.
+To get one, grab a wooden axe, or enter the command `/wedit:wand`.
 
 Selections in WorldEdit are cuboid shaped by default.
 To make a selection, you need to mark the two corners of this cuboid.
@@ -40,13 +35,13 @@ If done correctly, you should see a highlight of your selection.
 
 ![Cuboid Selection](img/cuboid_selection.jpg)
 
-If there's no block for you to mark a corner with, like high in the air, you can also use the commands `;pos1` or `;pos2` to mark the first and second corner respectively, as the position you are currently standing in. This is not the same as the position you are standing _on_.
+If there's no block for you to mark a corner with, like high in the air, you can also use the commands `/wedit:pos1` or `/wedit:pos2` to mark the first and second corner respectively, as the position you are currently standing in. This is not the same as the position you are standing _on_.
 
 ![Position Placement](img/pos_placement.jpg)
 
 ## Kit items for convenience
 
-There are many operations in WorldEdit that we may commonly use, such as undoing, and copying structures. To make this addon more convenient for players on any device, it comes with a set of items that act as a shortcut to these common WorldEdit functions. To receive this kit, just type `;kit`.
+There are many operations in WorldEdit that we may commonly use, such as undoing, and copying structures. To make this addon more convenient for players on any device, it comes with a set of items that act as a shortcut to these common WorldEdit functions. To receive this kit, just type `/wedit:kit`.
 
 ## Doing stuff with your selection
 
@@ -57,9 +52,9 @@ We're going to try some of the features WorldEdit has to offer.
 2. Use the Pattern Picker on the air (mobile players may hold the screen with it) and use "Fill Selection" again to clear the stone.
 3. Place down sandstone and glass, use the Pattern pPicker on the sandstone, and sneak and use it on the glass to add to your pattern. Use "Fill Selection" and you should have a mix of sandstone and glass.
 4. Take out the Mask Picker in your inventory and use it on the sandstone. Set a block of your choice as your pattern, and use "Fill Selection". All sandstone should now be replaced with that block.
-5. Repeat your selection upwards by typing the command `;stack 4 up`.
+5. Repeat your selection upwards by typing the command `/wedit:stack 4 up`.
 
-If you want to you can undo everthing by using the undo item until you can't undo any further. You should also use `;mask` to clear the mask created previously.
+If you want to you can undo everthing by using the undo item until you can't undo any further. You should also use `/wedit:mask` to clear the mask created previously.
 
 ## Playing with brushes
 

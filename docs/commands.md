@@ -1,1074 +1,942 @@
 # Commands
 
-Commands are the main way to use the many features of WorldEdit. Type `;help` to get a list of available commands. If you don't find a command here that's in the original, look in the  [differences](differences.md) page to see if it's planned.
+Commands are the main way to use the many features of WorldEdit. Type `/help` to get a list of available commands. If you don't find a command here that's in the original, look in the [differences](differences.md) page to see if it's planned.
 
 [TOC]
 
 ## Reading this documentation
 
-Commands may come with arguments. When you see an argument surrounded in `[square brackets]`, then that argument is optional. If it's surrounded in `<angled brackets>`, then you need to define it when using the command. If you find arguments that look like `[-this]`, they are flags. Flags change how commands are executed. Each letter after the "-" is its own flag. You can define them apart (`-a -b`) or together (`-ab`). Some flags even require an argument defined after them. Finally, `|` means you have a choice among the list it makes and must choose one.
+Commands may come with arguments. When you see an argument surrounded in `[square brackets]`, then that argument is optional. If it's surrounded in `<angled brackets>`, then you need to define it when using the command.
 
 ## Permissions
 
-Each command has their own permission requirements to be useable by a player. To give yourself or anyone else permission for various commands, just type `/tag "@s, or a player name" add "permission"`. For example, `/tag @s add worldedit.region.set` would give yourself permission to use the `;set` command. You can give yourself permission for multiple comands at once. Using `worldedit.clipboard` for instance would give you permission to use every clipboard command. If you add `-` to the begin of a permission, you can also blacklist commands that use those permissions. So `-worldedit.clipboard` would _prevent_ you from using clipboard commands.
+Each command has their own permission requirements to be useable by a player. To give yourself or anyone else permission for various commands, just type `/tag "@s, or a player name" add "permission"`. For example, `/tag @s add worldedit.region.set` would give yourself permission to use the `/wedit:set` command. You can give yourself permission for multiple comands at once. Using `worldedit.clipboard` for instance would give you permission to use every clipboard command. If you add `-` to the begin of a permission, you can also blacklist commands that use those permissions. So `-worldedit.clipboard` would _prevent_ you from using clipboard commands.
 
 !!! note
 
     No command will work unless you _at least_ have explicit permission to use any worldedit command. `/tag @s add worldedit` would give you permission for all of them.
 
 ## The commands
+
 <!--TODO: Fix expand command documentation-->
 <!--COMMANDAREA-->
-!!! note ""
-	
-	**;help (or ;?)**
-
-	|**Description**|Get a list of commands available and a quick description for each of them|
-	|:--|:--|
-	|**Permission**|`worldedit.help`|
-	|**Usage**|`;help ([page]|<command>)`|
-
-!!! note ""
-	
-	**;worldedit (or ;we)**
 
-	|**Description**|WorldEdit commands|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;worldedit <version|perf>`|
-
 !!! note ""
-	
-	**;worldedit version**
+**/wedit:worldedit (or /wedit:we)**
 
-	|**Description**|Get WorldEdit version|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;worldedit version`|
+    |**Description**|WorldEdit commands|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:worldedit <version|perf>`|
 
 !!! note ""
-	
-	**;worldedit perf**
+**/wedit:worldedit version**
 
-	|**Description**|Toggle performance mode for the current session.|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;worldedit perf`|
+    |**Description**|Get WorldEdit version|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:worldedit version`|
 
 !!! note ""
-	
-	**;limit**
+**/wedit:worldedit perf**
 
-	|**Description**|Set the number of blocks you can change per action|
-	|:--|:--|
-	|**Permission**|`worldedit.limit`|
-	|**Usage**|`;limit [limit]`|
+    |**Description**|Toggle performance mode for the current session.|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:worldedit perf`|
 
 !!! note ""
-	
-	**;kit**
+**/wedit:limit**
 
-	|**Description**|Give yourself a set of items to do common worldedit functions|
-	|:--|:--|
-	|**Permission**|`worldedit.kit`|
-	|**Usage**|`;kit`|
+    |**Description**|Set the number of blocks you can change per action|
+    |:--|:--|
+    |**Permission**|`worldedit.limit`|
+    |**Usage**|`/wedit:limit [limit]`|
 
 !!! note ""
-	
-	**;toggleplace**
+**/wedit:kit**
 
-	|**Description**|Toggles the placement position used in various WorldEdit operations.|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;toggleplace`|
+    |**Description**|Give yourself a set of items to do common worldedit functions|
+    |:--|:--|
+    |**Permission**|`worldedit.kit`|
+    |**Usage**|`/wedit:kit`|
 
 !!! note ""
-	
-	**;blockid (or ;id)**
+**/wedit:toggleplace**
 
-	|**Description**|Prints the id and states of the block you're looking at.|
-	|:--|:--|
-	|**Permission**|`worldedit.blockid`|
-	|**Usage**|`;blockid [-d]`|
+    |**Description**|Toggles the placement position used in various WorldEdit operations.|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:toggleplace`|
 
 !!! note ""
-	
-	**;cancel**
+**/wedit:blockid (or /wedit:id)**
 
-	|**Description**|Cancels one of, or all your active jobs.|
-	|:--|:--|
-	|**Permission**|`worldedit.cancel`|
-	|**Usage**|`;cancel [job]`|
+    |**Description**|Prints the id and states of the block you're looking at.|
+    |:--|:--|
+    |**Permission**|`worldedit.blockid`|
+    |**Usage**|`/wedit:blockid [type]`|
 
 !!! note ""
-	
-	**;pos1 (or ;1)**
+**/wedit:cancel**
 
-	|**Description**|Set the first position of your selection to the specified or current position|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.pos`|
-	|**Usage**|`;pos1 [coordinates]`|
+    |**Description**|Cancels one of, or all your active jobs.|
+    |:--|:--|
+    |**Permission**|`worldedit.cancel`|
+    |**Usage**|`/wedit:cancel [job]`|
 
 !!! note ""
-	
-	**;pos2 (or ;2)**
+**/wedit:pos1 (or /wedit:1)**
 
-	|**Description**|Set the second position of your selection to the specified or current position|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.pos`|
-	|**Usage**|`;pos2 [coordinates]`|
+    |**Description**|Set the first position of your selection to the specified or current position|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.pos`|
+    |**Usage**|`/wedit:pos1 [coordinates]`|
 
 !!! note ""
-	
-	**;hpos1**
+**/wedit:pos2 (or /wedit:2)**
 
-	|**Description**|Set the first position of your selection to the position of the block you're facing|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.hpos`|
-	|**Usage**|`;hpos1`|
+    |**Description**|Set the second position of your selection to the specified or current position|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.pos`|
+    |**Usage**|`/wedit:pos2 [coordinates]`|
 
 !!! note ""
-	
-	**;hpos2**
+**/wedit:hpos1**
 
-	|**Description**|Set the second position of your selection to the position of the block you're facing|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.hpos`|
-	|**Usage**|`;hpos2`|
+    |**Description**|Set the first position of your selection to the position of the block you're facing|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.hpos`|
+    |**Usage**|`/wedit:hpos1`|
 
 !!! note ""
-	
-	**;chunk**
+**/wedit:hpos2**
 
-	|**Description**|Select your current, or specified chunk.|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.chunk`|
-	|**Usage**|`;chunk [-cs] ([coordinates]|<coordinates>)`|
+    |**Description**|Set the second position of your selection to the position of the block you're facing|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.hpos`|
+    |**Usage**|`/wedit:hpos2`|
 
 !!! note ""
-	
-	**;drawsel**
+**/wedit:chunk**
 
-	|**Description**|Toggle your selection's visibility|
-	|:--|:--|
-	|**Permission**|`worldedit.drawsel`|
-	|**Usage**|`;drawsel`|
+    |**Description**|Select your current, or specified chunk.|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.chunk`|
+    |**Usage**|`/wedit:chunk ([coordinates] [expandSelection]|<coordinates> [expandSelection])`|
 
 !!! note ""
-	
-	**;sel (or ;deselect, ;desel)**
+**/wedit:drawsel**
 
-	|**Description**|Change selection mode|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;sel <cuboid|extend|sphere|cyl>`|
+    |**Description**|Toggle your selection's visibility|
+    |:--|:--|
+    |**Permission**|`worldedit.drawsel`|
+    |**Usage**|`/wedit:drawsel`|
 
 !!! note ""
-	
-	**;sel cuboid**
+**/wedit:sel (or /wedit:deselect, /wedit:desel)**
 
-	|**Description**|Select two corners of a cuboid|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;sel [-d] cuboid`|
+    |**Description**|Change selection mode|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:sel [mode] [makeDefault]`|
 
 !!! note ""
-	
-	**;sel extend**
+**/wedit:wand**
 
-	|**Description**|Fast cuboid selection mode|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;sel [-d] extend`|
+    |**Description**|Give yourself a selection wand|
+    |:--|:--|
+    |**Permission**|`worldedit.wand`|
+    |**Usage**|`/wedit:wand`|
 
 !!! note ""
-	
-	**;sel sphere**
+**/wedit:contract**
 
-	|**Description**|Select a sphere|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;sel [-d] sphere`|
+    |**Description**|Contract the selection area|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.contract`|
+    |**Usage**|`/wedit:contract (<amount> [direction]|<amount> <reverseAmount> [direction])`|
 
 !!! note ""
-	
-	**;sel cyl**
+**/wedit:expand**
 
-	|**Description**|Select a cylinder|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;sel [-d] cyl`|
+    |**Description**|Expand the selection area|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.expand`|
+    |**Usage**|`/wedit:expand <vert>`|
 
 !!! note ""
-	
-	**;wand**
+**/wedit:expand vert**
 
-	|**Description**|Give yourself a selection wand|
-	|:--|:--|
-	|**Permission**|`worldedit.wand`|
-	|**Usage**|`;wand`|
+    |**Description**|Vertically expand your selection to world height limits|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:expand vert [height]`|
 
 !!! note ""
-	
-	**;contract**
+**/wedit:shift**
 
-	|**Description**|Contract the selection area|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.contract`|
-	|**Usage**|`;contract (<amount> [direction]|<amount> <reverseAmount> [direction])`|
+    |**Description**|Shift the selection area|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.shift`|
+    |**Usage**|`/wedit:shift <amount> [direction]`|
 
 !!! note ""
-	
-	**;expand**
+**/wedit:outset**
 
-	|**Description**|Expand the selection area|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.expand`|
-	|**Usage**|`;expand <vert>`|
+    |**Description**|Outset the selection area|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.outset`|
+    |**Usage**|`/wedit:outset <amount> [horizontal] [vertical]`|
 
 !!! note ""
-	
-	**;expand vert**
+**/wedit:inset**
 
-	|**Description**|Vertically expand your selection to world height limits|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;expand vert [height]`|
+    |**Description**|Inset the selection area|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.inset`|
+    |**Usage**|`/wedit:inset <amount> [horizontal] [vertical]`|
 
 !!! note ""
-	
-	**;shift**
+**/wedit:trim**
 
-	|**Description**|Shift the selection area|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.shift`|
-	|**Usage**|`;shift <amount> [direction]`|
+    |**Description**|Minimize the selection to encompass matching blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.selection.trim`|
+    |**Usage**|`/wedit:trim [mask]`|
 
 !!! note ""
-	
-	**;outset**
+**/wedit:count**
 
-	|**Description**|Outset the selection area|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.outset`|
-	|**Usage**|`;outset [-hv] <amount>`|
+    |**Description**|Count the number of blocks that match a mask|
+    |:--|:--|
+    |**Permission**|`worldedit.analysis.count`|
+    |**Usage**|`/wedit:count <mask>`|
 
 !!! note ""
-	
-	**;inset**
+**/wedit:distr**
 
-	|**Description**|Inset the selection area|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.inset`|
-	|**Usage**|`;inset [-hv] <amount>`|
+    |**Description**|Analyse the amount of different blocks in the selection|
+    |:--|:--|
+    |**Permission**|`worldedit.analysis.distr`|
+    |**Usage**|`/wedit:distr [checkClipboard] [strict]`|
 
 !!! note ""
-	
-	**;trim**
+**/wedit:cut**
 
-	|**Description**|Minimize the selection to encompass matching blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.selection.trim`|
-	|**Usage**|`;trim [mask]`|
+    |**Description**|Remove your current selection and place it in the clipboard|
+    |:--|:--|
+    |**Permission**|`worldedit.clipboard.cut`|
+    |**Usage**|`/wedit:cut [includeAir] [includeEntities] [mask] [fill]`|
 
 !!! note ""
-	
-	**;count**
+**/wedit:copy**
 
-	|**Description**|Count the number of blocks that match a mask|
-	|:--|:--|
-	|**Permission**|`worldedit.analysis.count`|
-	|**Usage**|`;count <mask>`|
+    |**Description**|Copy the current selection to the clipboard|
+    |:--|:--|
+    |**Permission**|`worldedit.clipboard.copy`|
+    |**Usage**|`/wedit:copy [includeAir] [includeEntities] [mask]`|
 
 !!! note ""
-	
-	**;distr**
+**/wedit:paste**
 
-	|**Description**|Analyse the amount of different blocks in the selection|
-	|:--|:--|
-	|**Permission**|`worldedit.analysis.distr`|
-	|**Usage**|`;distr [-cd]`|
+    |**Description**|Paste your clipboard into the world|
+    |:--|:--|
+    |**Permission**|`worldedit.clipboard.paste`|
+    |**Usage**|`/wedit:paste [mask] [originalLocation] [pasteContent]`|
 
 !!! note ""
-	
-	**;cut**
+**/wedit:clearclipboard**
 
-	|**Description**|Remove your current selection and place it in the clipboard|
-	|:--|:--|
-	|**Permission**|`worldedit.clipboard.cut`|
-	|**Usage**|`;cut [-ae] [fill] [-m <mask>]`|
+    |**Description**|Clear your clipboard|
+    |:--|:--|
+    |**Permission**|`worldedit.clipboard.clear`|
+    |**Usage**|`/wedit:clearclipboard`|
 
 !!! note ""
-	
-	**;copy**
+**/wedit:hsphere**
 
-	|**Description**|Copy the current selection to the clipboard|
-	|:--|:--|
-	|**Permission**|`worldedit.clipboard.copy`|
-	|**Usage**|`;copy [-aem <mask>]`|
+    |**Description**|Generate a hollow sphere|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.hsphere`|
+    |**Usage**|`/wedit:hsphere <pattern> (<radii> [hollow] [raised] [dome]|<radiiXZ> <radiiY> [hollow] [raised] [dome]|<radiiX> <radiiY> <radiiZ> [hollow] [raised] [dome])`|
 
 !!! note ""
-	
-	**;paste**
+**/wedit:sphere**
 
-	|**Description**|Paste your clipboard into the world|
-	|:--|:--|
-	|**Permission**|`worldedit.clipboard.paste`|
-	|**Usage**|`;paste [-osnm <mask>]`|
+    |**Description**|Generate a sphere|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.sphere`|
+    |**Usage**|`/wedit:sphere <pattern> (<radii> [hollow] [raised] [dome]|<radiiXZ> <radiiY> [hollow] [raised] [dome]|<radiiX> <radiiY> <radiiZ> [hollow] [raised] [dome])`|
 
 !!! note ""
-	
-	**;clearclipboard**
+**/wedit:cyl**
 
-	|**Description**|Clear your clipboard|
-	|:--|:--|
-	|**Permission**|`worldedit.clipboard.clear`|
-	|**Usage**|`;clearclipboard`|
+    |**Description**|Generate a cylinder|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.cylinder`|
+    |**Usage**|`/wedit:cyl <pattern> (<radii> [height] [hollow] [raised] [direction]|<radiiX> <radiiZ> [height] [hollow] [raised] [direction])`|
 
 !!! note ""
-	
-	**;hsphere**
+**/wedit:hcyl**
 
-	|**Description**|Generate a hollow sphere|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.sphere`|
-	|**Usage**|`;hsphere [-rd <dome>] <pattern> <radii>`|
+    |**Description**|Generate a hollow cylinder|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.hcylinder`|
+    |**Usage**|`/wedit:hcyl <pattern> (<radii> [height] [raised] [direction]|<radiiX> <radiiZ> [height] [raised] [direction])`|
 
 !!! note ""
-	
-	**;sphere**
+**/wedit:pyramid**
 
-	|**Description**|Generate a sphere|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.sphere`|
-	|**Usage**|`;sphere [-hrd <dome>] <pattern> <radii>`|
+    |**Description**|Generate a pyramid|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.pyramid`|
+    |**Usage**|`/wedit:pyramid <pattern> <size> [hollow]`|
 
 !!! note ""
-	
-	**;cyl**
+**/wedit:hpyramid**
 
-	|**Description**|Generate a cylinder|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.cylinder`|
-	|**Usage**|`;cyl [-hrd <direction>] <pattern> <radii> [height]`|
+    |**Description**|Generate a hollow pyramid|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.pyramid`|
+    |**Usage**|`/wedit:hpyramid <pattern> <size>`|
 
 !!! note ""
-	
-	**;hcyl**
+**/wedit:torus**
 
-	|**Description**|Generate a hollow cylinder|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.cylinder`|
-	|**Usage**|`;hcyl [-rd <direction>] <pattern> <radii> [height]`|
+    |**Description**|Generate a torus.|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.torus`|
+    |**Usage**|`/wedit:torus <pattern> <outerRadius> <innerRadius> [hollow] [direction]`|
 
 !!! note ""
-	
-	**;pyramid**
+**/wedit:htorus**
 
-	|**Description**|Generate a pyramid|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.pyramid`|
-	|**Usage**|`;pyramid [-h] <pattern> <size>`|
+    |**Description**|Generate a hollow torus.|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.torus`|
+    |**Usage**|`/wedit:htorus <pattern> <outerRadius> <innerRadius> [direction]`|
 
 !!! note ""
-	
-	**;hpyramid**
+**/wedit:gen (or /wedit:g)**
 
-	|**Description**|Generate a hollow pyramid|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.pyramid`|
-	|**Usage**|`;hpyramid <pattern> <size>`|
+    |**Description**|Generate any kind of shape in your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.shape`|
+    |**Usage**|`/wedit:gen <pattern> <expression> [hollow]`|
 
 !!! note ""
-	
-	**;torus**
+**/wedit:gradient**
 
-	|**Description**|Generate a torus.|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.torus`|
-	|**Usage**|`;torus [-hd <direction>] <pattern> <outerRadius> <innerRadius>`|
+    |**Description**|Manage your gradients.|
+    |:--|:--|
+    |**Permission**|`worldedit.generation.gradient`|
+    |**Usage**|`/wedit:gradient <create|delete|list>`|
 
 !!! note ""
-	
-	**;htorus**
+**/wedit:gradient create**
 
-	|**Description**|Generate a hollow torus.|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.torus`|
-	|**Usage**|`;htorus [-d <direction>] <pattern> <outerRadius> <innerRadius>`|
+    |**Description**|Create a gradient to use in patterns.|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:gradient create <selection>`|
 
 !!! note ""
-	
-	**;gen (or ;g)**
+**/wedit:gradient delete**
 
-	|**Description**|Generate any kind of shape in your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.shape`|
-	|**Usage**|`;gen [-h] <pattern> <expr>`|
+    |**Description**|Delete a gradient.|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:gradient delete <id>`|
 
 !!! note ""
-	
-	**;gradient**
+**/wedit:gradient list**
 
-	|**Description**|Manage your gradients.|
-	|:--|:--|
-	|**Permission**|`worldedit.generation.gradient`|
-	|**Usage**|`;gradient <create|delete|list>`|
+    |**Description**|List created gradients.|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:gradient list`|
 
 !!! note ""
-	
-	**;gradient create**
+**/wedit:gmask**
 
-	|**Description**|Create a gradient to use in patterns.|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;gradient create [-sf <fade>] <id> [patterns...]`|
+    |**Description**|Set the global mask|
+    |:--|:--|
+    |**Permission**|`worldedit.global-mask`|
+    |**Usage**|`/wedit:gmask [mask]`|
 
 !!! note ""
-	
-	**;gradient delete**
+**/wedit:set**
 
-	|**Description**|Delete a gradient.|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;gradient delete <id>`|
+    |**Description**|Fill the selection with a block pattern|
+    |:--|:--|
+    |**Permission**|`worldedit.region.set`|
+    |**Usage**|`/wedit:set <pattern>`|
 
 !!! note ""
-	
-	**;gradient list**
+**/wedit:replace**
 
-	|**Description**|List created gradients.|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;gradient list`|
+    |**Description**|Replace certain blocks in the selection with other blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.region.replace`|
+    |**Usage**|`/wedit:replace <mask> <pattern>`|
 
 !!! note ""
-	
-	**;gmask**
+**/wedit:move**
 
-	|**Description**|Set the global mask|
-	|:--|:--|
-	|**Permission**|`worldedit.global-mask`|
-	|**Usage**|`;gmask [mask]`|
+    |**Description**|Move the selection in a certain direction|
+    |:--|:--|
+    |**Permission**|`worldedit.region.move`|
+    |**Usage**|`/wedit:move [amount] [offset] [replace] [includeAir] [includeEntities] [mask]`|
 
 !!! note ""
-	
-	**;set**
+**/wedit:stack**
 
-	|**Description**|Fill the selection with a block pattern|
-	|:--|:--|
-	|**Permission**|`worldedit.region.set`|
-	|**Usage**|`;set <pattern>`|
+    |**Description**|Repeat the contents of the current selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.stack`|
+    |**Usage**|`/wedit:stack [count] [offset] [offsetMode] [includeAir] [includeEntities] [mask]`|
 
 !!! note ""
-	
-	**;replace**
+**/wedit:revolve**
 
-	|**Description**|Replace certain blocks in the selection with other blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.region.replace`|
-	|**Usage**|`;replace <mask> <pattern>`|
+    |**Description**|Make copies of the selection revolving around the player|
+    |:--|:--|
+    |**Permission**|`worldedit.region.revolve`|
+    |**Usage**|`/wedit:revolve <count> [start] [end] [heightDiff] [includeAir] [includeEntities] [direction] [mask]`|
 
 !!! note ""
-	
-	**;move**
+**/wedit:rotate**
 
-	|**Description**|Move the selection in a certain direction|
-	|:--|:--|
-	|**Permission**|`worldedit.region.move`|
-	|**Usage**|`;move [-aes] [amount] [offset] [replace] [-m <mask>]`|
+    |**Description**|Rotate the selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.rotate`|
+    |**Usage**|`/wedit:rotate <rotate> [rotateX] [rotateZ] [aroundOrigin] [affectWorld]`|
 
 !!! note ""
-	
-	**;stack**
+**/wedit:flip**
 
-	|**Description**|Repeat the contents of the current selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.stack`|
-	|**Usage**|`;stack [-aers] [count] [offset] [-m <mask>]`|
+    |**Description**|Flip the selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.flip`|
+    |**Usage**|`/wedit:flip [direction] [aroundOrigin] [affectWorld]`|
 
 !!! note ""
-	
-	**;revolve**
+**/wedit:scale**
 
-	|**Description**|Make copies of the selection revolving around the player|
-	|:--|:--|
-	|**Permission**|`worldedit.region.revolve`|
-	|**Usage**|`;revolve [-as] <count> [start] [end] [heightDiff] [-d <direction>] [-m <mask>]`|
+    |**Description**|commands.wedit:scale.description|
+    |:--|:--|
+    |**Permission**|`worldedit.region.scale`|
+    |**Usage**|`/wedit:scale (<scale> [aroundOrigin] [affectWorld]|<scaleXZ> <scaleY> [aroundOrigin] [affectWorld]|<scaleX> <scaleY> <scaleZ> [aroundOrigin] [affectWorld])`|
 
 !!! note ""
-	
-	**;rotate**
+**/wedit:walls**
 
-	|**Description**|Rotate the selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.rotate`|
-	|**Usage**|`;rotate [-ows] <rotate> [rotateX] [rotateZ]`|
+    |**Description**|Generate a wall from your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.walls`|
+    |**Usage**|`/wedit:walls <pattern>`|
 
 !!! note ""
-	
-	**;flip**
+**/wedit:smooth**
 
-	|**Description**|Flip the selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.flip`|
-	|**Usage**|`;flip [-ows] [direction]`|
+    |**Description**|Smooth the surface within the selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.smooth`|
+    |**Usage**|`/wedit:smooth [iterations] [mask]`|
 
 !!! note ""
-	
-	**;walls**
+**/wedit:faces**
 
-	|**Description**|Generate a wall from your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.walls`|
-	|**Usage**|`;walls <pattern>`|
+    |**Description**|Generate an outline from your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.faces`|
+    |**Usage**|`/wedit:faces <pattern>`|
 
 !!! note ""
-	
-	**;smooth**
+**/wedit:hollow**
 
-	|**Description**|Smooth the surface within the selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.smooth`|
-	|**Usage**|`;smooth [iterations] [mask]`|
+    |**Description**|Hollow out the objects contained in your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.region.hollow`|
+    |**Usage**|`/wedit:hollow [thickness] [pattern]`|
 
 !!! note ""
-	
-	**;faces**
+**/wedit:line**
 
-	|**Description**|Generate an outline from your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.faces`|
-	|**Usage**|`;faces <pattern>`|
+    |**Description**|Create a line between your first and second selection points|
+    |:--|:--|
+    |**Permission**|`worldedit.region.line`|
+    |**Usage**|`/wedit:line <pattern> [thickness]`|
 
 !!! note ""
-	
-	**;hollow**
+**/wedit:center (or /wedit:middle)**
 
-	|**Description**|Hollow out the objects contained in your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.region.hollow`|
-	|**Usage**|`;hollow [thickness] [pattern]`|
+    |**Description**|Set the center block(s).|
+    |:--|:--|
+    |**Permission**|`worldedit.region.center`|
+    |**Usage**|`/wedit:center <pattern>`|
 
 !!! note ""
-	
-	**;line**
+**/wedit:fill**
 
-	|**Description**|Create a line between your first and second selection points|
-	|:--|:--|
-	|**Permission**|`worldedit.region.line`|
-	|**Usage**|`;line <pattern>`|
+    |**Description**|Fill an area with certain blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.fill`|
+    |**Usage**|`/wedit:fill <pattern> <radius> [depth] [direction]`|
 
 !!! note ""
-	
-	**;center (or ;middle)**
+**/wedit:fillr**
 
-	|**Description**|Set the center block(s).|
-	|:--|:--|
-	|**Permission**|`worldedit.region.center`|
-	|**Usage**|`;center <pattern>`|
+    |**Description**|Recursively fill an area with certain blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.fillr`|
+    |**Usage**|`/wedit:fillr <pattern> <radius> [depth] [direction]`|
 
 !!! note ""
-	
-	**;fill**
+**/wedit:removeabove**
 
-	|**Description**|Fill an area with certain blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.fill`|
-	|**Usage**|`;fill <pattern> <radius> [depth] [direction]`|
+    |**Description**|Remove blocks above you|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.removeabove`|
+    |**Usage**|`/wedit:removeabove <size> [height]`|
 
 !!! note ""
-	
-	**;fillr**
+**/wedit:removebelow**
 
-	|**Description**|Recursively fill an area with certain blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.fillr`|
-	|**Usage**|`;fillr <pattern> <radius> [depth] [direction]`|
+    |**Description**|Remove blocks below you|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.removebelow`|
+    |**Usage**|`/wedit:removebelow <size> [depth]`|
 
 !!! note ""
-	
-	**;removeabove**
+**/wedit:removenear**
 
-	|**Description**|Remove blocks above you|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.removeabove`|
-	|**Usage**|`;removeabove <size> [height]`|
+    |**Description**|Remove nearby blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.removenear`|
+    |**Usage**|`/wedit:removenear <mask> <size>`|
 
 !!! note ""
-	
-	**;removebelow**
+**/wedit:replacenear**
 
-	|**Description**|Remove blocks below you|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.removebelow`|
-	|**Usage**|`;removebelow <size> [depth]`|
+    |**Description**|Replace nearby blocks with other blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.replacenear`|
+    |**Usage**|`/wedit:replacenear <size> <mask> <pattern>`|
 
 !!! note ""
-	
-	**;removenear**
+**/wedit:drain**
 
-	|**Description**|Remove nearby blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.removenear`|
-	|**Usage**|`;removenear <mask> <size>`|
+    |**Description**|Drain nearby fluids|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.drain`|
+    |**Usage**|`/wedit:drain <radius>`|
 
 !!! note ""
-	
-	**;replacenear**
+**/wedit:fixwater**
 
-	|**Description**|Replace nearby blocks with other blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.replacenear`|
-	|**Usage**|`;replacenear <size> <mask> <pattern>`|
+    |**Description**|Make nearby flowing water blocks source blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.fixwater`|
+    |**Usage**|`/wedit:fixwater <radius>`|
 
 !!! note ""
-	
-	**;drain**
+**/wedit:fixlava**
 
-	|**Description**|Drain nearby fluids|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.drain`|
-	|**Usage**|`;drain [-w] <radius>`|
+    |**Description**|Make nearby flowing lava blocks source blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.fixlava`|
+    |**Usage**|`/wedit:fixlava <radius>`|
 
 !!! note ""
-	
-	**;fixwater**
+**/wedit:snow**
 
-	|**Description**|Make nearby flowing water blocks source blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.fixwater`|
-	|**Usage**|`;fixwater <radius>`|
+    |**Description**|Simulate snow in the area|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.snow`|
+    |**Usage**|`/wedit:snow <size> [height] [accumulateSnow]`|
 
 !!! note ""
-	
-	**;fixlava**
+**/wedit:thaw**
 
-	|**Description**|Make nearby flowing lava blocks source blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.fixlava`|
-	|**Usage**|`;fixlava <radius>`|
+    |**Description**|Melt snow and ice exposed to the sky|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.thaw`|
+    |**Usage**|`/wedit:thaw <size> [height]`|
 
 !!! note ""
-	
-	**;snow**
+**/wedit:green**
 
-	|**Description**|Simulate snow in the area|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.snow`|
-	|**Usage**|`;snow [-s] <size> [height]`|
+    |**Description**|Turn nearby dirt into grass|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.green`|
+    |**Usage**|`/wedit:green <radius> [strictDirt]`|
 
 !!! note ""
-	
-	**;thaw**
+**/wedit:extinguish (or /wedit:ext, /wedit:ex)**
 
-	|**Description**|Melt snow and ice exposed to the sky|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.thaw`|
-	|**Usage**|`;thaw <size> [height]`|
+    |**Description**|Extinguish nearby fires|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.extinguish`|
+    |**Usage**|`/wedit:extinguish <radius>`|
 
 !!! note ""
-	
-	**;green**
+**/wedit:calculate (or /wedit:calc, /wedit:eval, /wedit:evaluate, /wedit:solve)**
 
-	|**Description**|Turn nearby dirt into grass|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.green`|
-	|**Usage**|`;green [-f] <radius>`|
+    |**Description**|Evaluate a mathematical expression.|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.calc`|
+    |**Usage**|`/wedit:calculate <expr>`|
 
 !!! note ""
-	
-	**;extinguish (or ;ext, ;ex)**
+**/wedit:navwand**
 
-	|**Description**|Extinguish nearby fires|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.extinguish`|
-	|**Usage**|`;extinguish <radius>`|
+    |**Description**|Give yourself a navigation wand|
+    |:--|:--|
+    |**Permission**|`worldedit.setwand`|
+    |**Usage**|`/wedit:navwand`|
 
 !!! note ""
-	
-	**;butcher**
+**/wedit:up**
 
-	|**Description**|Kill nearby entities.|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.butcher`|
-	|**Usage**|`;butcher [-pngabtrwf] [radius]`|
+    |**Description**|Move up a certain number of blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.up`|
+    |**Usage**|`/wedit:up <height>`|
 
 !!! note ""
-	
-	**;calculate (or ;calc, ;eval, ;evaluate, ;solve)**
+**/wedit:unstuck**
 
-	|**Description**|Evaluate a mathematical expression.|
-	|:--|:--|
-	|**Permission**|`worldedit.utility.calc`|
-	|**Usage**|`;calculate <expr>`|
+    |**Description**|Move out of blocks|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.unstuck`|
+    |**Usage**|`/wedit:unstuck`|
 
 !!! note ""
-	
-	**;navwand**
+**/wedit:jumpto (or /wedit:j)**
 
-	|**Description**|Give yourself a navigation wand|
-	|:--|:--|
-	|**Permission**|`worldedit.setwand`|
-	|**Usage**|`;navwand`|
+    |**Description**|Teleport you to the top of the block you're looking at|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.jumpto.command`|
+    |**Usage**|`/wedit:jumpto`|
 
 !!! note ""
-	
-	**;up**
+**/wedit:thru**
 
-	|**Description**|Move up a certain number of blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.up`|
-	|**Usage**|`;up <height>`|
+    |**Description**|Teleport through any wall you look at|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.thru.command`|
+    |**Usage**|`/wedit:thru`|
 
 !!! note ""
-	
-	**;unstuck (or ;!)**
+**/wedit:ascend**
 
-	|**Description**|Move out of blocks|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.unstuck`|
-	|**Usage**|`;unstuck`|
+    |**Description**|Go up a floor|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.ascend`|
+    |**Usage**|`/wedit:ascend [levels]`|
 
 !!! note ""
-	
-	**;jumpto (or ;j)**
+**/wedit:descend**
 
-	|**Description**|Teleport you to the top of the block you're looking at|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.jumpto.command`|
-	|**Usage**|`;jumpto`|
+    |**Description**|Go down a floor|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.descend`|
+    |**Usage**|`/wedit:descend [levels]`|
 
 !!! note ""
-	
-	**;thru**
+**/wedit:ceil**
 
-	|**Description**|Teleport through any wall you look at|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.thru.command`|
-	|**Usage**|`;thru`|
+    |**Description**|Go to the ceiling.|
+    |:--|:--|
+    |**Permission**|`worldedit.navigation.ceiling`|
+    |**Usage**|`/wedit:ceil [clearance]`|
 
 !!! note ""
-	
-	**;ascend**
+**/wedit:tool**
 
-	|**Description**|Go up a floor|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.ascend`|
-	|**Usage**|`;ascend [levels]`|
+    |**Description**|Get all sorts of tools|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:tool <none|stacker|extruder|selwand|navwand|farwand|cmd|fill|repl|cycler>`|
 
 !!! note ""
-	
-	**;descend**
+**/wedit:tool none**
 
-	|**Description**|Go down a floor|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.descend`|
-	|**Usage**|`;descend [levels]`|
+    |**Description**|Unbind held tool|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:tool none`|
 
 !!! note ""
-	
-	**;ceil**
+**/wedit:tool stacker**
 
-	|**Description**|Go to the ceiling.|
-	|:--|:--|
-	|**Permission**|`worldedit.navigation.ceiling`|
-	|**Usage**|`;ceil [clearance]`|
+    |**Description**|Block stacker tool|
+    |:--|:--|
+    |**Permission**|`worldedit.tool.stack`|
+    |**Usage**|`/wedit:tool stacker [range] [mask]`|
 
 !!! note ""
-	
-	**;tool**
+**/wedit:tool extruder**
 
-	|**Description**|Get all sorts of tools|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;tool <none|stacker|selwand|navwand|farwand|cmd|repl|cycler>`|
+    |**Description**|commands.wedit:tool.description.extruder|
+    |:--|:--|
+    |**Permission**|`worldedit.tool.extruder`|
+    |**Usage**|`/wedit:tool extruder [range] [digging]`|
 
 !!! note ""
-	
-	**;tool none**
+**/wedit:tool selwand**
 
-	|**Description**|Unbind held tool|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;tool none`|
+    |**Description**|Selection tool|
+    |:--|:--|
+    |**Permission**|`worldedit.setwand`|
+    |**Usage**|`/wedit:tool selwand`|
 
 !!! note ""
-	
-	**;tool stacker**
+**/wedit:tool navwand**
 
-	|**Description**|Block stacker tool|
-	|:--|:--|
-	|**Permission**|`worldedit.tool.stack`|
-	|**Usage**|`;tool stacker [range] [mask]`|
+    |**Description**|Navigation tool|
+    |:--|:--|
+    |**Permission**|`worldedit.setwand`|
+    |**Usage**|`/wedit:tool navwand`|
 
 !!! note ""
-	
-	**;tool selwand**
+**/wedit:tool farwand**
 
-	|**Description**|Selection tool|
-	|:--|:--|
-	|**Permission**|`worldedit.setwand`|
-	|**Usage**|`;tool selwand`|
+    |**Description**|Selection tool, but can reach farther|
+    |:--|:--|
+    |**Permission**|`worldedit.farwand`|
+    |**Usage**|`/wedit:tool farwand`|
 
 !!! note ""
-	
-	**;tool navwand**
+**/wedit:tool cmd**
 
-	|**Description**|Navigation tool|
-	|:--|:--|
-	|**Permission**|`worldedit.setwand`|
-	|**Usage**|`;tool navwand`|
+    |**Description**|Command exeution tool; both vanilla and worldedit|
+    |:--|:--|
+    |**Permission**|`worldedit.tool.cmd`|
+    |**Usage**|`/wedit:tool cmd <command...>`|
 
 !!! note ""
-	
-	**;tool farwand**
+**/wedit:tool fill**
 
-	|**Description**|Selection tool, but can reach farther|
-	|:--|:--|
-	|**Permission**|`worldedit.farwand`|
-	|**Usage**|`;tool farwand`|
+    |**Description**|commands.wedit:tool.description.fill|
+    |:--|:--|
+    |**Permission**|`worldedit.utility.fill`|
+    |**Usage**|`/wedit:tool fill <pattern> <radius> [depth] [direction]`|
 
 !!! note ""
-	
-	**;tool cmd**
+**/wedit:tool repl**
 
-	|**Description**|Command exeution tool; both vanilla and worldedit|
-	|:--|:--|
-	|**Permission**|`worldedit.tool.cmd`|
-	|**Usage**|`;tool cmd <command...>`|
+    |**Description**|Block replacer tool|
+    |:--|:--|
+    |**Permission**|`worldedit.repl`|
+    |**Usage**|`/wedit:tool repl <pattern>`|
 
 !!! note ""
-	
-	**;tool repl**
+**/wedit:tool cycler**
 
-	|**Description**|Block replacer tool|
-	|:--|:--|
-	|**Permission**|`worldedit.repl`|
-	|**Usage**|`;tool repl <pattern>`|
+    |**Description**|Block cycler tool|
+    |:--|:--|
+    |**Permission**|`worldedit.cycler`|
+    |**Usage**|`/wedit:tool cycler`|
 
 !!! note ""
-	
-	**;tool cycler**
+**/wedit:superpickaxe (or /wedit:sp)**
 
-	|**Description**|Block cycler tool|
-	|:--|:--|
-	|**Permission**|`worldedit.cycler`|
-	|**Usage**|`;tool cycler`|
+    |**Description**|Toggle the super pickaxe|
+    |:--|:--|
+    |**Permission**|`worldedit.superpickaxe`|
+    |**Usage**|`/wedit:superpickaxe <single|area|recursive>`|
 
 !!! note ""
-	
-	**;superpickaxe (or ;sp)**
+**/wedit:superpickaxe single**
 
-	|**Description**|Toggle the super pickaxe|
-	|:--|:--|
-	|**Permission**|`worldedit.superpickaxe`|
-	|**Usage**|`;superpickaxe <single|area|recursive>`|
+    |**Description**|Make the super pickaxe break a single block|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:superpickaxe single`|
 
 !!! note ""
-	
-	**;superpickaxe single**
+**/wedit:superpickaxe area**
 
-	|**Description**|Make the super pickaxe break a single block|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;superpickaxe single`|
+    |**Description**|Make the super pickaxe break blocks in a cubic range|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:superpickaxe area <range>`|
 
 !!! note ""
-	
-	**;superpickaxe area**
+**/wedit:superpickaxe recursive**
 
-	|**Description**|Make the super pickaxe break blocks in a cubic range|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;superpickaxe area <range>`|
+    |**Description**|Make the super pickaxe break blocks starting from the initial one|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:superpickaxe recursive <range>`|
 
 !!! note ""
-	
-	**;superpickaxe recursive**
+**/wedit:brush (or /wedit:br)**
 
-	|**Description**|Make the super pickaxe break blocks starting from the initial one|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;superpickaxe recursive <range>`|
+    |**Description**|Set the type of a brush being held|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:brush <none|sphere|cyl|smooth|struct|erode|overlay|blob>`|
 
 !!! note ""
-	
-	**;brush (or ;br)**
+**/wedit:brush none**
 
-	|**Description**|Set the type of a brush being held|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;brush <none|sphere|cyl|smooth|struct|erode|overlay>`|
+    |**Description**|Unbind a bound brush from your current item|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:brush none`|
 
 !!! note ""
-	
-	**;brush none**
+**/wedit:brush sphere**
 
-	|**Description**|Unbind a bound brush from your current item|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;brush none`|
+    |**Description**|Create a sphere brush|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.sphere`|
+    |**Usage**|`/wedit:brush sphere <pattern> [radius] [hollow]`|
 
 !!! note ""
-	
-	**;brush sphere**
+**/wedit:brush cyl**
 
-	|**Description**|Create a sphere brush|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.sphere`|
-	|**Usage**|`;brush sphere [-h] <pattern> [radius]`|
+    |**Description**|Create a cylinder brush|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.cylinder`|
+    |**Usage**|`/wedit:brush cyl <pattern> [radius] [height] [hollow]`|
 
 !!! note ""
-	
-	**;brush cyl**
+**/wedit:brush smooth**
 
-	|**Description**|Create a cylinder brush|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.cylinder`|
-	|**Usage**|`;brush cyl [-h] <pattern> [radius] [height]`|
+    |**Description**|Create a terrain smoothing brush|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.smooth`|
+    |**Usage**|`/wedit:brush smooth [radius] [iterations] [mask]`|
 
 !!! note ""
-	
-	**;brush smooth**
+**/wedit:brush struct**
 
-	|**Description**|Create a terrain smoothing brush|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.smooth`|
-	|**Usage**|`;brush smooth [radius] [iterations] [mask]`|
+    |**Description**|Creates a brush that places structures|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.struct`|
+    |**Usage**|`/wedit:brush struct <clipboard>`|
 
 !!! note ""
-	
-	**;brush struct**
+**/wedit:brush erode**
 
-	|**Description**|Creates a brush that places structures|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.struct`|
-	|**Usage**|`;brush struct <clipboard>`|
+    |**Description**|Creates a terrain shaping brush|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.erode`|
+    |**Usage**|`/wedit:brush erode <lift|fill|melt|smooth>`|
 
 !!! note ""
-	
-	**;brush erode**
+**/wedit:brush overlay**
 
-	|**Description**|Creates a terrain shaping brush|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.erode`|
-	|**Usage**|`;brush erode <lift|fill|melt|smooth>`|
+    |**Description**|Creates a terrain overlaying brush|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.overlay`|
+    |**Usage**|`/wedit:brush overlay <pattern> [radius] [depth] [mask]`|
 
 !!! note ""
-	
-	**;brush overlay**
+**/wedit:brush blob**
 
-	|**Description**|Creates a terrain overlaying brush|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.overlay`|
-	|**Usage**|`;brush overlay <pattern> [radius] [depth] [mask]`|
+    |**Description**|commands.wedit:brush.description.blob|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.blob`|
+    |**Usage**|`/wedit:brush blob <pattern> [radius] [growPercent] [smoothness]`|
 
 !!! note ""
-	
-	**;mask**
+**/wedit:mask**
 
-	|**Description**|Set what kind of blocks a brush can affect, if any|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.options.mask`|
-	|**Usage**|`;mask [mask]`|
+    |**Description**|Set what kind of blocks a brush can affect, if any|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.options.mask`|
+    |**Usage**|`/wedit:mask [mask]`|
 
 !!! note ""
-	
-	**;tracemask**
+**/wedit:tracemask**
 
-	|**Description**|Set what kind of blocks a brush can be used on|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.options.tracemask`|
-	|**Usage**|`;tracemask [mask]`|
+    |**Description**|Set what kind of blocks a brush can be used on|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.options.tracemask`|
+    |**Usage**|`/wedit:tracemask [mask]`|
 
 !!! note ""
-	
-	**;size**
+**/wedit:size**
 
-	|**Description**|Set the size of a brush or get information about the selection|
-	|:--|:--|
-	|**Permission**||
-	|**Usage**|`;size (<size>|[-c])`|
+    |**Description**|Set the size of a brush or get information about the selection|
+    |:--|:--|
+    |**Permission**||
+    |**Usage**|`/wedit:size (<size>|[countClipboard])`|
 
 !!! note ""
-	
-	**;range**
+**/wedit:range**
 
-	|**Description**|Set how far a brush can be used from|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.options.range`|
-	|**Usage**|`;range [range]`|
+    |**Description**|Set how far a brush can be used from|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.options.range`|
+    |**Usage**|`/wedit:range [range]`|
 
 !!! note ""
-	
-	**;material**
+**/wedit:material**
 
-	|**Description**|Set what kind of blocks a brush should make|
-	|:--|:--|
-	|**Permission**|`worldedit.brush.options.material`|
-	|**Usage**|`;material <pattern>`|
+    |**Description**|Set what kind of blocks a brush should make|
+    |:--|:--|
+    |**Permission**|`worldedit.brush.options.material`|
+    |**Usage**|`/wedit:material <pattern>`|
 
 !!! note ""
-	
-	**;undo**
+**/wedit:undo**
 
-	|**Description**|Undo a certain amount of actions|
-	|:--|:--|
-	|**Permission**|`worldedit.history.undo`|
-	|**Usage**|`;undo [times]`|
+    |**Description**|Undo a certain amount of actions|
+    |:--|:--|
+    |**Permission**|`worldedit.history.undo`|
+    |**Usage**|`/wedit:undo [times]`|
 
 !!! note ""
-	
-	**;redo**
+**/wedit:redo**
 
-	|**Description**|Redo a certain amount of actions|
-	|:--|:--|
-	|**Permission**|`worldedit.history.redo`|
-	|**Usage**|`;redo [times]`|
+    |**Description**|Redo a certain amount of actions|
+    |:--|:--|
+    |**Permission**|`worldedit.history.redo`|
+    |**Usage**|`/wedit:redo [times]`|
 
 !!! note ""
-	
-	**;clearhistory**
+**/wedit:clearhistory**
 
-	|**Description**|Clear your editing history|
-	|:--|:--|
-	|**Permission**|`worldedit.history.clear`|
-	|**Usage**|`;clearhistory`|
+    |**Description**|Clear your editing history|
+    |:--|:--|
+    |**Permission**|`worldedit.history.clear`|
+    |**Usage**|`/wedit:clearhistory`|
 
 !!! note ""
-	
-	**;export**
+**/wedit:export**
 
-	|**Description**|Exports the selection for later use.|
-	|:--|:--|
-	|**Permission**|`worldedit.structure.export`|
-	|**Usage**|`;export [-ea] <name>`|
+    |**Description**|Exports the selection for later use.|
+    |:--|:--|
+    |**Permission**|`worldedit.structure.export`|
+    |**Usage**|`/wedit:export <name> [includeAir] [includeEntities]`|
 
 !!! note ""
-	
-	**;import**
+**/wedit:import**
 
-	|**Description**|Imports a structure to the clipboard.|
-	|:--|:--|
-	|**Permission**|`worldedit.structure.import`|
-	|**Usage**|`;import <name>`|
+    |**Description**|Imports a structure to the clipboard.|
+    |:--|:--|
+    |**Permission**|`worldedit.structure.import`|
+    |**Usage**|`/wedit:import <name>`|
 
 !!! note ""
-	
-	**;biomeinfo**
+**/wedit:biomeinfo**
 
-	|**Description**|Retrieve the kinds of biomes in your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.biome.info`|
-	|**Usage**|`;biomeinfo [-pt]`|
+    |**Description**|Retrieve the kinds of biomes in your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.biome.info`|
+    |**Usage**|`/wedit:biomeinfo [detectAt]`|
 
 !!! note ""
-	
-	**;setbiome**
-
-	|**Description**|Change the biomes in your selection|
-	|:--|:--|
-	|**Permission**|`worldedit.biome.set`|
-	|**Usage**|`;setbiome <biome> [-p]`|
+**/wedit:setbiome**
 
+    |**Description**|Change the biomes in your selection|
+    |:--|:--|
+    |**Permission**|`worldedit.biome.set`|
+    |**Usage**|`/wedit:setbiome <biome> [changeAtPosition]`|

@@ -13,25 +13,25 @@ The namespace can be assumed to be `minecraft` for vanilla blocks. However, it's
 
 !!! Example
 
-    `;set stone`
+    `/wedit:set stone`
 
     This sets the selected region to normal stone.
 
-    `;set red_wool`
+    `/wedit:set red_wool`
 
     This sets the region to red wool.
 
-    `;set stone_slab[stone_slab_type=brick,top_slot_bit=true]`
+    `/wedit:set stone_slab[stone_slab_type=brick,top_slot_bit=true]`
 
     This sets the region to upper half brick slabs.
 
 !!! Tip
 
-    Using the `;blockid` command while facing a block tells you how that block should be written in WorldEdit patterns!
+    Using the `/wedit:blockid` command while facing a block tells you how that block should be written in WorldEdit patterns!
 
 !!! Note
 
-    You can also define certain block variations by adding a data value to the block ID. `wool:1` is orange wool for instance. This can't be defined alongside block states. You can do `;blockid -d` To get the id along with the data value of the block you look at.
+    You can also define certain block variations by adding a data value to the block ID. `wool:1` is orange wool for instance. This can't be defined alongside block states. You can do `/wedit:blockid -d` To get the id along with the data value of the block you look at.
 
 ### Random Pattern
 
@@ -39,11 +39,11 @@ It's possible to make a pattern that creates a mixture of other patterns. The si
 
 !!! Example
 
-    `;set dirt,grass`
+    `/wedit:set dirt,grass`
 
     This sets the region to half dirt, half grass.
 
-    `;set 20%*wool,80%stone`
+    `/wedit:set 20%*wool,80%stone`
 
     This sets the region to 20% random wool, and 80% stone.
 
@@ -59,11 +59,11 @@ Prefixing '^' to a block ID or block states allows you to change that aspect of 
 
 !!! Example
 
-    `;replace birch_stairs ^acacia_stairs`
+    `/wedit:replace birch_stairs ^acacia_stairs`
 
     This turns birch stairs into acacia ones while keeping their orientation.
 
-    `;replace wheat ^[growth=7]`
+    `/wedit:replace wheat ^[growth=7]`
 
     This makes all wheat crops fully grown.
 
@@ -77,17 +77,17 @@ Want to quickly use a block without having to type it in? Use `#hand` to use the
 
 ### Void Pattern
 
-A `void` pattern doesn't place any block. Seems pretty useless by itself, but it can be combined with other patterns to only affect certain parts of a region. For instance, `;set grass,void` will only affect half of the blocks in the selection.
+A `void` pattern doesn't place any block. Seems pretty useless by itself, but it can be combined with other patterns to only affect certain parts of a region. For instance, `/wedit:set grass,void` will only affect half of the blocks in the selection.
 
 ### Gradient Patterns
 
-Gradients are a complex pattern type. To create a gradient, type the command `;gradient create` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `;gradient create nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
+Gradients are a complex pattern type. To create a gradient, type the command `/wedit:gradient create` followed by the name of the gradient, then patterns of your choice each separated with a space. For example, `/wedit:gradient create nature stone dirt grass` will make a gradient called "nature" that transitions from stone to dirt then grass.
 
 !!! Tips
 
-    You can specify the gradient based on a selection by running `;gradient create -s "name"`. The command will read the selection along its longest side like a gradient map.
+    You can specify the gradient based on a selection by running `/wedit:gradient create -s "name"`. The command will read the selection along its longest side like a gradient map.
 
-    You can also change how much the patterns fade into each other with the `-f` flag. For example `;gradient create -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
+    You can also change how much the patterns fade into each other with the `-f` flag. For example `/wedit:gradient create -f 0 test stone dirt` makes a gradient pattern called "test" of stone and dirt with a hard transition between the two.
 
 Once you have defined a gradient you can then use it in a pattern like so: `$gradient_name`. By default the gradient goes in the direction you're facing, but you can specify the direction by adding a dot followed by the direction. For example, `$gradient_name.north`. Only absolute directions are supported, so `left`, `right`, `forward` nor `back` can't be used.
 
@@ -95,8 +95,8 @@ Once you have defined a gradient you can then use it in a pattern like so: `$gra
 
     You can also do a radial gradient; that is, a gradient that goes from the center of the operation to its boundaries. You define it like how you define the direction, but with `rad`. For example, `$gradient_name.rad`. There's also `$gradient_name.lit` but instead of the center, it starts from the player's position.
 
-You can look back at what gradients you have with `;gradient list`, or delete one you already made with `;gradient delete "id"`. Note that creating a gradient with an ID that already exists will simply override the old gradient.
+You can look back at what gradients you have with `/wedit:gradient list`, or delete one you already made with `/wedit:gradient delete "id"`. Note that creating a gradient with an ID that already exists will simply override the old gradient.
 
 ### Blob Patterns
 
-A blob pattern is a complex pattern that generates blocks randomly, but more consistently than a normal random pattern. It generates them using voronoi noise. You can specify how large this noise pattern is. The larger the pattern the more consistent it becomes. To make a blob pattern, do `#blob[n](pattern)`, where `[n]` is the size of the noise, and `pattern` is what determines what blocks the blob pattern chooses from. For example, `;set #blob5(stone,dirt)` will make a blobby pattern of stone and dirt.
+A blob pattern is a complex pattern that generates blocks randomly, but more consistently than a normal random pattern. It generates them using voronoi noise. You can specify how large this noise pattern is. The larger the pattern the more consistent it becomes. To make a blob pattern, do `#blob[n](pattern)`, where `[n]` is the size of the noise, and `pattern` is what determines what blocks the blob pattern chooses from. For example, `/wedit:set #blob5(stone,dirt)` will make a blobby pattern of stone and dirt.

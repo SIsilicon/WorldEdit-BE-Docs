@@ -6,33 +6,36 @@ WorldEdit comes with a few commands help you make shapes without the use of a re
 
 ## Spheres
 
-``` txt
+```txt
 ;sphere [-hr] <pattern> <radius> [radiusY] [radiusZ]
 ;hsphere [-r] <pattern> <radius> [radiusY] [radiusZ]
 ```
+
 This generates a sphere or spheroid of any dimensions. You can also define 2, or 3 numbers to define the radius in different axes. `-h` makes it hollow, and `-r` raises the sphere's bottom to the origin.
 
 ## Cylinders
 
-``` txt
+```txt
 ;cyl [-hr] <pattern> <radius> ([radiusY]) [height]
 ;hcyl [-r] <pattern> <radius> ([radiusY]) [height]
 ```
+
 This generates a cylinder of any dimensions. You can also define 2 numbers to define the radius in different axes. Again, `-h` makes it hollow, and `-r` raises the its bottom to the origin.
 
 ## Pyramids
 
-``` txt
+```txt
 ;pyramid [-h] <pattern> <size>
 ;hpyramid <pattern> <size>
 ```
+
 This generates a pyramid. Unlike the previous two shapes, the center is at the base of the pyramid.
 
 ## Custom Shapes
 
-Apart from these builtin shapes, there's also the ability to make your own with the `;gen` command!
+Apart from these builtin shapes, there's also the ability to make your own with the `/wedit:gen` command!
 
-``` txt
+```txt
 ;gen [-h] <pattern> <expression>
 ```
 
@@ -40,10 +43,10 @@ Unlike the others, you need to first make a selection to define where the shape 
 
 !!! Examples
 
-    `;gen -h stone "y < x^2-z^2"`- Generates a stone saddle
+    `/wedit:gen -h stone "y < x^2-z^2"`- Generates a stone saddle
 
-    `;gen stone "(0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2"` - Generates a stone torus
+    `/wedit:gen stone "(0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2"` - Generates a stone torus
 
-    `;gen glass "y < cos(sqrt(x^2+z^2)^2 * 10) * 0.2"` - Generates a radial cosine wave
+    `/wedit:gen glass "y < cos(sqrt(x^2+z^2)^2 * 10) * 0.2"` - Generates a radial cosine wave
 
-    `;gen -h wool "y^2/9+x^2/6*(1/(1-0.4*y))+z^2/6*(1/(1-0.4*y))<0.08"` - Generates a hollow wooly egg
+    `/wedit:gen -h wool "y^2/9+x^2/6*(1/(1-0.4*y))+z^2/6*(1/(1-0.4*y))<0.08"` - Generates a hollow wooly egg

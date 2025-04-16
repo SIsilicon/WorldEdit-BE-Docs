@@ -69,6 +69,7 @@ def printUsage(args, sub=''):
     
     return ' ' + ' '.join(usage) if usage else ''
 
+command_prefix = "/wedit:"
 commands_folder = '../WorldEdit/src/server/commands'
 commands = {}
 
@@ -85,23 +86,32 @@ with open(commands_folder + '/command_list.ts') as file:
 for path in commands:
     with open(path) as file:
         line = file.readline()
+        suffixJsonStr = None
         jsonStr = None
         while line:
-            if re.match(r'const registerInformation = {', line):
+            if re.match(r'const suffixArguments: commandArgList = \[', line):
+                suffixJsonStr = re.sub(r'const suffixArguments: commandArgList = \[', "[", line).replace(";", "")
+            elif re.match(r'const registerInformation: CommandInfo = {', line):
                 jsonStr = '{\n'
             elif re.match(r'};', line):
                 jsonStr += '}'
                 break
-            elif jsonStr:
-                if re.match(r'\s+default:.+\n', line):
-                    line = '\tdefault: 1' + (',\n' if line[:-1].endswith(',') else '\n')
-                elif re.match(r'\s+range:.+\n', line):
-                    line = '\trange: 1' + (',\n' if line[:-1].endswith(',') else '\n')
-                line = re.sub(r'(\s+)(.+?):(.+)', r'\1"\2":\3', line)
-                jsonStr += line.replace("'", '"').split('//')[0]
+            elif re.match(r'];', line):
+                suffixJsonStr += ']'
+            elif jsonStr or suffixJsonStr:
+                line = re.sub(r'(default:\s*)(.*?)([,}])', r'\1 1\3', line)
+                line = re.sub(r'(range:\s*)(\[.*?\])\s*([,}])', r'\1 1\3', line)
+                line = re.sub(r'(\s+)(\S+?):(.+)', r'\1"\2":\3', line).replace("'", '"').split('//')[0]
+                if jsonStr:
+                    if suffixJsonStr:
+                        line = re.sub(r'...suffixArguments', suffixJsonStr[1:-3], line)
+                    jsonStr += line
+                elif suffixJsonStr:
+                    suffixJsonStr += line
             line = file.readline()
 
         jsonStr = re.sub(r'(\w+?)(?=: )', r'"\1"', jsonStr)
+        jsonStr = re.sub(r',(\s*?)([}\]])', r'\1\2', jsonStr)
         jsonStr = re.sub(r',(\s*?)([}\]])', r'\1\2', jsonStr)
         try:
             commands[path] = json.loads(jsonStr)
@@ -136,7 +146,7 @@ with open(commandspage, 'w') as file:
         aliases = ''
         for alias in command.get('aliases', []):
             aliases += ' (or ' if not aliases else ''
-            aliases += f';{alias}, '
+            aliases += f'{command_prefix}{alias}, '
         aliases = ')'.join(aliases.rsplit(', ', 1))
         
         if sub:
@@ -155,11 +165,11 @@ with open(commandspage, 'w') as file:
             print(f'WARNING: There is no text value for \033[93m{desc}\033[0m.')
         perm = f'`{perm}`' if perm else ''
         
-        file.write(f'\t**;{name}{aliases}**\n\n')
+        file.write(f'\t**{command_prefix}{name}{aliases}**\n\n')
         file.write(f'\t|**Description**|{texts.get(desc, desc)}|\n')
         file.write('\t|:--|:--|\n')
         file.write(f'\t|**Permission**|{perm}|\n')
-        file.write(f'\t|**Usage**|`;{command["name"]}{args}`|\n')
+        file.write(f'\t|**Usage**|`{command_prefix}{command["name"]}{args}`|\n')
         
         file.write('\n')
     

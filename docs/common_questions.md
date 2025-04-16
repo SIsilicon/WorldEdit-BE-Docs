@@ -37,8 +37,8 @@ How Minecraft works is that some blocks are just variations of a base block. Gra
 
 That depends on the outcome you want.
 
--   Use `;drawsel` to toggle the visiblity of the selection. The selection is still there, so you can still use your usual selection based commands.
--   Use `;desel` to clear your selection (not the blocks inside. Use `;cut` for that). As soon as you start making your selection it will once again be highlighted with particles, unless you used `;drawsel` to disable it.
+-   Use `/wedit:drawsel` to toggle the visiblity of the selection. The selection is still there, so you can still use your usual selection based commands.
+-   Use `/wedit:desel` to clear your selection (not the blocks inside. Use `/wedit:cut` for that). As soon as you start making your selection it will once again be highlighted with particles, unless you used `/wedit:drawsel` to disable it.
 
 ## How do I uninstall the addon from the world?
 
