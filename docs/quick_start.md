@@ -12,8 +12,7 @@ By default, players are not allowed to use WorldEdit. Only those tagged with "wo
 
 !!! Notice
 
-    The commands provided by this addon use a semicolon (;) instead of a bracket (/).
-    In the future, Mojang might add actual custom commands support to Minecraft.
+    The commands provided by this addon use a semicolon (;) instead of a bracket (/). This could change in the future when the game's API is more capable.
 
 Getting from point A to point B can sometimes be a hassle.
 Luckily, this addon comes with what's known as a navigation wand.
