@@ -69,7 +69,7 @@ def printUsage(args, sub=''):
     
     return ' ' + ' '.join(usage) if usage else ''
 
-command_prefix = "/wedit:"
+command_prefix = ";"
 commands_folder = '../WorldEdit/src/server/commands'
 commands = {}
 

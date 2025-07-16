@@ -1,8 +1,8 @@
 # Brushes
 
-Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to almost any vanilla item, as long as you are holding it. For example, `/wedit:brush sphere log 5` Binds a sphere brush to the item you're holding.
+Brush tools are a more specific set of tools. They're meant to sculpt, shape and paint the world. You can bind a brush to almost any vanilla item, as long as you are holding it. For example, `;brush sphere log 5` Binds a sphere brush to the item you're holding.
 
-You can unbind a brush from an item with `/wedit:brush none`.
+You can unbind a brush from an item with `;brush none`.
 
 [TOC]
 
@@ -30,7 +30,7 @@ The cylinder brush creates a cylinder of blocks wherever it hits. Again, `-h` ma
 ;brush smooth [radius] [iterations] [mask]
 ```
 
-The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smoothed. `mask` determines what is part of the terrain to be smoothed. This mask acts different from `/wedit:gmask` which determines what blocks are affected all together.
+The smooth brush smoothes down terrain on use. `iterations` will specify how much the terrain will get smoothed. `mask` determines what is part of the terrain to be smoothed. This mask acts different from `;gmask` which determines what blocks are affected all together.
 
 ### Erosion Brush
 
@@ -56,7 +56,7 @@ Use the erosion brush to shape terrain with great control. It comes in various m
 ;brush overlay <pattern> [radius] [depth] [mask]
 ```
 
-The overlay brush replaces blocks exposed to the sky with a pattern of choice, like dirt or grass. For example, `/wedit:br overlay dirt 3 2` creates a brush of radius 3 that will overlay dirt 2 blocks deep in an affected surface. The mask parameter lets you choose what blocks count as a surface.
+The overlay brush replaces blocks exposed to the sky with a pattern of choice, like dirt or grass. For example, `;br overlay dirt 3 2` creates a brush of radius 3 that will overlay dirt 2 blocks deep in an affected surface. The mask parameter lets you choose what blocks count as a surface.
 
 ### Structure/Clipboard brush
 

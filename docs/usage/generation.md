@@ -33,7 +33,7 @@ This generates a pyramid. Unlike the previous two shapes, the center is at the b
 
 ## Custom Shapes
 
-Apart from these builtin shapes, there's also the ability to make your own with the `/wedit:gen` command!
+Apart from these builtin shapes, there's also the ability to make your own with the `;gen` command!
 
 ```txt
 ;gen [-h] <pattern> <expression>
@@ -43,10 +43,10 @@ Unlike the others, you need to first make a selection to define where the shape 
 
 !!! Examples
 
-    `/wedit:gen -h stone "y < x^2-z^2"`- Generates a stone saddle
+    `;gen -h stone "y < x^2-z^2"`- Generates a stone saddle
 
-    `/wedit:gen stone "(0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2"` - Generates a stone torus
+    `;gen stone "(0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2"` - Generates a stone torus
 
-    `/wedit:gen glass "y < cos(sqrt(x^2+z^2)^2 * 10) * 0.2"` - Generates a radial cosine wave
+    `;gen glass "y < cos(sqrt(x^2+z^2)^2 * 10) * 0.2"` - Generates a radial cosine wave
 
-    `/wedit:gen -h wool "y^2/9+x^2/6*(1/(1-0.4*y))+z^2/6*(1/(1-0.4*y))<0.08"` - Generates a hollow wooly egg
+    `;gen -h wool "y^2/9+x^2/6*(1/(1-0.4*y))+z^2/6*(1/(1-0.4*y))<0.08"` - Generates a hollow wooly egg

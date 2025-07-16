@@ -2,15 +2,15 @@
 
 Masks, alongside patterns, are commonly used in WorldEdit commands. Unlike patterns, masks determine which blocks will be affected by commands, brushes, and so on.
 
-Aside from commands that take a mask as a parameter, like `/wedit:replace [mask] <pattern>`, you can also apply masks to individual brushes by using the `/wedit:mask` command, or you can apply a mask to all your WorldEdit actions globally with `/wedit:gmask`. The global mask can also be set from the kit using the [Mask Picker](../kit.md#mask_picker).
+Aside from commands that take a mask as a parameter, like `;replace [mask] <pattern>`, you can also apply masks to individual brushes by using the `;mask` command, or you can apply a mask to all your WorldEdit actions globally with `;gmask`. The global mask can also be set from the kit using the [Mask Picker](../kit.md#mask_picker).
 
 !!! Note
 
-    Masks applied through different means will stack with each other. If you set your global mask with `/wedit:gmask dirt`, and then set a brush mask with `/wedit:mask stone`, that brush will not be able to modify any blocks at all! This is because the combined mask will only match blocks which are both stone and dirt!
+    Masks applied through different means will stack with each other. If you set your global mask with `;gmask dirt`, and then set a brush mask with `;mask stone`, that brush will not be able to modify any blocks at all! This is because the combined mask will only match blocks which are both stone and dirt!
 
 !!! Tip
 
-    You can clear your global mask by using `/wedit:gmask` again without arguments.
+    You can clear your global mask by using `;gmask` again without arguments.
 
 [TOC]
 
@@ -20,11 +20,11 @@ You can combine masks in two way: intersection, where all masks must pass to be 
 
 !!! Example
 
-    `/wedit:replace stone,dirt bedrock`
+    `;replace stone,dirt bedrock`
 
     This replace blocks that are stone OR dirt with bedrock.
 
-    `/wedit:replace "dirt <air" grass`
+    `;replace "dirt <air" grass`
 
     This replace blocks that are dirt AND under air with grass.
 
@@ -38,11 +38,11 @@ Like [single block patterns](patterns.md#single-block-pattern), masks also take 
 
 !!! Example
 
-    `/wedit:replace wool dirt`
+    `;replace wool dirt`
 
     Replaces wool of any colour with dirt.
 
-    `/wedit:replace log2[new_log_type=dark_oak,pillar_axis=0],cobblestone air`
+    `;replace log2[new_log_type=dark_oak,pillar_axis=0],cobblestone air`
 
     Replaces dark oak logs facing up, and cobblestone with air.
 
@@ -52,7 +52,7 @@ Using the `!` symbol allows you to match blocks that do NOT match any other mask
 
 !!! Example
 
-    `/wedit:replace !gravel,dirt,sand grass`
+    `;replace !gravel,dirt,sand grass`
 
     This replaces any block that isn't gravel, dirt or sand with grass.
 
@@ -66,7 +66,7 @@ You can test if a block is being overlayed (`>`) or underlayed (`<`) by the curr
 
 !!! Example
 
-    `/wedit:replace "air >stone" grass`
+    `;replace "air >stone" grass`
 
     This replaces any air that's overlaying(above) stone with grass.
 
@@ -80,7 +80,7 @@ This mask will match blocks that match it's defined states, no matter what type 
 
 !!! Example
 
-    `/wedit:replace ^=[pillar_axis=0] stone`
+    `;replace ^=[pillar_axis=0] stone`
 
     This sets any pillar-like blocks that face up to stone.
 
@@ -90,4 +90,4 @@ This mask matches any block that's directly adjacent to air blocks, i.e. exposed
 
 ### Shadow Mask
 
-This mask matches blocks that can't be seen from where you are. It's best used in combination with `#surface`. For example, `/wedit:replace "#shadow #surface" stone` on some grass under trees while you're above them will turn them into stone. Inverting it like `!#shadow` will only match with blocks that can be seen from where you are.
+This mask matches blocks that can't be seen from where you are. It's best used in combination with `#surface`. For example, `;replace "#shadow #surface" stone` on some grass under trees while you're above them will turn them into stone. Inverting it like `!#shadow` will only match with blocks that can be seen from where you are.

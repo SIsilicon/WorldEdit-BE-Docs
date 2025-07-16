@@ -8,7 +8,7 @@ You may often find yourself in need of getting to places in order to do your wor
 
 WorldEdit gives you access to a Navigation Wand, a tool that is bound to the ender pearl.
 
-At any time, you can interact with the ender pearl to jump to the top of any block you are looking at (as with the `/wedit:jumpto` command, described below). You can also use the ender pearl while sneaking to pass through walls (as with the `/wedit:thru` command, described below).
+At any time, you can interact with the ender pearl to jump to the top of any block you are looking at (as with the `;jumpto` command, described below). You can also use the ender pearl while sneaking to pass through walls (as with the `;thru` command, described below).
 
 ## Freeing yourself
 
@@ -17,7 +17,7 @@ At any time, you can interact with the ender pearl to jump to the top of any blo
 ;!
 ```
 
-This will get you out of a block if you somehow got inside it. It moves you to the top-most free position, choosing to do nothing if you were not stuck to begin with. The short alias `/wedit:!` can often be useful if you aren’t in creative mode and find yourself suffocating after pasting or generating something on top of yourself.
+This will get you out of a block if you somehow got inside it. It moves you to the top-most free position, choosing to do nothing if you were not stuck to begin with. The short alias `;!` can often be useful if you aren’t in creative mode and find yourself suffocating after pasting or generating something on top of yourself.
 
 ## Jumping to the block in sight
 

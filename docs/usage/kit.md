@@ -4,7 +4,7 @@ As WorldEdit for Bedrock is made for different devices, the kit was created to m
 
 ## Main items
 
-Upon typing the command `/wedit:kit`, you are given the following items:
+Upon typing the command `;kit`, you are given the following items:
 
 -   <a name="selection_wand"></a>**Selection Wand ![](../img/icons/wood_axe.png):** Make selections to do stuff with. You can remove your selection by dropping the wand. See [Selection](regions/selection.md).
 -   <a name="region_tools"></a>**Region Tools:** These tools are all used with your selection to do various things with it. They are a single item and you can switch between them by sneaking and using said item. By default it is "Fill Selection".
@@ -21,7 +21,7 @@ Upon typing the command `/wedit:kit`, you are given the following items:
 -   <a name="undo"></a>**Undo ![](../img/icons/undo.png):** Undo your previous action that affected the world. See [History](general/history.md).
 -   <a name="redo"></a>**Redo ![](../img/icons/redo.png):** Redo your previous action that affected the world. See [History](general/history.md).
 -   <a name="config"></a>**WorldEdit Settings ![](../img/icons/config.png):** Enter a menu to change and setup some things about WorldEdit and the kit items.
--   <a name="mask_picker"></a>**Mask Picker ![](../img/icons/maskdropper.png):** Select blocks to use in the global mask. Like the Pattern Picker, sneaking will add blocks to the mask. This affects "Fill Selection", and the brushes. To clear it, use the command `/wedit:gmask`.
+-   <a name="mask_picker"></a>**Mask Picker ![](../img/icons/maskdropper.png):** Select blocks to use in the global mask. Like the Pattern Picker, sneaking will add blocks to the mask. This affects "Fill Selection", and the brushes. To clear it, use the command `;gmask`.
 -   <a name="shape_tools"></a>**Shape Tools:** These tools let you make a variety of shapes made of any block. Like the region tools, they are a single item, and you switch between them by sneaking and using said item. By default it is "Draw Line".
     -   **Draw Line ![](../img/icons/draw_line.png):** Draw a line from your first position to your second.
     -   **Draw Sphere ![](../img/icons/draw_sphere.png):** Draw a sphere from your first position with a radius determined by the distance from the second position.
@@ -39,7 +39,7 @@ This section allows you to change some things that affect WorldEdit overall. You
 
 -   **Include Entities**: Whether to include entities in your clipboard when copying or cutting. This only affects the kit items. See [Clipboard](clipboard.md) for how to include entities via commands.
 -   **Include Air**: Whether to include air in your clipboard. Like the previous setting, this only affects the kit items.
--   **Performance Mode**: Whether to run WorldEdit in performance mode. In this mode, the clipboard is saved in a simpler format; allowing you to copy, cut and paste more quickly. However, this limits your clipboard's capabilities. For example, you can only rotate along the Y axis, and air is always included. This can also be toggled by entering `/wedit:worldedit perf`.
+-   **Performance Mode**: Whether to run WorldEdit in performance mode. In this mode, the clipboard is saved in a simpler format; allowing you to copy, cut and paste more quickly. However, this limits your clipboard's capabilities. For example, you can only rotate along the Y axis, and air is always included. This can also be toggled by entering `;worldedit perf`.
 -   **Selection Mode**: What selection mode to use. See [Selection](./regions/selection.md).
 
 ### Tools ![](../img/icons/tool_config.png) and Brushes ![](../img/icons/brush_config.png)
