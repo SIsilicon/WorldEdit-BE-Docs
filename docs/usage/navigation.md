@@ -23,6 +23,7 @@ This will get you out of a block if you somehow got inside it. It moves you to t
 
 ```txt
 ;jumpto
+;j
 ```
 
 This command sends you to the top of the block that you are looking at. If that block is a vertical wall, you will be placed on top of the cliff at the very edge.
