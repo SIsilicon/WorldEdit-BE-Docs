@@ -2,7 +2,7 @@
 
 !!! Important
 
-    As of writing this page, the app is only available on PC.
+    as of writing the app supports Linux and macOS. Mobile support will be coming in 6 months to a year.
 
 Bedrock World Editor app is an NBT editor created by [8Crafter](https://github.com/8Crafter-Studios). Apart from NBT editing, it comes with WorldEdit support that lets you process worlds in ways you can't with just the addon.
 
