@@ -2,7 +2,7 @@
 
 The utility commands are meant for the common stuff that usually take several commands, or one larger command to be done. They're all executed from the player's position.
 
-[TOC]
+
 
 ## Editing nearby blocks
 
@@ -84,6 +84,7 @@ Too much snow? Fine, use this command to get rid of it and also thaw the ice as 
 ## Put out fires
 
 ```
+;extinguish <radius>
 ;ex <radius>
 ```
 
