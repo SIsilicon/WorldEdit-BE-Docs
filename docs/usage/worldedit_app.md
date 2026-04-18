@@ -51,5 +51,4 @@ You may have to press "Show All Assets" to see the file you need. Once downloade
 
 ## Limitations
 
-- Changing biomes may not work properly in worlds with a modded height range.
 - Marketplace maps are encrypted, so they can't be modified.
