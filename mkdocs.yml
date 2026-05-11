@@ -11,6 +11,7 @@ markdown_extensions:
     - pymdownx.highlight
     - pymdownx.inlinehilite
     - pymdownx.snippets
+    - pymdownx.keys
 
 theme:
     name: readthedocs

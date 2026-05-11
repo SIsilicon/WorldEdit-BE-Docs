@@ -12,7 +12,7 @@ To use the editor mode version of WorldEdit, you need to have Editor Mode instal
 
 WorldEdit with Editor Mode has the following features compared to the normal version.
 
-- Undo and Redo using Shortcut keys (Ctrl+Z and Ctrl+Y)
+- Undo and Redo using Shortcut keys (++ctrl+z++ and ++ctrl+y++)
 - Editor brush controls (creating strokes by holding your mouse over terrain)
 - Gradient management via UI
 - Region operation management via UI
