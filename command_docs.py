@@ -141,7 +141,7 @@ with open(commandspage, 'w') as file:
     file.write(prevfile)
     
     def printCommand(command, sub=None):
-        file.write('!!! note ""\n\t\n')
+        file.write('!!! note ""\n\t\n\t###')
         
         aliases = ''
         for alias in command.get('aliases', []):
@@ -165,7 +165,7 @@ with open(commandspage, 'w') as file:
             print(f'WARNING: There is no text value for \033[93m{desc}\033[0m.')
         perm = f'`{perm}`' if perm else ''
         
-        file.write(f'\t**{command_prefix}{name}{aliases}**\n\n')
+        file.write(f'\t**`{command_prefix}{name}{aliases}`**\n\n')
         file.write(f'\t|**Description**|{texts.get(desc, desc)}|\n')
         file.write('\t|:--|:--|\n')
         file.write(f'\t|**Permission**|{perm}|\n')
