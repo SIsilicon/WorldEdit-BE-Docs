@@ -2,6 +2,8 @@ site_name: WorldEdit for Minecraft Bedrock
 repo_url: https://github.com/SIsilicon/WorldEdit-BE-Docs
 
 markdown_extensions:
+    - toc:
+        permalink: 
     - admonition
     - tables
     - attr_list
