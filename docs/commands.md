@@ -2,8 +2,6 @@
 
 Commands are the main way to use the many features of WorldEdit. Type `/help` to get a list of available commands. If you don't find a command here that's in the original, look in the [differences](differences.md) page to see if it's planned.
 
-[TOC]
-
 ## Reading this documentation
 
 Commands may come with arguments. When you see an argument surrounded in `[square brackets]`, then that argument is optional. If it's surrounded in `<angled brackets>`, then you need to define it when using the command. If you find arguments that look like `[-this]`, they are flags. Flags change how commands are executed. Each letter after the "-" is its own flag. You can define them apart (`-a -b`) or together (`-ab`). Some flags even require an argument defined after them. Finally, `|` means you have a choice among the list it makes and must choose one.
@@ -22,7 +20,7 @@ Each command has their own permission requirements to be useable by a player. To
 <!--COMMANDAREA-->
 !!! note ""
 	
-	**;help (or ;?)**
+	###	**`;help (or ;?)`**
 
 	|**Description**|Get a list of commands available and a quick description for each of them|
 	|:--|:--|
@@ -31,7 +29,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;worldedit (or ;we)**
+	###	**`;worldedit (or ;we)`**
 
 	|**Description**|WorldEdit commands|
 	|:--|:--|
@@ -40,7 +38,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;worldedit version**
+	###	**`;worldedit version`**
 
 	|**Description**|Get WorldEdit version|
 	|:--|:--|
@@ -49,7 +47,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;worldedit perf**
+	###	**`;worldedit perf`**
 
 	|**Description**|Toggle performance mode for the current session.|
 	|:--|:--|
@@ -58,7 +56,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;worldedit app**
+	###	**`;worldedit app`**
 
 	|**Description**|Get the link to the external app.|
 	|:--|:--|
@@ -67,7 +65,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;limit**
+	###	**`;limit`**
 
 	|**Description**|Set the number of blocks you can change per action|
 	|:--|:--|
@@ -76,7 +74,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;kit**
+	###	**`;kit`**
 
 	|**Description**|Give yourself a set of items to do common worldedit functions|
 	|:--|:--|
@@ -85,7 +83,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;toggleplace**
+	###	**`;toggleplace`**
 
 	|**Description**|Toggles the placement position used in various WorldEdit operations.|
 	|:--|:--|
@@ -94,7 +92,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;blockid (or ;id)**
+	###	**`;blockid (or ;id)`**
 
 	|**Description**|Prints the id and states of the block you're looking at.|
 	|:--|:--|
@@ -103,7 +101,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;cancel**
+	###	**`;cancel`**
 
 	|**Description**|Cancels one of, or all your active jobs.|
 	|:--|:--|
@@ -112,7 +110,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;pos1 (or ;1)**
+	###	**`;pos1 (or ;1)`**
 
 	|**Description**|Set the first position of your selection to the specified or current position|
 	|:--|:--|
@@ -121,7 +119,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;pos2 (or ;2)**
+	###	**`;pos2 (or ;2)`**
 
 	|**Description**|Set the second position of your selection to the specified or current position|
 	|:--|:--|
@@ -130,7 +128,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hpos1**
+	###	**`;hpos1`**
 
 	|**Description**|Set the first position of your selection to the position of the block you're facing|
 	|:--|:--|
@@ -139,7 +137,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hpos2**
+	###	**`;hpos2`**
 
 	|**Description**|Set the second position of your selection to the position of the block you're facing|
 	|:--|:--|
@@ -148,7 +146,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;chunk**
+	###	**`;chunk`**
 
 	|**Description**|Select your current, or specified chunk.|
 	|:--|:--|
@@ -157,7 +155,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;drawsel**
+	###	**`;drawsel`**
 
 	|**Description**|Toggle your selection's visibility|
 	|:--|:--|
@@ -166,7 +164,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel (or ;deselect, ;desel)**
+	###	**`;sel (or ;deselect, ;desel)`**
 
 	|**Description**|Change selection mode|
 	|:--|:--|
@@ -175,7 +173,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel cuboid**
+	###	**`;sel cuboid`**
 
 	|**Description**|Select two corners of a cuboid|
 	|:--|:--|
@@ -184,7 +182,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel extend**
+	###	**`;sel extend`**
 
 	|**Description**|Fast cuboid selection mode|
 	|:--|:--|
@@ -193,7 +191,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel sphere**
+	###	**`;sel sphere`**
 
 	|**Description**|Select a sphere|
 	|:--|:--|
@@ -202,7 +200,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel cyl**
+	###	**`;sel cyl`**
 
 	|**Description**|Select a cylinder|
 	|:--|:--|
@@ -211,7 +209,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sel convex**
+	###	**`;sel convex`**
 
 	|**Description**|Select points for a convex hull|
 	|:--|:--|
@@ -220,7 +218,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;wand**
+	###	**`;wand`**
 
 	|**Description**|Give yourself a selection wand|
 	|:--|:--|
@@ -229,7 +227,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;contract**
+	###	**`;contract`**
 
 	|**Description**|Contract the selection area|
 	|:--|:--|
@@ -238,7 +236,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;expand**
+	###	**`;expand`**
 
 	|**Description**|Expand the selection area|
 	|:--|:--|
@@ -247,7 +245,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;expand vert**
+	###	**`;expand vert`**
 
 	|**Description**|Vertically expand your selection to world height limits|
 	|:--|:--|
@@ -256,7 +254,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;shift**
+	###	**`;shift`**
 
 	|**Description**|Shift the selection area|
 	|:--|:--|
@@ -265,7 +263,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;outset**
+	###	**`;outset`**
 
 	|**Description**|Outset the selection area|
 	|:--|:--|
@@ -274,7 +272,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;inset**
+	###	**`;inset`**
 
 	|**Description**|Inset the selection area|
 	|:--|:--|
@@ -283,7 +281,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;trim**
+	###	**`;trim`**
 
 	|**Description**|Minimize the selection to encompass matching blocks|
 	|:--|:--|
@@ -292,7 +290,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;count**
+	###	**`;count`**
 
 	|**Description**|Count the number of blocks that match a mask|
 	|:--|:--|
@@ -301,7 +299,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;distr**
+	###	**`;distr`**
 
 	|**Description**|Analyse the amount of different blocks in the selection|
 	|:--|:--|
@@ -310,7 +308,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;cut**
+	###	**`;cut`**
 
 	|**Description**|Remove your current selection and place it in the clipboard|
 	|:--|:--|
@@ -319,7 +317,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;copy**
+	###	**`;copy`**
 
 	|**Description**|Copy the current selection to the clipboard|
 	|:--|:--|
@@ -328,7 +326,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;paste**
+	###	**`;paste`**
 
 	|**Description**|Paste your clipboard into the world|
 	|:--|:--|
@@ -337,7 +335,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;clearclipboard**
+	###	**`;clearclipboard`**
 
 	|**Description**|Clear your clipboard|
 	|:--|:--|
@@ -346,7 +344,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft**
+	###	**`;loft`**
 
 	|**Description**|Create a loft from a series of selected points|
 	|:--|:--|
@@ -355,7 +353,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft start_curve**
+	###	**`;loft start_curve`**
 
 	|**Description**|Create a new curve frame to shape the loft with.|
 	|:--|:--|
@@ -364,7 +362,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft add_point**
+	###	**`;loft add_point`**
 
 	|**Description**|Add a point to the loft's last curve frame|
 	|:--|:--|
@@ -373,7 +371,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft set**
+	###	**`;loft set`**
 
 	|**Description**|Fill the loft frame with a specified pattern|
 	|:--|:--|
@@ -382,7 +380,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft remove**
+	###	**`;loft remove`**
 
 	|**Description**|Remove the last point added to the loft frame|
 	|:--|:--|
@@ -391,7 +389,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;loft clear**
+	###	**`;loft clear`**
 
 	|**Description**|Clear the loft's frames|
 	|:--|:--|
@@ -400,7 +398,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hsphere**
+	###	**`;hsphere`**
 
 	|**Description**|Generate a hollow sphere|
 	|:--|:--|
@@ -409,7 +407,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;sphere**
+	###	**`;sphere`**
 
 	|**Description**|Generate a sphere|
 	|:--|:--|
@@ -418,7 +416,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;cyl**
+	###	**`;cyl`**
 
 	|**Description**|Generate a cylinder|
 	|:--|:--|
@@ -427,7 +425,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hcyl**
+	###	**`;hcyl`**
 
 	|**Description**|Generate a hollow cylinder|
 	|:--|:--|
@@ -436,7 +434,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;pyramid**
+	###	**`;pyramid`**
 
 	|**Description**|Generate a pyramid|
 	|:--|:--|
@@ -445,7 +443,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hpyramid**
+	###	**`;hpyramid`**
 
 	|**Description**|Generate a hollow pyramid|
 	|:--|:--|
@@ -454,7 +452,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;torus**
+	###	**`;torus`**
 
 	|**Description**|Generate a torus.|
 	|:--|:--|
@@ -463,7 +461,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;htorus**
+	###	**`;htorus`**
 
 	|**Description**|Generate a hollow torus.|
 	|:--|:--|
@@ -472,7 +470,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gen (or ;g)**
+	###	**`;gen (or ;g)`**
 
 	|**Description**|Generate any kind of shape in your selection|
 	|:--|:--|
@@ -481,7 +479,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gradient**
+	###	**`;gradient`**
 
 	|**Description**|Manage your gradients.|
 	|:--|:--|
@@ -490,7 +488,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gradient create**
+	###	**`;gradient create`**
 
 	|**Description**|Create a gradient to use in patterns.|
 	|:--|:--|
@@ -499,7 +497,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gradient delete**
+	###	**`;gradient delete`**
 
 	|**Description**|Delete a gradient.|
 	|:--|:--|
@@ -508,7 +506,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gradient list**
+	###	**`;gradient list`**
 
 	|**Description**|List created gradients.|
 	|:--|:--|
@@ -517,7 +515,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;terrain**
+	###	**`;terrain`**
 
 	|**Description**|Generate terrain with noise|
 	|:--|:--|
@@ -526,7 +524,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;gmask**
+	###	**`;gmask`**
 
 	|**Description**|Set the global mask|
 	|:--|:--|
@@ -535,7 +533,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;set**
+	###	**`;set`**
 
 	|**Description**|Fill the selection with a block pattern|
 	|:--|:--|
@@ -544,7 +542,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;replace**
+	###	**`;replace`**
 
 	|**Description**|Replace certain blocks in the selection with other blocks|
 	|:--|:--|
@@ -553,7 +551,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;move**
+	###	**`;move`**
 
 	|**Description**|Move the selection in a certain direction|
 	|:--|:--|
@@ -562,7 +560,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;overlay**
+	###	**`;overlay`**
 
 	|**Description**|Overlay blocks on surfaces within the selection|
 	|:--|:--|
@@ -571,7 +569,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;stack**
+	###	**`;stack`**
 
 	|**Description**|Repeat the contents of the current selection|
 	|:--|:--|
@@ -580,7 +578,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;revolve**
+	###	**`;revolve`**
 
 	|**Description**|Make copies of the selection revolving around the player|
 	|:--|:--|
@@ -589,7 +587,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;rotate**
+	###	**`;rotate`**
 
 	|**Description**|Rotate the selection|
 	|:--|:--|
@@ -598,7 +596,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;flip**
+	###	**`;flip`**
 
 	|**Description**|Flip the selection|
 	|:--|:--|
@@ -607,7 +605,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;scale**
+	###	**`;scale`**
 
 	|**Description**|Scale the selection|
 	|:--|:--|
@@ -616,7 +614,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;walls**
+	###	**`;walls`**
 
 	|**Description**|Generate a wall from your selection|
 	|:--|:--|
@@ -625,7 +623,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;smooth**
+	###	**`;smooth`**
 
 	|**Description**|Smooth the surface within the selection|
 	|:--|:--|
@@ -634,7 +632,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;faces**
+	###	**`;faces`**
 
 	|**Description**|Generate an outline from your selection|
 	|:--|:--|
@@ -643,7 +641,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;hollow**
+	###	**`;hollow`**
 
 	|**Description**|Hollow out the objects contained in your selection|
 	|:--|:--|
@@ -652,7 +650,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;line**
+	###	**`;line`**
 
 	|**Description**|Create a line between your first and second selection points|
 	|:--|:--|
@@ -661,7 +659,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;curve**
+	###	**`;curve`**
 
 	|**Description**|Create a curve between multiple selection points|
 	|:--|:--|
@@ -670,7 +668,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;path**
+	###	**`;path`**
 
 	|**Description**|Create a path with your clipboard|
 	|:--|:--|
@@ -679,7 +677,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;path rotated**
+	###	**`;path rotated`**
 
 	|**Description**|Create a path with your clipboard rotated along the path|
 	|:--|:--|
@@ -688,7 +686,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;center (or ;middle)**
+	###	**`;center (or ;middle)`**
 
 	|**Description**|Set the center block(s).|
 	|:--|:--|
@@ -697,7 +695,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;fill**
+	###	**`;fill`**
 
 	|**Description**|Fill an area with certain blocks|
 	|:--|:--|
@@ -706,7 +704,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;fillr**
+	###	**`;fillr`**
 
 	|**Description**|Recursively fill an area with certain blocks|
 	|:--|:--|
@@ -715,7 +713,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;removeabove**
+	###	**`;removeabove`**
 
 	|**Description**|Remove blocks above you|
 	|:--|:--|
@@ -724,7 +722,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;removebelow**
+	###	**`;removebelow`**
 
 	|**Description**|Remove blocks below you|
 	|:--|:--|
@@ -733,7 +731,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;removenear**
+	###	**`;removenear`**
 
 	|**Description**|Remove nearby blocks|
 	|:--|:--|
@@ -742,7 +740,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;replacenear**
+	###	**`;replacenear`**
 
 	|**Description**|Replace nearby blocks with other blocks|
 	|:--|:--|
@@ -751,7 +749,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;drain**
+	###	**`;drain`**
 
 	|**Description**|Drain nearby fluids|
 	|:--|:--|
@@ -760,7 +758,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;fixwater**
+	###	**`;fixwater`**
 
 	|**Description**|Make nearby flowing water blocks source blocks|
 	|:--|:--|
@@ -769,7 +767,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;fixlava**
+	###	**`;fixlava`**
 
 	|**Description**|Make nearby flowing lava blocks source blocks|
 	|:--|:--|
@@ -778,7 +776,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;snow**
+	###	**`;snow`**
 
 	|**Description**|Simulate snow in the area|
 	|:--|:--|
@@ -787,7 +785,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;thaw**
+	###	**`;thaw`**
 
 	|**Description**|Melt snow and ice exposed to the sky|
 	|:--|:--|
@@ -796,7 +794,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;green**
+	###	**`;green`**
 
 	|**Description**|Turn nearby dirt into grass|
 	|:--|:--|
@@ -805,7 +803,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;extinguish (or ;ext, ;ex)**
+	###	**`;extinguish (or ;ext, ;ex)`**
 
 	|**Description**|Extinguish nearby fires|
 	|:--|:--|
@@ -814,7 +812,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;butcher**
+	###	**`;butcher`**
 
 	|**Description**|Kill nearby entities.|
 	|:--|:--|
@@ -823,7 +821,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;calculate (or ;calc, ;eval, ;evaluate, ;solve)**
+	###	**`;calculate (or ;calc, ;eval, ;evaluate, ;solve)`**
 
 	|**Description**|Evaluate a mathematical expression.|
 	|:--|:--|
@@ -832,7 +830,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;navwand**
+	###	**`;navwand`**
 
 	|**Description**|Give yourself a navigation wand|
 	|:--|:--|
@@ -841,7 +839,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;up**
+	###	**`;up`**
 
 	|**Description**|Move up a certain number of blocks|
 	|:--|:--|
@@ -850,7 +848,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;unstuck (or ;!)**
+	###	**`;unstuck (or ;!)`**
 
 	|**Description**|Move out of blocks|
 	|:--|:--|
@@ -859,7 +857,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;jumpto (or ;j)**
+	###	**`;jumpto (or ;j)`**
 
 	|**Description**|Teleport you to the top of the block you're looking at|
 	|:--|:--|
@@ -868,7 +866,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;thru**
+	###	**`;thru`**
 
 	|**Description**|Teleport through any wall you look at|
 	|:--|:--|
@@ -877,7 +875,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;ascend**
+	###	**`;ascend`**
 
 	|**Description**|Go up a floor|
 	|:--|:--|
@@ -886,7 +884,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;descend**
+	###	**`;descend`**
 
 	|**Description**|Go down a floor|
 	|:--|:--|
@@ -895,7 +893,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;ceil**
+	###	**`;ceil`**
 
 	|**Description**|Go to the ceiling.|
 	|:--|:--|
@@ -904,7 +902,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool**
+	###	**`;tool`**
 
 	|**Description**|Get all sorts of tools|
 	|:--|:--|
@@ -913,7 +911,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool none**
+	###	**`;tool none`**
 
 	|**Description**|Unbind held tool|
 	|:--|:--|
@@ -922,7 +920,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool stacker**
+	###	**`;tool stacker`**
 
 	|**Description**|Block stacker tool|
 	|:--|:--|
@@ -931,7 +929,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool extruder**
+	###	**`;tool extruder`**
 
 	|**Description**|Extrusion tool|
 	|:--|:--|
@@ -940,7 +938,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool selwand**
+	###	**`;tool selwand`**
 
 	|**Description**|Selection tool|
 	|:--|:--|
@@ -949,7 +947,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool navwand**
+	###	**`;tool navwand`**
 
 	|**Description**|Navigation tool|
 	|:--|:--|
@@ -958,7 +956,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool farwand**
+	###	**`;tool farwand`**
 
 	|**Description**|Selection tool, but can reach farther|
 	|:--|:--|
@@ -967,7 +965,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool cmd**
+	###	**`;tool cmd`**
 
 	|**Description**|Command exeution tool; both vanilla and worldedit|
 	|:--|:--|
@@ -976,7 +974,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool fill**
+	###	**`;tool fill`**
 
 	|**Description**|Fill tool|
 	|:--|:--|
@@ -985,7 +983,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool repl**
+	###	**`;tool repl`**
 
 	|**Description**|Block replacer tool|
 	|:--|:--|
@@ -994,7 +992,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tool cycler**
+	###	**`;tool cycler`**
 
 	|**Description**|Block cycler tool|
 	|:--|:--|
@@ -1003,7 +1001,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;superpickaxe (or ;sp)**
+	###	**`;superpickaxe (or ;sp)`**
 
 	|**Description**|Toggle the super pickaxe|
 	|:--|:--|
@@ -1012,7 +1010,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;superpickaxe single**
+	###	**`;superpickaxe single`**
 
 	|**Description**|Make the super pickaxe break a single block|
 	|:--|:--|
@@ -1021,7 +1019,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;superpickaxe area**
+	###	**`;superpickaxe area`**
 
 	|**Description**|Make the super pickaxe break blocks in a cubic range|
 	|:--|:--|
@@ -1030,7 +1028,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;superpickaxe recursive**
+	###	**`;superpickaxe recursive`**
 
 	|**Description**|Make the super pickaxe break blocks starting from the initial one|
 	|:--|:--|
@@ -1039,7 +1037,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush (or ;br)**
+	###	**`;brush (or ;br)`**
 
 	|**Description**|Set the type of a brush being held|
 	|:--|:--|
@@ -1048,7 +1046,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush none**
+	###	**`;brush none`**
 
 	|**Description**|Unbind a bound brush from your current item|
 	|:--|:--|
@@ -1057,7 +1055,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush sphere**
+	###	**`;brush sphere`**
 
 	|**Description**|Create a sphere brush|
 	|:--|:--|
@@ -1066,7 +1064,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush cyl**
+	###	**`;brush cyl`**
 
 	|**Description**|Create a cylinder brush|
 	|:--|:--|
@@ -1075,7 +1073,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush smooth**
+	###	**`;brush smooth`**
 
 	|**Description**|Create a terrain smoothing brush|
 	|:--|:--|
@@ -1084,7 +1082,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush raise**
+	###	**`;brush raise`**
 
 	|**Description**|Creates a terrain raising brush|
 	|:--|:--|
@@ -1093,7 +1091,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush struct**
+	###	**`;brush struct`**
 
 	|**Description**|Creates a brush that places structures|
 	|:--|:--|
@@ -1102,7 +1100,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush erode**
+	###	**`;brush erode`**
 
 	|**Description**|Creates a terrain shaping brush|
 	|:--|:--|
@@ -1111,7 +1109,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush overlay**
+	###	**`;brush overlay`**
 
 	|**Description**|Creates a terrain overlaying brush|
 	|:--|:--|
@@ -1120,7 +1118,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;brush blob**
+	###	**`;brush blob`**
 
 	|**Description**|Creates a blob generating brush|
 	|:--|:--|
@@ -1129,7 +1127,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;mask**
+	###	**`;mask`**
 
 	|**Description**|Set what kind of blocks a brush can affect, if any|
 	|:--|:--|
@@ -1138,7 +1136,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;tracemask**
+	###	**`;tracemask`**
 
 	|**Description**|Set what kind of blocks a brush can be used on|
 	|:--|:--|
@@ -1147,7 +1145,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;size**
+	###	**`;size`**
 
 	|**Description**|Set the size of a brush or get information about the selection|
 	|:--|:--|
@@ -1156,7 +1154,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;range**
+	###	**`;range`**
 
 	|**Description**|Set how far a brush can be used from|
 	|:--|:--|
@@ -1165,7 +1163,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;material**
+	###	**`;material`**
 
 	|**Description**|Set what kind of blocks a brush should make|
 	|:--|:--|
@@ -1174,7 +1172,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;undo**
+	###	**`;undo`**
 
 	|**Description**|Undo a certain amount of actions|
 	|:--|:--|
@@ -1183,7 +1181,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;redo**
+	###	**`;redo`**
 
 	|**Description**|Redo a certain amount of actions|
 	|:--|:--|
@@ -1192,7 +1190,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;clearhistory**
+	###	**`;clearhistory`**
 
 	|**Description**|Clear your editing history|
 	|:--|:--|
@@ -1201,7 +1199,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;export**
+	###	**`;export`**
 
 	|**Description**|Exports the selection for later use.|
 	|:--|:--|
@@ -1210,7 +1208,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;import**
+	###	**`;import`**
 
 	|**Description**|Imports a structure to the clipboard.|
 	|:--|:--|
@@ -1219,7 +1217,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;biomeinfo**
+	###	**`;biomeinfo`**
 
 	|**Description**|Retrieve the kinds of biomes in your selection|
 	|:--|:--|
@@ -1228,7 +1226,7 @@ Each command has their own permission requirements to be useable by a player. To
 
 !!! note ""
 	
-	**;setbiome**
+	###	**`;setbiome`**
 
 	|**Description**|Change the biomes in your selection|
 	|:--|:--|
