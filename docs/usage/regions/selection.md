@@ -10,7 +10,7 @@ By default, WorldEdit displays your selection with particles. This can help visu
 
 ## Selecting cuboids
 
-As of the time of writing, WorldEdit currently only supports the cuboid selection shapes, but it's the only shape you'd need for most cases, and is the most basic. By default, a selection is defined by marking two opposite corners of the cuboid. There are several ways to mark these points.
+WorldEdit supports several selection shapes, including cuboid, extend, sphere, cylinder, and convex. The cuboid is the most basic and is useful for many operations. By default, a cuboid selection is defined by marking two opposite corners. There are several ways to mark these points.
 
 ### Using the selection wand.
 

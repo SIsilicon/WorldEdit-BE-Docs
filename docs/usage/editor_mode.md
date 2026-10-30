@@ -16,3 +16,5 @@ WorldEdit with Editor Mode has the following features compared to the normal ver
 - Editor brush controls (creating strokes by holding your mouse over terrain)
 - Gradient management via UI
 - Region operation management via UI
+- WorldEdit selections sync with Editor Mode selections. Non-cuboid selections are supported, but editing one in Editor Mode converts it to a block volume selection, which cannot be edited in crosshair mode.
+  Change to another selection shape to return to crosshair editing.
